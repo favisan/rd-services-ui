@@ -1,0 +1,60 @@
+h4{
+    margin-top: 1%;
+}
+#titulo-agendadas{
+    color:  rgb(49, 155, 118);
+}
+#titulo-realizadas{
+    color:  rgb(145, 145, 136);
+}
+#titulo-canceladas{
+    color:   rgb(141, 60, 69);
+}
+.consulta{
+    height: 5vh;
+    border-radius: 29px;
+    margin-top: 1%;
+}
+.consulta:hover{
+    cursor: pointer;
+}
+.agendada{
+    border: 3px solid rgb(49, 155, 118);
+}
+.agendada:hover{
+    background-color:rgba(92, 195, 160, 0.3);
+}
+.realizada{
+    border: 3px solid rgb(145, 145, 136);
+}
+.realizada:hover{
+    background-color:rgba(146, 146, 136, 0.3);
+}
+.cancelada{
+    border: 3px solid rgb(141, 60, 69);
+}
+.cancelada:hover{
+    background-color:rgba(141, 60, 69, 0.3);
+}
+
+button{
+    background-color: #319A75;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    margin-left: 1%;
+}
+button:hover{
+    background-color:#5cc3a0
+}
+.botoes-consulta{
+    display: none;
+}
+p{
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+.texto-expansao{
+    display: none;
+    padding-left: 1.5%;
+}
