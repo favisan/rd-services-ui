@@ -1,0 +1,59 @@
+body {
+padding: 0px;
+     
+}
+
+.container1 {
+    padding: 0%;
+  
+    
+}
+
+h1 {
+    color: greenyellow;
+    font-size: 60px;
+    margin: 30px 30px;
+    padding: 50px 50px;
+
+}
+
+
+.banner-wrap {
+    padding: 0%;
+    height: 300px;
+   
+    background: rgba(24, 24, 24, 0.3);
+}
+
+.banner-wrap h1 {
+    
+    color: honeydew;
+    font-size: 60px;
+    
+    
+}   
+
+.btn {
+
+margin: 0px;
+padding: 10px;
+background-color: white;
+
+}
+
+.btn a {
+    display: inline-block;
+    border-radius: 60px;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    background-color:#40744e;
+    padding: 0px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.btn a :hover{
+    background-color: lawngreen;
+}
