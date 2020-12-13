@@ -31,6 +31,7 @@
 section{
     background-color: rgba(224, 239, 220, 0.24);
     width: 100%;
+    margin-bottom: 2%;
 }
 .navbar-light .navbar-nav .nav-link {
     color: #444444;
@@ -40,7 +41,6 @@ footer{
     background-color: #929288;
     width: 100%;
     color: #ffffff;
-    margin-top: 2%;
 }
 footer h4{
     font-size: 1.0rem;
