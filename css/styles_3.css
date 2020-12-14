@@ -1,4 +1,4 @@
-/* footer e rodape */
+/* Header e Footer */
 
 .btn-menu{
     background-color: #319A75;
@@ -32,6 +32,10 @@ section{
     background-color: rgba(224, 239, 220, 0.24);
     width: 100%;
     padding-bottom: 2%;
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .navbar-light .navbar-nav .nav-link {
     color: #444444;
@@ -49,6 +53,86 @@ footer h4{
     color: #ffffff;
     display: inline;
 }
+
+/* fim Footer e Header */
+
+/* trilha */
+
+.rowtrilha {
+    justify-content: center;
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    align-items: center;
+    width: 100%;
+}
+.cada-item{
+    width: 12%;
+}
+.linha{
+    height: 10px;
+    width: 100%;
+}
+.linha-ativa{
+    background-color: rgb(0, 080, 052);
+}
+.linha-futura{
+    background-color:white;
+    border-top: solid 2px rgb(0, 080, 052);
+    border-bottom: solid 2px rgb(0, 080, 052);
+}
+.bolinha {
+    border-radius: 100%;
+    border: solid 2px rgb(0, 080, 052);
+    height: 36px;
+    width: 45px;
+    text-align: center;
+    padding-top: 4%;
+    font-weight: bold;
+    z-index: 2;
+}
+.bolinha-cheia{
+    background-color: rgb(0, 080, 052);
+    color: white;
+}
+.bolinha-vazia{
+    background-color: white;
+    color:rgb(0, 080, 052);
+}
+.trilha {
+    font-weight: bold;
+}
+.bola-linha{
+    width: 100%;
+    align-items: center;
+}
+.texto-consulta{
+    width: 100%;
+}
+.opcao-vazia{
+    color: white;
+}
+#bolinha7{
+    width: 36px;
+    height: 36px;
+}
+
+/* fim trilha */
+
+/* filtro */
+
+.periodo{
+    margin-bottom: 0;
+}
+.filtro{
+    display: flex;
+    justify-content: space-between;
+    width: 35%
+}
+label:hover{
+    text-decoration: underline;
+}
+/* fim filtro */
 
 /* pagina 3 */
 
