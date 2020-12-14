@@ -1,4 +1,3 @@
-
 .btn-menu{
     background-color: #319A75;
     color: #FFFFFF;
@@ -12,6 +11,7 @@
     color: #444444;
 }
 
+
 .collapse{
     text-align: center;
 }
@@ -19,7 +19,6 @@
 .nav-item:hover{
     text-decoration: underline;
 }
-
 .item-menu{
     padding: 25px 12px;
     font-size: 1.5rem;
@@ -52,19 +51,41 @@ footer h4{
     display: inline;
 }
 
-h1 {
-    text-align: center;
-    color: #319A75;
-}
-.planos {
-    text-align: center;
-       
-}
-h5 {
-    text-align: center;
-    color: #319A75;
-}
-li {
-    text-align: left;
+.botoes-cadastro{
+    float: right;
 }
 
+.btn{
+    display: inline;
+    justify-content: flex-end;
+    background-color: #319A75;
+    color: #fff;
+    text-align-last: right;
+    clear: both;
+}
+
+.btn-cancelar{
+    background-color: #c6d4c8;
+}
+
+.card-text{
+    font-size: 0.75rem;
+}
+
+.btn-card{
+    width: 100%;
+    text-align-last: center;
+}
+
+.alinhamento{
+    text-align-last: center;
+}
+
+.modal-content{
+    padding: 20px;
+    background-color: rgba(223, 239, 219);
+}
+
+.vencimento-cartao{
+    display: inline-flex;
+}
