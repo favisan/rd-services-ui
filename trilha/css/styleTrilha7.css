@@ -51,6 +51,7 @@
 }
 
 .bolinhaVazia {
+    display: inline-block;
     background-color: white;
     border-radius: 100%;
     border-style: solid;
@@ -60,4 +61,25 @@
     text-align: center;
     color: rgb(0, 080, 052);
     font-weight: bold;
+}
+
+.linhaVazia{
+    justify-content: center;
+    display: inline-block;  /* alinhando o circulo com a linha */
+    height: 10px;
+    width: 71px;
+    margin-top: -26px;
+    border-style: solid;
+    color: rgb(0, 080, 052);
+    background-color:white;
+    margin-left: 43px;
+    position: absolute;
+}
+
+.trilhaVazia, .opcaoVazia {
+    display: flex;
+    color:transparent;
+    border-style: solid;
+    width: 95px;
+    margin-left: 5px;
 }
