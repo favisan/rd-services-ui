@@ -127,7 +127,7 @@ footer h4{
 .filtro{
     display: flex;
     justify-content: space-between;
-    width: 35%
+    width: 45%
 }
 label:hover{
     text-decoration: underline;
@@ -193,4 +193,17 @@ button:hover{
 }
 #medico3{
     background-image: url("../img/doolitle.jpg");
+}
+
+/* responsividade */
+@media(max-width:1010px){
+    .foto{
+        display: none;
+    }
+    .filtro{
+        width:75%;
+    }
+    .cada-item{
+        width:25%
+    }
 }
