@@ -8,7 +8,9 @@ a:hover {
 }
 
 .banner {
-    background-color: aquamarine;
+    background-image: url("../img/foto-1.jpg");
+    background-size: cover;
+    background-position: center;
     height: 500px;
     width: 100%;
     display: flex;
@@ -30,6 +32,11 @@ a:hover {
 .btn-banner {
     margin: 0 0.5rem 0 0.5rem;
     padding: 14px 20px;
+    font-size: 1.2rem;
+}
+
+.btn-banner:hover {
+    background-color: #1f5e48;
 }
 
 .material-icons {
@@ -80,9 +87,25 @@ a:hover {
 
 .card-icon {
     opacity: 0.30;
-    width: 80px;
-    height: 80px;
-    background-color: teal;
+    width: 70px;
+    height: 70px;
+    /* background-color: teal; */
+}
+
+.card-nutri {
+    background-image: url("../img/logo_balanca.svg");
+}
+
+.card-exames {
+    background-image: url("../img/logo_lab.svg");
+}
+
+.card-consultas {
+    background-image: url("../img/logo_med.svg");
+}
+
+.card-lab {
+    background-image: url("../img/logo_vax.svg");
 }
 
 .card-title {

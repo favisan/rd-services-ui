@@ -68,3 +68,11 @@ li {
     text-align: left;
 }
 
+
+/* 
+@media(max-width: 425px){ 
+    .footer .row .col-md-3 {
+        margin-top: 10px;
+    }
+} */
+
