@@ -12,6 +12,7 @@
 
 #altera-foto{
     text-align: center;
+    align-self: center;
 }
 
 .btn{
@@ -37,7 +38,8 @@
 }
 
 #img-perfil{
-    padding: 30px 0px;
+    padding: 30px 20px;
+    width: 30%;
 }
 
 .altera-senha{
@@ -47,4 +49,11 @@
 
 .modal-content{
     padding: 20px;
+    background-color: rgba(223, 239, 219);
+}
+
+
+.img-card{
+    width: 70%;
+    align-self: center;
 }
