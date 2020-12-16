@@ -91,3 +91,7 @@ footer h4{
     display: inline-flex;
 }
 
+.img-card{
+    width: 70%;
+    align-self: center;
+}

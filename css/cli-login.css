@@ -1,0 +1,72 @@
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container-background {
+    background-image: url("../img/foto-1.jpg");
+    background-size: cover;
+    display: flex;
+    height: 650px;
+    justify-content: center;
+}
+
+.box-central{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.text-center{
+    color: #444444;
+}
+
+.btn-verde {
+    background-color: #319A75;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    border-radius: 2px;
+    line-height: 18px;
+}
+
+.btn-verde:hover {
+    background-color: rgb(000, 080, 052);
+    border: 1px solid rgb(000, 080, 052); 
+}
+
+
+.box-line {
+    border: 1px solid #4ea3808a;
+    width: 50%;
+    margin: auto;
+  }
+
+::-webkit-input-placeholder {
+    color: #908F8F!important;
+}
+
+footer{
+    padding: 30px;
+    background-color: #929288;
+    width: 100%;
+    color: #ffffff;
+}
+
+footer h4{
+    font-size: 1.0rem;
+}
+
+.rodape .nav-item .nav-link {
+    color: #ffffff;
+    display: inline;
+}
+
+.nav-item:hover{
+    text-decoration: underline;
+}

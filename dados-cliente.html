@@ -7,7 +7,7 @@
     <title>Projeto Integrado RD Divas</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles-cadastro.css">
+    <link rel="stylesheet" href="css/styles-dados.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -20,19 +20,21 @@
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="col-lg-8 col-md-9 col-sm-9 col-xs-4 item-menu">
+            <div class="collapse navbar-collapse item-menu" id="navbarSupportedContent">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-4 ">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item"><a class="nav-link" href="planos.html">Planos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
                         <li class="nav-item"><a class="nav-link" href="portal.html#servicos">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Minha Área</a></li>
                     </ul>
                 </div>
-                <div class="col-xl-4 col-lg-6 col-md-4 col-sm-4 col-xs-4">
-                    <div class="text-center">Login</div>
-                    <div>
-                        <a href="login-cliente.html"><button class="btn btn-menu">Paciente</button></a>
-                        <button class="btn btn-menu">Médico</button>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4" id="img-login">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <p id="txt-login">Olá Laura</p>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <img src="./img/icon_login.png">
                     </div>
                 </div>
             </div>
@@ -41,31 +43,10 @@
     </header>
 
     <section>
-        <h2 class="text-center">Cadastro</h2>
-        <h6>Dados de Acesso:</h6>
+        <h2 class="text-center">Meus Dados</h2>
+        
         <form>
-            <div class="form-row">
-                <div class="form-group col-md-8">
-                    <label for="cadastro-email">Email:</label>
-                    <input type="email" class="form-control" id="cadastro-email" placeholder="Digite o seu e-mail">
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="cadastro-senha">Senha:</label>
-                    <input type="password" class="form-control" id="cadastro-senha" placeholder="Digite a senha">
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-8">
-                    <label for="cadastro-email2">Repita o Email:</label>
-                    <input type="email" class="form-control" id="cadastro-email2" placeholder="Digite o seu e-mail">
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="cadastro-senha2">Repita a Senha:</label>
-                    <input type="password" class="form-control" id="cadastro-senha2" placeholder="Digite a senha">
-                </div>
-            </div>
-        </form>
-        <hr>
+            
         <h6>Dados Pessoais:</h6>
         <form>
             <div class="form-row">
@@ -161,10 +142,39 @@
                 </div>
             </div>
             <hr>
+
+            <div class="form-row">
+                <div class="form-group col-md-6" id="altera-foto">
+                    <img id="img-perfil" src="./img/icon_login.png">
+                    <button type="button" class="btn" data-toggle="modal" data-target=".bd-foto-perfil-modal-lg">Alterar Foto</button>
+                </div>
+                <div class="form altera-senha">
+                    <label>Alterar a Senha:</label>
+                    <div class="form-row"></div>
+                    <div class="form-group col-md-6">
+                        <label for="cadastro-senha">Senha atual:</label>
+                        <input type="password" class="form-control" id="cadastro-senha" placeholder="Digite a senha">
+                    </div>
+
+                    <div class="form-row">                
+                        <div class="form-group col-md-6">
+                            <label for="cadastro-senha">Nova senha:</label>
+                            <input type="password" class="form-control" id="cadastro-senha" placeholder="Digite a senha">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="cadastro-senha2">Repita a nova senha:</label>
+                            <input type="password" class="form-control" id="cadastro-senha2" placeholder="Digite a senha">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+        <hr>
             
             <h6>Planos:</h6>
            
-            <div class="modal-body">
+            <div class="modal-body" id="planos-dados">
                <div class="card-deck">
                    <div class="card">
                        <img class="img-card" src="./img/BASIC.png" alt="Card image cap">
@@ -207,16 +217,16 @@
             </div>
             
            <!-- MODAL -->
-            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+           <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <form>
                             <div class="modal-header">
                                 <h5 class="modal-title">Dados do Cartão:</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
+                                <span aria-hidden="true">&times;</span>
                                 </button>
-                              </div>
+                            </div>
                             <div class="form-row">
                                 <div class="form-group col-md-12 cadastro-cartao">
                                     <label for="cartao-numero">Número do Cartão:</label>
@@ -265,9 +275,25 @@
                 </div>
             </div>
 
+            <div class="modal fade bd-foto-perfil-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Escolha uma foto para o seu perfil:</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="form-group">
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             
             <div class="form-group botoes-cadastro">
-                <button class="btn ">Cadastrar</button>
+                <button class="btn ">Alterar</button>
                 <button class="btn btn-cancelar">Cancelar</button>
             </div>
         </form>

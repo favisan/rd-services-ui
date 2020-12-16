@@ -1,0 +1,59 @@
+#img-login{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#txt-login{
+    font-size: 1rem;
+    color: #444444;
+    text-align: right;
+}
+
+#altera-foto{
+    text-align: center;
+    align-self: center;
+}
+
+.btn{
+    display: inline;
+    justify-content: flex-end;
+    background-color: #319A75;
+    color: #fff;
+    text-align-last: right;
+    clear: both;
+}
+
+.btn-cancelar{
+    background-color: #c6d4c8;
+}
+
+.btn-card{
+    width: 100%;
+    text-align-last: center;
+}
+
+.botoes-cadastro{
+    float: right;
+}
+
+#img-perfil{
+    padding: 30px 20px;
+    width: 30%;
+}
+
+.altera-senha{
+    border-left: 1px solid lightgray;
+    padding: 0px 20px;
+}
+
+.modal-content{
+    padding: 20px;
+    background-color: rgba(223, 239, 219);
+}
+
+
+.img-card{
+    width: 70%;
+    align-self: center;
+}
