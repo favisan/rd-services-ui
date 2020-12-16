@@ -9,7 +9,7 @@ section {
 
 .logo {
     position: absolute;
-    margin-top: 40px;
+    margin-top: 55px;
     margin-left: 40px;
 }
 
@@ -56,20 +56,17 @@ section {
 
 .btn-verde:hover {
     background-color: rgb(000, 080, 052);
-    border: 1px solid rgb(000, 080, 052); 
 }
 
 .btn-cinza {
     font-size: 14px;
     font-weight: 700;
     background-color: rgb(108, 108, 100);
-    border: 1px solid rgb(108, 108, 100);
     color: white;
 }
 
 .btn-cinza:hover {
     background-color: rgb(146, 146, 136);
-    border: 1px solid rgb(146, 146, 136); 
 }
 
 footer{

@@ -43,20 +43,14 @@
 }
 
 .btn-verde {
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 1.5rem;
     background-color: #2a764a;
     color: #FFFFFF;
-    padding: 10px 20px;
     border-radius: 7px;
 }
 
 .btn-verde:hover {
     background-color: rgb(000, 080, 052);
-}
-
-::-webkit-input-placeholder {
-    color: #908F8F!important;
 }
 
 footer{
@@ -73,6 +67,7 @@ footer h4{
 .rodape .nav-item .nav-link {
     color: #ffffff;
     display: inline;
+    margin-left: -15px;
 }
 
 .nav-item:hover{
