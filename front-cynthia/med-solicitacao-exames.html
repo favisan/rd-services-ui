@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RD - Solicitação de exames</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/med-solicitacao-exame.css">
+    </head>
+    <body>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <img src="images/banner-2.jpg" class="banner" alt="">
+                <img src="images/logo-branco.png" class="logo" alt="">
+            </div>
+        </div>
+      
+        <section>
+        <div class="container pt-5">
+            <h1 class="titulo-verde text-center">Solicitação de Exames</h1>
+
+            <form id="id-form" name="formulario" action="#">
+                <div class="row mt-2">
+                    <div class="form-group col-12 col-md-9">
+                        <label for="name-paciente" class="label-form">Nome do(a) paciente</label>
+                        <input type="text" class="form-control style-input" id="name-paciente" placeholder="João Carlos Santana" required>
+                    </div>
+                    <div class="form-group col-12 col-md-3">
+                        <label for="data-consulta" class="label-form">Data da consulta</label>
+                        <input type="text" class="form-control style-input" id="data-consulta" placeholder="12/12/2020" required>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="form-group col-12 col-md-9">
+                        <label for="name-medico" class="label-form">Nome do(a) médico(a)</label>
+                        <input type="text" class="form-control style-input" id="name-medico" placeholder="Maria Helena da Silva" required>
+                    </div>
+                    <div class="form-group col-12 col-md-2">
+                        <label for="numero-crm" class="label-form">CRM</label>
+                        <input type="text" class="form-control style-input" id="numero-crm" placeholder="0000000" required>
+                    </div>
+                    <div class="form-group col-12 col-md-1">
+                        <label for="crm-uf" class="label-form">UF</label>
+                        <input type="text" class="form-control style-input" id="crm-uf" placeholder="SP" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="local-atendimento" class="label-form">Local de atendimento</label>
+                        <input type="text" class="form-control style-input" id="local-atendimento" placeholder="Clinica Saúde e Vida" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-12 col-md-9">
+                        <label for="endereco-medico" class="label-form">Endereço</label>
+                        <input type="text" class="form-control style-input" id="endereco-medico" placeholder="Rua Joaquina 1234" required>
+                    </div>
+                    <div class="form-group col-12 col-md-3">
+                        <label for="bairro-medico" class="label-form">Bairro</label>
+                        <input type="text" class="form-control style-input" id="bairro-medico" placeholder="12/12/2020" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-12 col-md-8">
+                        <label for="cidade-medico" class="label-form">Cidade</label>
+                        <input type="text" class="form-control style-input" id="cidade-medico" placeholder="São Paulo" required>
+                    </div>
+                    <div class="form-group col-12 col-md-1">
+                        <label for="uf-endereco-medico" class="label-form">UF</label>
+                        <input type="text" class="form-control style-input" id="uf-endereco-medico" placeholder="SP" required>
+                    </div>
+                    <div class="form-group col-12 col-md-3">
+                        <label for="telefone-medico" class="label-form">Telefone</label>
+                        <input type="text" class="form-control style-input" id="telefone-medico" placeholder="(xx) 0000-0000" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="indicacao-clinica" class="label-form">Indicação Clínica</label>
+                        <input type="text" class="form-control style-input" id="indicacao-clinica" required>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="form-group col-12">
+                        <label for="indicacao-clinica" class="label-form">Descrição dos exames</label>
+                        <textarea  class="form-control style-input-text-area" id="indicacao-clinica" rows="4" required></textarea>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-verde mr-5">Confirmar Solicitação</button>
+                    <button type="reset" class="btn btn-cinza">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+        <footer class="mt-4">
+            <div class="row">
+                <div class="col-md-6"><img src="images/logo-footer.png"></div>
+                <div class="col-md-2">
+                    <h4>MAPA DO SITE</h4>
+                    <ul class="nav flex-column rodape">
+                        <li class="nav-item"><a class="nav-link" href="#">Planos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+                        </ul>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <h4>SOCIAL MIDIA</h4>   
+                    <ul class="nav flex-column rodape">
+                        <li class="nav-item"><img src="images/logo-facebook.png"><a class="nav-link" href="#">Facebook</a></li>
+                        <li class="nav-item"><img src="images/logo-linkedin.png"><a class="nav-link" href="#">Linkedin</a></li>
+                    </ul>
+                </div>
+            
+            </div>    
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
