@@ -87,8 +87,8 @@ a:hover {
 
 .card-icon {
     opacity: 0.30;
-    width: 70px;
-    height: 70px;
+    width: 67px;
+    height: 67px;
     /* background-color: teal; */
 }
 
@@ -114,11 +114,16 @@ font-size: 1rem;
 }
 
 
-.card-line {
+    .card-line {
     border: 1px solid #4EA37F;
     width: 50%;
     margin: auto;
   }
+
+  .btn-card {
+      font-size: 1rem;
+      padding: 10px 20px;
+  } 
 
   /* ABOUT */
 
