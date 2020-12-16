@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Integrado RD Divas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">  
+    <link rel="stylesheet" href="css/styles-area-cliente.css">
+</head>
+<body class="container">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+                <img src="img/logo-menu.png">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">    
+                <div class="col-lg-8 col-md-9 col-sm-9 col-xs-4 item-menu" >
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Planos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-4 col-sm-4 col-xs-4">
+                    <!-- <a href=""><span class="text-center">sair</span></a> -->
+                        <p class=" perfil">Olá, Usuário</p>
+                </div>
+            </div>
+        </nav>       
+    </header>
+    <section>
+
+<div class="container">
+    <h4 class="text-center titulo">Acompanhe aqui as informações do seu perfil.</h4>
+	<div class="row images" id="ads">
+    <!-- Category Card -->
+    <div class="col-md-3 col-sm-6 col-12  p-2">
+        <div class="card rounded ">
+            <div class="card-image">
+                <img class="img-fluid rounded mx-auto d-block p-3" src="./img/consulta.png" alt="Icon Consulta" />
+            </div>
+            <div class="card-image-overlay m-auto p-3"> 
+                <a class="ad-btn " href="#">Consultas</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-12  p-2">
+        <div class="card rounded">
+            <div class="card-image">
+                <img class="img-fluid rounded mx-auto d-block p-3" src="./img/exames.png" alt="Icon exame" />
+            </div>
+            <div class="card-image-overlay m-auto p-3"> 
+                <a class="ad-btn" href="#">Exames</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-12 p-2">
+        <div class="card rounded ">
+            <div class="card-image">
+                <img class="img-fluid rounded mx-auto d-block p-3" src="./img/profile.png" alt="icon profile" />
+            </div>
+            <div class="card-image-overlay m-auto p-3"> 
+                <a class="ad-btn" href="#">Meus Dados</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-12 p-2">
+        <div class="card rounded">
+            <div class="card-image">
+                <img class="img-fluid rounded mx-auto d-block p-3" src="./img/nutrition.png" alt="Icon Nutrition" />
+            </div>
+            <div class="card-image-overlay m-auto p-3"> 
+                <a class="ad-btn" href="#">Plano Nutricional</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>   
+    </section>
+
+
+
+
+      <section>
+
+           <!-- Categoria Lembretes -->
+           <div class="col-md-6 col-sm-6 col-12 ">
+            <div class="todo__container">
+                <h1 class="todo__title text-center p-2">Lembrete</h1>
+                <form action="" class="todo-form" id="todoForm">
+                    <textarea class="form-control todo-form__input " id="todoInput" rows="2" placeholder="Insira um lembrete..." ></textarea>
+                    <button type="submit" value="" class="todo-form__btn" id="todoSubmit"><i class="fas fa-plus-circle"></i></button>
+                    <div style="display: none;width: 400px;" class="alert alert-danger campo" role="alert">
+                        Campo Obrigatório
+                      </div>
+                </form>
+                <div class="todo__tarefas" id="todoTarefas">
+                    <ul class="todo__tarefas-lista" id="todoLista">
+                    </ul>
+                </div>
+            </div>
+    </div>
+      </section>
+
+    <footer>
+        <div class="row">
+            <div class="col-md-6"><img src="img/logo-footer.png"></div>
+            <div class="col-md-2">
+                <h4>MAPA DO SITE</h4>
+                <ul class="nav flex-column rodape">
+                    <li class="nav-item"><a class="nav-link" href="#">Planos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+                    </ul>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <h4>SOCIAL MIDIA</h4>   
+                <ul class="nav flex-column rodape">
+                    <li class="nav-item"><img src="img/logo-facebook.png"><a class="nav-link" href="#">Facebook</a></li>
+                    <li class="nav-item"><img src="img/logo-linkedin.png"><a class="nav-link" href="#">Linkedin</a></li>
+                </ul>
+            </div>
+        </div>    
+    </footer>
+    <script type="text/javascript" src="./js/area-cliente.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+</body>
+</html>
