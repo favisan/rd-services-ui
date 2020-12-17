@@ -7,6 +7,23 @@
     border-radius: 2px;
     line-height: 18px;
 }
+.btn-secondary{
+    height: 25px;
+    text-align: center;
+    font-size:0.7rem;
+    font-weight: bold;
+    float: inline-end;
+    background-color:#929288;
+
+    /* position: relative;
+    left: 60px;
+    bottom:42px;
+     */
+}
+.btn-secondary a{
+    text-decoration: none;
+    color:white;
+}
 
 .collapse{
     text-align: center;
@@ -20,6 +37,8 @@
     padding: 25px 12px;
     font-size: 1.5rem;
 }
+
+
 
 /* Inicio Foto perfil */
 .perfil{
@@ -35,19 +54,19 @@
     max-width:100%;
 }
 /* FIM Foto perfil */
-  
+
 
 section{
     background-color: rgba(223, 239, 219, 0.24);
     width: 100%;
     padding: 5%;
-  
+
 }
 
 /* Titulo */
 .titulo{
     color: #319A75;
-    
+
 }
 
 /* Inicio Cards */
@@ -55,7 +74,7 @@ section{
 #ads {
     margin: 30px 0 30px 0;
 
-   
+
 }
 .card-all{
     border-radius:20px !important;
@@ -70,7 +89,8 @@ section{
 
 #ads .card-image-overlay {
         font-size: 20px;
-        
+
+
     }
 #ads .ad-btn {
         width: 150px;
@@ -84,7 +104,7 @@ section{
         text-decoration: none;
         margin: 20px auto 1px auto;
         color: #ffff;
-        overflow: hidden;        
+        overflow: hidden;
         position: relative;
         background-color: #067D4B;
         font-weight: bold;
@@ -109,32 +129,31 @@ section{
     @media screen and (max-width: 325px) {
 .ad-btn{
     max-width: 100px;
-    
-    
+
 }
 
 #ads .ad-btn{
-    font-size:0.5rem;
+    font-size:0.7rem;
     padding: 0;
 }
 .ad-btn li{
     font-size: 0.7rem;
     padding: 0 -40px;
-    
+
 }
 .ad-btn ul{
     font-size: 0.7rem;
-    
+
 }
 }
-    
+
 
     @media screen and (min-width: 768px) and (max-width: 990px) {
         .ad-btn{
             max-width: 100px;
-            
+
         }
-        
+
         #ads .ad-btn{
             font-size:0.7rem;
         }
@@ -144,54 +163,55 @@ section{
 
 /* Inicio da lista de lembretes */
 
-#todoInput:-moz-placeholder{
-    color:#4C4; 
-}
+
 
 .todo__title{
     color:white;
     background-color:#067D4B;
     font-size:1.2rem;
-    max-width:400px; 
-     border-radius: 10%; 
-    height: 40px;  
+    max-width:400px;
+     border-radius: 5%;
+    height: 40px;
     position: relative;
     top:10px;
-    
-    
-    
+
+
+
 }
 .todo-form{
     display: block;
-} 
+}
 .todo__tarefas ul{
     padding: 10px 0 10px 0 ;
 }
 .todo__tarefas-lista li {
-  
+
     font-size: 0.9rem;
     list-style: none;
     display: flex;
     overflow: hidden;
-    justify-content: space-between;  
+    justify-content: space-between;
     margin: 0 auto;
     border-bottom: 1px solid #ccc ;
-   
+
 }
+
+
 
 .todo-form__input{
     resize: none;
     max-width: 300px;
     padding-top:0 ;
     margin-left:0;
+
 }
  .todo__container{
     max-width: 400px;
-  
-} 
+
+}
  .form-control{
     display: inline-block;
-    top:20px 
+    top:20px
 }
 .text-btn{
     display:flex;
@@ -202,7 +222,7 @@ section{
 
 .todo__tarefas-lista span{
     text-align: center;
-   
+
 }
 
 
@@ -210,13 +230,18 @@ section{
 
 /* Meu Plano */
 
+@media screen and (min-width: 550px) and (max-width: 780px) {
+.rounded{
+  max-width: 400px;
+}
+}
 .title-plano{
     color:white;
     background-color:#067D4B;
     font-size:1.2rem;
-    max-width:300px; 
-     border-radius: 5%; 
-    height: 40px;  
+    max-width:300px;
+     border-radius: 5%;
+    height: 40px;
     position: relative;
     top:10px;
 
@@ -226,8 +251,8 @@ section{
     display: block;
     margin-left: auto;
     margin-right: auto;
-  
-    
+
+
 }
 .rounded{
     background-color:rgb(247, 245, 245);
@@ -237,9 +262,29 @@ section{
     font-size:0.8rem;
     margin:0 auto;
     padding: 0;
-   
+    padding-bottom:20px;
+
 }
 
+.success{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.btn-success{
+    height: 30px;
+    font-size:0.8rem;
+   border-radius:7px;
+   background-color:#067D4B;
+
+}
+
+.btn-success a{
+    text-decoration: none;
+    color:white;
+}
 /* Fim do plano Atual */
 
 footer{
