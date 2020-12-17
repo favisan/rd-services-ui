@@ -24,7 +24,7 @@
                         <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
                     </ul>
                 </div>
-                <div class="col-xl-4 col-lg-6 col-md-4 col-sm-4 col-xs-4">
+                <div class=" foto col-xl-4 col-lg-6 col-md-4 col-sm-4 col-xs-4">
                     <!-- <a href=""><span class="text-center">sair</span></a> -->
                         <p class=" perfil">Olá, Usuário</p>
                 </div>
@@ -80,30 +80,51 @@
 </div>
 </div>   
     </section>
+         <!-- Categoria Lembretes -->
+      <section >
+       <div class="container">
+        <div class="row">
 
 
-
-
-      <section>
-
-           <!-- Categoria Lembretes -->
-           <div class="col-md-6 col-sm-6 col-12 ">
-            <div class="todo__container">
-                <h1 class="todo__title text-center p-2">Lembrete</h1>
-                <form action="" class="todo-form" id="todoForm">
-                    <textarea class="form-control todo-form__input " id="todoInput" rows="2" placeholder="Insira um lembrete..." ></textarea>
-                    <button type="submit" value="" class="todo-form__btn" id="todoSubmit"><i class="fas fa-plus-circle"></i></button>
-                    <div style="display: none;width: 400px;" class="alert alert-danger campo" role="alert">
-                        Campo Obrigatório
-                      </div>
-                </form>
-                <div class="todo__tarefas" id="todoTarefas">
-                    <ul class="todo__tarefas-lista" id="todoLista">
-                    </ul>
+            <div class="col-md-6 col-sm-12 col-12 p-3">
+                <div class="todo__container ">
+                    <h1  class="todo__title text-center p-2" >Lembrete </h1>
+                    <div class="card rounded ">
+                        <div class="card-image-overlay  p-3"> 
+                        <form action="" class="todo-form " id="todoForm">
+                        <div class="text-btn">
+                        <textarea class="form-control todo-form__input " id="todoInput" rows="2" placeholder="Insira um lembrete..." ></textarea>
+                        <button type="submit" value="" class="todo-form__btn" id="todoSubmit"><i class="fas fa-plus-circle"></i></button>
+                        </div>
+                    </form>
+                    <div class="todo__tarefas" id="todoTarefas">
+                        <ul class="todo__tarefas-lista " id="todoLista" role="menu" aria-labelledby="dLabel">
+                        </ul>
+                    </div>
                 </div>
             </div>
-    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-12 p-3" ></div>
+            
+            <div class="col-md-4 col-sm-12 col-12 p-3 ">
+                <h1  class="todo__title text-center p-2" >Meu Plano Atual </h1>
+                <div class="card rounded ">
+                    <div class="card-image-overlay  p-3"> 
+                        <img class="image_plano" src="./img/premium (2).png"/>
+                        <ul class="ad-btn text-left">
+                        <li>-  Serviços Farmacêuticos</li>
+                        <li>- Consulta com o Clínico Geral</li>
+                        <li>- Consulta com Especialistas</li>
+                        <li>- Programa Nutricional</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+     
       </section>
+
 
     <footer>
         <div class="row">

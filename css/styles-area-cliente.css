@@ -29,6 +29,7 @@
 
 }
 
+
 .perfil::after{
     content:url("../img/user.png");
     max-width:100%;
@@ -109,12 +110,24 @@ section{
 .ad-btn{
     max-width: 100px;
     
+    
 }
 
 #ads .ad-btn{
-    font-size:0.7rem;
+    font-size:0.5rem;
+    padding: 0;
 }
-    }
+.ad-btn li{
+    font-size: 0.7rem;
+    padding: 0 -40px;
+    
+}
+.ad-btn ul{
+    font-size: 0.7rem;
+    
+}
+}
+    
 
     @media screen and (min-width: 768px) and (max-width: 990px) {
         .ad-btn{
@@ -130,32 +143,83 @@ section{
 /* Fim dos cards*/
 
 /* Inicio da lista de lembretes */
+
 .todo__title{
     color:white;
     background-color:#067D4B;
     font-size:1.2rem;
     max-width:400px; 
-    /* border-radius: 5%; */
+     border-radius: 5%; 
     height: 40px;  
+    position: relative;
+    top:10px;
+    padding: 0;
+    
 }
-.btn-group{
-    max-width: 100%;
-}
+.todo-form{
+    display: block;
+} 
 
-.todo__tarefas-lista li .checked {
+/* .todo__tarefas-lista li .checked {
     color: #ccc;
     text-decoration: line-through; 
 }
 
 .todo__tarefas-lista li.over {
     border: 1px dashed #ccc; 
-}
+} */
 .todo-form__input{
     resize: none;
-    max-width: 350px;
+    max-width: 400px;
+    padding-top:0 ;
+    margin: 0 ;
 }
+ .todo__container{
+    max-width: 400px;
+  
+} 
+/* .text-btn{
+    display:inline-block;
+    
+} */
+
+
 
 /* Fim da lista de lembretes  */
+
+/* Meu Plano */
+
+.title-plano{
+    color:white;
+    background-color:#067D4B;
+    font-size:1.2rem;
+    max-width:300px; 
+     border-radius: 5%; 
+    height: 40px;  
+    position: relative;
+    top:10px;
+
+}
+.image_plano{
+    max-width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+    
+}
+.rounded{
+    background-color:rgb(247, 245, 245);
+}
+.ad-btn{
+    list-style: none;
+    font-size:0.8rem;
+    margin:0 auto;
+    padding: 0;
+   
+}
+
+/* Fim do plano Atual */
 
 footer{
     padding: 30px;
