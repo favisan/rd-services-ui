@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendamento de Consultas</title>
+    <link rel="stylesheet" href="./css/styles_2.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+              <img src="img/logo-menu.png">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">    
+                <div class="col-lg-8 col-md-9 col-sm-9 col-xs-4 item-menu" >
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Planos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+                    </ul>
+                </div>
+              <div class="col-xl-4 col-lg-6 col-md-4 col-sm-4 col-xs-4">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item"><a class="nav-link" href="#"><b>Agendamento de Consultas</b></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Minhas Consultas</a></li>
+              </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+
+      <!-- trilha 1 -->
+
+    
+      <div class="cntrBreadCrumb">
+        <nav aria-label="breadcrumb">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="containerP1 ">
+                        <div class="bolinha">1</div>
+                        <div class="linha"></div>
+                        <div class="trilha">Consulta</div>
+                        <div class="opcao">Presencial</div>
+                    </div>
+                </div>
+                <div class="col-md-1 ">
+                    <div class="containerP2 ">
+                        <div class="bolinha">2</div>
+                        <div class="linha"></div>
+                        <div class="trilha">Especialidade</div>
+                        <div class="opcao">Endocrinologia</div>
+                        <div class="opcaoVazia"></div>
+                    </div>
+                </div>
+                <div class="col-md-1 ">
+                    <div class="containerP3 ">
+                        <div class="bolinhaVazia">3</div>
+                        <div class="linhaVazia"></div>
+                        <div class="trilha">Data</div>
+                        <div class="opcaoVazia"></div>
+                    </div>
+                </div>
+                <div class="col-md-1 ">
+                    <div class="containerP4 ">
+                        <div class="bolinhaVazia">4</div>
+                        <div class="linhaVazia"></div>
+                        <div class="trilha">Especialista</div>
+                        <div class="opcaoVazia"></div>
+                    </div>
+                </div>
+                <div class="col-md-1 ">
+                    <div class="containerP5">
+                        <div class="bolinhaVazia">5</div>
+                        <div class="linhaVazia"></div>
+                        <div class="trilha">Horário</div>
+                        <div class="opcaoVazia"></div>
+                    </div>
+                </div>
+                <div class="col-md-1 ">
+                    <div class="containerP6">
+                        <div class="bolinhaVazia">6</div>
+                        <div class="linhaVazia"></div>
+                        <div class="trilha">Pagamento</div>
+                        <div class="opcaoVazia"></div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="containerP7">
+                        <div class="bolinhaVazia">7</div>
+                        <div class="trilha">Confirmação</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--fim trilha 1 -->
+
+ 
+    <div class="container">
+      <div class="calendar">
+        <div class="month">
+          <i class="fas fa-angle-left prev"></i>
+          <div class="date">
+            <h1></h1>
+            <p></p>
+          </div>
+          <i class="fas fa-angle-right next"></i>
+        </div>
+        <div class="weekdays">
+          <div>Dom</div>
+          <div>Seg</div>
+          <div>Ter</div>
+          <div>Qua</div>
+          <div>Qui</div>
+          <div>Sex</div>
+          <div>Sab</div>
+        </div>
+        <div class="days"></div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="row">
+          <div class="col-md-6"><img src="img/logo-footer.png"></div>
+          <div class="col-md-2">
+              <h4>MAPA DO SITE</h4>
+              <ul class="nav flex-column rodape">
+                  <li class="nav-item"><a class="nav-link" href="#">Planos</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+                  </ul>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-3">
+              <h4>SOCIAL MIDIA</h4>   
+              <ul class="nav flex-column rodape">
+                  <li class="nav-item"><img src="img/logo-facebook.png"><a class="nav-link" href="#">Facebook</a></li>
+                  <li class="nav-item"><img src="img/logo-linkedin.png"><a class="nav-link" href="#">Linkedin</a></li>
+              </ul>
+          </div>
+      </div>    
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="./js/app_2.js"></script>
+  </body>
+</html>
