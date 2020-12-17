@@ -71,6 +71,11 @@ li {
     background-color: #1f5e48;
 }
 
+.rodape li a.nav-link {
+    list-style: none;
+    padding: 0;
+}
+
 
 /* 
 @media(max-width: 425px){ 
