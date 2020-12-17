@@ -15,10 +15,6 @@
     float: inline-end;
     background-color:#929288;
 
-    /* position: relative;
-    left: 60px;
-    bottom:42px;
-     */
 }
 .btn-secondary a{
     text-decoration: none;
@@ -78,6 +74,14 @@ section{
 }
 .card-all{
     border-radius:20px !important;
+}
+
+.text-card{
+   
+    margin: auto;
+    font-size: 0.8rem;
+    text-align: center;
+    padding:30px 0 10px 0;
 }
 
 #ads .card:hover {
@@ -148,7 +152,7 @@ section{
 }
 
 
-    @media screen and (min-width: 768px) and (max-width: 990px) {
+ @media screen and (min-width: 768px) and (max-width: 990px) {
         .ad-btn{
             max-width: 100px;
 
@@ -160,10 +164,7 @@ section{
     }
 
   
-    /* .images:hover{
-        background-color:white;
-
-        } */
+  
 
 /* Fim dos cards*/
 
