@@ -68,6 +68,11 @@ li {
     text-align: left;
 }
 
+.rodape li a.nav-link {
+    list-style: none;
+    padding: 0;
+}
+
 
 /* 
 @media(max-width: 425px){ 
