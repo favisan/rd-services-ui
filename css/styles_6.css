@@ -119,6 +119,25 @@ footer h4{
 
 /* fim trilha */
 
+.titulo-confirmacao{
+    color:#00A6FF;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.texto-detalhes{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.texto-detalhes, .confirmacao-meio{
+    color:rgb(0, 080, 052)
+}
+.texto-lembrete{
+    color:#00A6FF;
+}
+#img-lembrete{
+    width: 30%;
+    margin-right: 30%;
+}
 button{
     background-color: #319A75;
     border-radius: 10px;
@@ -129,4 +148,33 @@ button{
 }
 button:hover{
     background-color:#5cc3a0
+}
+.confirmacao-baixo, .confirmacao-cima{
+    width: 100%;
+}
+.texto-confirmacao-esquerda{
+    width: 53%;
+    margin-left:30%;
+    text-align: center;
+}
+.confirmacao-baixo{
+    width: 100%;
+}
+.btn-confirm{
+    width: 16%;
+}
+@media(max-width:1010px){
+    .foto{
+        display: none;
+    }
+    .filtro{
+        width:75%;
+    }
+    .cada-item{
+        width:25%
+    }
+    #img-lembrete{
+        display: none
+    }
+
 }
