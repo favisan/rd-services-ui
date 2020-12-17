@@ -22,17 +22,17 @@ window.addEventListener('DOMContentLoaded', function () {
         const tarefa = document.createElement('li');
         const paragrafo = document.createElement('p');
         const span = document.createElement('span');
-
+    
         span.innerText = 'x';
         span.classList.add('todo__btn-excluir');
         paragrafo.innerText = input;
-
+       
         tarefa.setAttribute('draggable', true);
-
+      
         tarefa.appendChild(paragrafo);
         tarefa.appendChild(span);
         listasTarefas.appendChild(tarefa);
-
+        
         paragrafo.addEventListener('click', function () {
             paragrafo.classList.toggle('checked')
         })
