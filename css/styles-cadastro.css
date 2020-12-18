@@ -70,6 +70,10 @@ footer h4{
     clear: both;
 }
 
+section .btn:hover {
+    background-color: rgb(000, 080, 052);
+}
+
 .btn-cancelar{
     background-color: #c6d4c8;
     

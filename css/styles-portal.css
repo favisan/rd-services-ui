@@ -126,6 +126,10 @@ font-size: 1rem;
       padding: 10px 20px;
   } 
 
+  .btn-card:hover {
+    background-color: rgb(000, 080, 052);
+  }
+
   /* ABOUT */
 
   .about {
