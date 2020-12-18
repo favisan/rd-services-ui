@@ -158,3 +158,32 @@ background-color: white;
     }
     
 }
+
+
+/*chatbot*/
+
+.btn-chat-a {
+    
+    color: #FFFFFF;
+    font-size: 10px;
+    
+}
+.btn-chat {
+    background-color: rgb(000,147,201);
+    color: #FFFFFF;
+    border-radius:25px;
+    width: 220px;
+    height: 70px;
+    font-size: 18px;
+    padding: 0px 0px 0px 28px;
+    border: 0px;
+    margin-bottom: 20px;
+}
+
+.btn-chat:hover{
+    background-color: rgb(137,184,234);
+    color: #FFFFFF;
+    padding: 0px 0px 0px 28px;
+    border: 0px;
+    cursor: pointer;
+}
