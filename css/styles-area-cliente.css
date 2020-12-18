@@ -91,7 +91,7 @@ section{
 #ads .ad-btn {
         width: 150px;
         height: 40px;
-        border-radius: 10px;
+        border-radius: 2px;
         font-size: 1rem;
         line-height: 35px;
         text-align: center;
@@ -283,7 +283,7 @@ button#todoSubmit{
 .btn-success{
     height: 30px;
     font-size:0.8rem;
-   border-radius:7px;
+   border-radius:2px;
    background-color:#067D4B;
 
 }
@@ -338,4 +338,9 @@ footer h4{
 
 .navbar-light .navbar-nav .nav-link {
     color: #444444;
+}
+
+.btn-sm:hover{
+    text-decoration: none;
+    background-color: #1f5e48;
 }
