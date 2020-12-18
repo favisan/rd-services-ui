@@ -1,5 +1,7 @@
-
-
+.dom{
+  color: white;
+  text-decoration: none;
+}
   
   .container {
     width: 100%;
@@ -99,7 +101,7 @@
   .today {
     background-color: #319A75;
   }
-
+ 
 
   
 /* footer e rodape */
