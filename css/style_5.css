@@ -21,6 +21,11 @@ body {
     margin: 0 0;
 }
 
+h2{
+    background: no-repeat;
+    height: 350px;
+}
+
 .menu,
 .content {
     width: 100px;
