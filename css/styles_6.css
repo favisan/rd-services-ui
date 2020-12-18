@@ -163,6 +163,7 @@ button:hover{
 .btn-confirm{
     width: 16%;
 }
+
 @media(max-width:1010px){
     .foto{
         display: none;
