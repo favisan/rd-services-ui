@@ -123,13 +123,8 @@ p{
     display: none;
 }
 
-.todos-filtros{
-
-}
-
 .filtro-text{
     position: relative;
-    float:left;
     margin-left: 20px;
     display: inline-block;
 }
@@ -140,6 +135,7 @@ p{
     float: left;
     margin-left: 20px;
     margin-top: 5px;
+    display: none;
 }
 .filtro1 {
 	left: 100px;
@@ -148,4 +144,17 @@ p{
     float: left;
     position: relative;
     margin-top: 5px;
+    display: none;
+}
+.fechar-filtro{
+    left: 150px;
+	width: 200px;
+    height: 130px;
+    float: left;
+    position: relative;
+    margin-top: 5px;
+    display: none;
+}
+.fechar-filtro:hover{
+    cursor: pointer;
 }
