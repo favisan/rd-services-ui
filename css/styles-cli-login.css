@@ -20,6 +20,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     padding: 40px;
+    margin: auto;
 }
 
 .text-center{
@@ -69,4 +70,11 @@ footer h4{
 
 .nav-item:hover{
     text-decoration: underline;
+}
+
+/* MODAL */
+
+.modal-content{
+    padding: 20px;
+    background-color: rgba(223, 239, 219);
 }

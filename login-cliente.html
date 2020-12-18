@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/cli-login.css">
+    <link rel="stylesheet" href="css/styles-cli-login.css">
 
 </head>
 
@@ -54,30 +54,58 @@
 
     <div class="row">
         <div class="container-fluid container-background">
-            <div class="box-central col-md-4 align-self-center">
-                <h3 class="text-center">Login do Paciente</h3>
-                <form id="id-form" name="formulario" action="#">
-                    <div class="form-group mt-4">
-                        <label for="login-email-med">E-mail</label>
-                        <input type="text" class="form-control" id="login-email-med" placeholder="Digite seu e-mail"
-                            required>
-                    </div>
 
-                    <div class="form-group">
-                        <label for="login-email-med">Senha</label>
-                        <input type="text" class="form-control" id="login-email-med" placeholder="Digite sua senha"
-                            required>
-                    </div>
-                    <button type="submit" class="btn col-md-12 btn-verde mt-4">Entrar</button>
-                </form>
-                <p class="text-center mb-3 mt-2 nav-item"><a class="nav-link" href="#">Esqueceu sua senha?</a></p>
-                <div class="box-line my-2"></div>
-                <p class="text-center mt-3">Ainda não possui cadastro?</p>
-                <button type="button" class="btn btn-verde"><a href="cadastro-cliente.html">Cadastrar</a></button>
+            <div class="container align-self-center">
+                <div class="box-central col-md-4">
+                    <h3 class="text-center">Login do Paciente</h3>
+                    <form id="id-form" name="formulario" action="#">
+                        <div class="form-group mt-4">
+                            <label for="login-email-med">E-mail</label>
+                            <input type="text" class="form-control" id="login-email-med" placeholder="Digite seu e-mail"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="login-email-med">Senha</label>
+                            <input type="text" class="form-control" id="login-email-med" placeholder="Digite sua senha"
+                                required>
+                        </div>
+                        <button type="submit" class="btn col-md-12 btn-verde mt-4">Entrar</button>
+                    </form>
+                    <p class="text-center mb-3 mt-2 nav-item"><a class="nav-link" href="#" data-toggle="modal"
+                            data-target=".bd-example-modal-lg">Esqueceu sua senha?</a></p>
+                    <div class="box-line my-2"></div>
+                    <p class="text-center mt-3">Ainda não possui cadastro?</p>
+                    <button type="button" class="btn btn-verde"><a href="cadastro-cliente.html">Cadastrar</a></button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header">
+                            <!-- <h5 class="modal-title">Digite o e-mail cadastrado:</h5> -->
+
+                            <div class="form-group col-md-12 cadastro-cartao">
+                                <label for="cartao-numero">Digite o e-mail cadastrado:</label>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <input type="text" class="form-control" id="email-rec-senha"
+                                    placeholder="digite o seu e-mail">
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
 
-
+        <!-- FOOTER -->
         <footer>
             <div class="row">
                 <div class="col-md-6"><img src="img/logo-footer.png"></div>
@@ -103,6 +131,9 @@
             </div>
 
     </div>
+    </div>
+
+
 
     </footer>
 
