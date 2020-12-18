@@ -78,3 +78,11 @@ footer h4{
     padding: 20px;
     background-color: rgba(223, 239, 219);
 }
+
+.esqueci-senha div {
+    display: flex;
+}
+
+.esqueci-senha div input {
+    margin-right: 10px;
+}
