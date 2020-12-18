@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('form');
     const botaoCheck = document.querySelector('#todoMarcarTodos');
     const listasTarefas = document.querySelector('#todoLista');
-    const botaoLimpar = document.querySelector('#todoRemoverTodos');
+    // const botaoLimpar = document.querySelector('#todoRemoverTodos');
     
 
     form.addEventListener('submit', function (e) {
