@@ -1,0 +1,144 @@
+.superior {
+    width: 100%;
+    height: 170px;
+}
+
+.logo {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+#container {
+    width: 100%;
+    height: 50px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #c2bfbd;
+    background-color: #f3eeeb;
+}
+
+.top {
+    color: #2a764a;
+    margin-left: 280px;
+}
+
+.container-principal {
+    display: flex;
+}
+
+.container-menu {
+    width: 20%;
+    color:#8D8178;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    background-color: #f3eeeb;
+    border-right-width: 1px;
+    border-right-color: #c2bfbd;
+    border-right-style: solid;
+}
+
+.sub {
+    color: #8D8178;
+}
+.container-form {
+  padding: 50px; 
+}
+
+.usuario {
+    margin: 20px;
+}
+
+.editarFotoPerfil {
+    color: #8D8178;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-left: 10px;
+    margin-bottom: 80px;
+}
+
+.senha {
+    color: blue;
+    font-size: 16px;
+    margin-left: 40px;
+    text-decoration: underline;
+    margin-top: 150px;
+}
+
+label {
+    color: #908f8f;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    padding-bottom: 3px;
+}
+
+.form-control {
+    border-radius: 7px;
+}
+
+input {
+    border: 1px solid rgb(144, 143, 143); 
+    border-radius: 7px;
+    color: #908f8f;
+    font-size: 13px;
+    height: 40px;
+    padding: 0 15px;
+}
+
+::-webkit-input-placeholder {
+    color: #908F8F!important;
+    font-size: 13px;
+}
+
+.bt-padrao {
+    background-color: #2a764a;
+    color: white;
+    border-radius: 7px;
+    border-color: white;
+    border-width: 1px;
+}
+
+.bt-voltar {
+    background-color: rgb(108, 108, 100);
+    color: white;
+    border-radius: 7px;
+    border-color: white;
+    border-width: 1px;
+}
+
+select {
+    background-color: rgb(108, 108, 100);
+    color: white;
+    border-radius: 7px;
+    border-color: white;
+    border-width: 1px;
+    margin-left: 10px;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #444444;
+}
+
+.nav-item:hover{
+    text-decoration: underline;
+}
+
+footer{
+    padding: 30px;
+    background-color: #929288;
+    width: 100%;
+    color: #ffffff;
+}
+
+footer h4{
+    font-size: 1.0rem;
+}
+
+.rodape .nav-item .nav-link {
+    color: #ffffff;
+    display: inline;
+    margin-left: -15px;
+}
