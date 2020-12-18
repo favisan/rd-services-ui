@@ -1,4 +1,4 @@
-/* Header e Footer */
+/* footer e rodape */
 
 .btn-menu{
     background-color: #319A75;
@@ -49,8 +49,6 @@ footer h4{
     color: #ffffff;
     display: inline;
 }
-
-/* Fim Header e Footer */
 
 /*pagina 7*/
 
@@ -123,4 +121,31 @@ p{
 }
 .menos{
     display: none;
+}
+
+.todos-filtros{
+
+}
+
+.filtro-text{
+    position: relative;
+    float:left;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.filtro {
+	width: 200px;
+	height: 130px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.filtro1 {
+	left: 100px;
+	width: 200px;
+    height: 130px;
+    float: left;
+    position: relative;
+    margin-top: 5px;
 }
