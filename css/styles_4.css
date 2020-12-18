@@ -1,0 +1,228 @@
+.container-fluid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-horizontal{
+    display: flex;
+    flex: 1 1 auto;
+}
+.groupBtn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.btn-active {
+    background-color: #319A75;
+    color: #FFFFFF;
+    border-radius: 10px;
+    font-weight: 600;
+    width: 200px;
+    height: 50px;
+    margin: 3px;
+    font-size: 20px;
+    border: 0px;
+}
+
+.btn-active:hover{
+    background-color: #787878;
+    color: #FFFFFF;
+    margin: 3px;
+    cursor: pointer;
+}
+
+
+/* trilha */
+.cntrBreadCrumb {
+    justify-content: space-around;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    vertical-align: middle;
+}
+.bolinhaLinha{
+    display: inline-flex;    /* alinhando o circulo com a linha */
+}
+.linha{
+    position: relative;
+    justify-content: center;
+    display: inline-block;  /* alinhando o circulo com a linha */
+    height: 10px;
+    width: 71px;
+    margin-top: -25px;
+    background-color: rgb(0, 080, 052);
+    margin-left: 42px;
+    position: absolute;
+}
+.bolinha {
+    position: relative;
+    background-color: rgb(0, 080, 052);
+    border-radius: 100%;
+    height: 45px;
+    width: 45px;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    display: inline-block; /* alinhando o circulo com a linha */
+}
+.row {
+    justify-content: space-around;
+}
+.trilha .opcao {
+    display: flex;
+    color: rgb(0, 080, 052);
+}
+.trilha {
+    font-weight: bold;
+}
+.bolinhaVazia {
+    display: inline-block;
+    background-color: white;
+    border-radius: 100%;
+    border-style: solid;
+    height: 45px;
+    width: 45px;
+    padding-top: 8px;
+    text-align: center;
+    color: rgb(0, 080, 052);
+    font-weight: bold;
+}
+.linhaVazia{
+    justify-content: center;
+    display: inline-block;  /* alinhando o circulo com a linha */
+    height: 10px;
+    width: 71px;
+    margin-top: -26px;
+    border-style: solid;
+    color: rgb(0, 080, 052);
+    background-color:white;
+    margin-left: 42px;
+    position: absolute;
+}
+.trilhaVazia, .opcaoVazia {
+    display: flex;
+    color:transparent;
+    border-style: solid;
+    width: 80px;
+    margin-left: 5px;
+}
+/* trilha */
+
+
+/* footer e rodape */
+
+.btn-active {
+    background-color: #319A75;
+    color: #FFFFFF;
+    border-radius: 10px;
+    font-weight: 600;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    padding: 0px;
+    border: 0px;
+}
+
+.btn-active:hover{
+    background-color: #787878;
+    color: #FFFFFF;
+    padding: 0px;
+    cursor: pointer;
+}
+.text-center{
+    color: #444444;
+}
+.collapse{
+    text-align: center;
+}
+.nav-item:hover{
+    text-decoration: underline;
+}
+.item-menu{
+    padding: 25px 12px;
+    font-size: 1.5rem;
+}
+section{
+    background-color: rgba(224, 239, 220, 0.24);
+    width: 100%;
+    padding-bottom: 2%;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #444444;
+}
+footer{
+    padding: 30px;
+    background-color: #929288;
+    width: 100%;
+    color: #ffffff;
+}
+footer h4{
+    font-size: 1.0rem;
+}
+.rodape .nav-item .nav-link {
+    color: #ffffff;
+    display: inline;
+}
+
+
+.container1 {
+    padding: 0%;
+}
+
+.container {
+    padding: 0%;
+}
+h1 {
+ 
+    margin: 30px 30px;
+    padding: 50px 50px;
+    height: 150px;
+    
+}
+
+#imagem {
+    padding: 0%;
+}
+
+.divbotoes {
+
+    height: 100px;
+}
+
+.banner-wrap {
+    padding: 0%;
+    height: 350px;
+    background: rgba(24, 24, 24, 0.3);
+}
+
+.banner-wrap h1 {
+    
+    color: honeydew;
+    font-size: 60px;
+    
+    
+}   
+
+.btn {
+
+margin: 0px;
+padding: 10px;
+background-color: white;
+
+}
+
+.btn a {
+    display: inline-block;
+    border-radius: 60px;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    background-color:#40744e;
+    padding: 0px;
+    text-decoration: none;
+    color: white;
+
+}
