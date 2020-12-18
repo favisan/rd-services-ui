@@ -8,6 +8,7 @@
     font-size: 1rem;
     color: #444444;
     text-align: right;
+    margin-block-end: auto;
 }
 
 #altera-foto{
@@ -37,6 +38,10 @@
     float: right;
 }
 
+.botoes-cadastro a{
+    text-decoration: none;
+}
+
 #img-perfil{
     padding: 30px 20px;
     width: 30%;
@@ -56,4 +61,8 @@
 .img-card{
     width: 70%;
     align-self: center;
+}
+
+.botao-sair{
+    text-align-last: end;
 }

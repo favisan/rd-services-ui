@@ -54,6 +54,11 @@ footer h4{
 
 .botoes-cadastro{
     float: right;
+    text-decoration: none;
+}
+
+.botoes-cadastro a{
+    text-decoration: none;
 }
 
 .btn{
@@ -67,6 +72,7 @@ footer h4{
 
 .btn-cancelar{
     background-color: #c6d4c8;
+    
 }
 
 .card-text{

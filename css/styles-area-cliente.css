@@ -15,10 +15,6 @@
     float: inline-end;
     background-color:#929288;
 
-    /* position: relative;
-    left: 60px;
-    bottom:42px;
-     */
 }
 .btn-secondary a{
     text-decoration: none;
@@ -80,8 +76,16 @@ section{
     border-radius:20px !important;
 }
 
+.text-card{
+   
+    margin: auto;
+    font-size: 0.8rem;
+    text-align: center;
+    padding:30px 0 10px 0;
+}
+
 #ads .card:hover {
-            background: #fff;
+            
             box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
             border-radius: 5px;
             transition: all 0.3s ease;
@@ -148,7 +152,7 @@ section{
 }
 
 
-    @media screen and (min-width: 768px) and (max-width: 990px) {
+ @media screen and (min-width: 768px) and (max-width: 990px) {
         .ad-btn{
             max-width: 100px;
 
@@ -158,6 +162,9 @@ section{
             font-size:0.7rem;
         }
     }
+
+  
+  
 
 /* Fim dos cards*/
 
@@ -224,6 +231,16 @@ section{
     text-align: center;
 
 }
+
+
+button#todoSubmit{
+    border:none;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+
+}
+
 
 
 /* Fim da lista de lembretes  */
