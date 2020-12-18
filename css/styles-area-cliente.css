@@ -47,6 +47,20 @@
     content:url("../img/user.png");
     max-width:100%;
 }
+
+.btn{
+    display: inline;
+    justify-content: flex-end;
+    background-color: #319A75;
+    color: #fff;
+    text-align-last: right;
+    clear: both;
+}
+
+section .btn:hover {
+    background-color: rgb(000, 080, 052);
+}
+
 /* FIM Foto perfil */
 
 
