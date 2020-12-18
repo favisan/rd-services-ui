@@ -7,6 +7,7 @@
     border-radius: 2px;
     line-height: 18px;
 }
+
 .btn-secondary{
     height: 25px;
     text-align: center;
@@ -14,8 +15,8 @@
     font-weight: bold;
     float: inline-end;
     background-color:#929288;
-
 }
+
 .btn-secondary a{
     text-decoration: none;
     color:white;
@@ -34,14 +35,11 @@
     font-size: 1.5rem;
 }
 
-
-
 /* Inicio Foto perfil */
 .perfil{
     color: #444444;
     margin-right: 70px;
     font-size: 0.8rem;
-
 }
 
 
@@ -56,28 +54,24 @@ section{
     background-color: rgba(223, 239, 219, 0.24);
     width: 100%;
     padding: 5%;
-
 }
 
 /* Titulo */
 .titulo{
     color: #319A75;
-
 }
 
 /* Inicio Cards */
 
 #ads {
     margin: 30px 0 30px 0;
-
-
 }
+
 .card-all{
     border-radius:20px !important;
 }
 
 .text-card{
-   
     margin: auto;
     font-size: 0.8rem;
     text-align: center;
@@ -85,17 +79,15 @@ section{
 }
 
 #ads .card:hover {
-            
-            box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
+    box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
 
 #ads .card-image-overlay {
         font-size: 20px;
+}
 
-
-    }
 #ads .ad-btn {
         width: 150px;
         height: 40px;
@@ -112,25 +104,24 @@ section{
         position: relative;
         background-color: #067D4B;
         font-weight: bold;
-    }
+}
 
 #ads .ad-btn:hover {
-            background-color:#067D4B;
-            color:#067D4B;
-            border: 2px solid #067D4B;
-            background: transparent;
-            transition: all 0.3s ease;
-            box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
-        }
+    background-color:#067D4B;
+    color:#067D4B;
+    border: 2px solid #067D4B;
+    background: transparent;
+    transition: all 0.3s ease;
+    box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+}
 
 #ads .ad-title h5 {
-        font-size: 18px;
-
-    }
+    font-size: 18px;
+}
 
     /* Media para os botoes do card */
 
-    @media screen and (max-width: 325px) {
+@media screen and (max-width: 325px) {
 .ad-btn{
     max-width: 100px;
 
@@ -161,9 +152,8 @@ section{
         #ads .ad-btn{
             font-size:0.7rem;
         }
-    }
+}
 
-  
   
 
 /* Fim dos cards*/
@@ -268,12 +258,12 @@ button#todoSubmit{
     display: block;
     margin-left: auto;
     margin-right: auto;
-
-
 }
+
 .rounded{
     background-color:rgb(247, 245, 245);
 }
+
 .ad-btn{
     list-style: none;
     font-size:0.8rem;
@@ -320,4 +310,32 @@ footer h4{
     display: inline;
 }
 
+#txt-login{
+    font-size: 1rem;
+    color: #444444;
+    text-align: right;
+    margin-block-end: auto;
+}
 
+.botao-sair{
+    text-align-last: end;
+}
+
+#img-login{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn{
+    display: inline;
+    justify-content: flex-end;
+    background-color: #319A75;
+    color: #fff;
+    text-align-last: right;
+    clear: both;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #444444;
+}
