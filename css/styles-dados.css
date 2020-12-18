@@ -16,6 +16,10 @@
     align-self: center;
 }
 
+.botao-altera-foto:hover{
+    background-color: #1f5e48;
+}
+
 .btn{
     display: inline;
     justify-content: flex-end;
@@ -57,6 +61,9 @@
     background-color: rgba(223, 239, 219);
 }
 
+.btn-card:hover{
+    background-color: #1f5e48;
+}
 
 .img-card{
     width: 70%;
@@ -65,4 +72,9 @@
 
 .botao-sair{
     text-align-last: end;
+}
+
+.btn-sm:hover{
+    text-decoration: none;
+    background-color: #1f5e48;
 }

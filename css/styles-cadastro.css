@@ -7,11 +7,13 @@
     line-height: 18px;
 }
 
-.text-center{
-    color: #444444;
-
+a:hover{
+    text-decoration: none;    
 }
 
+.text-center{
+    color: #444444;
+}
 
 .collapse{
     text-align: center;
@@ -20,6 +22,7 @@
 .nav-item:hover{
     text-decoration: underline;
 }
+
 .item-menu{
     padding: 25px 12px;
     font-size: 1.5rem;
@@ -76,7 +79,6 @@ section .btn:hover {
 
 .btn-cancelar{
     background-color: #c6d4c8;
-    
 }
 
 .card-text{
@@ -86,6 +88,10 @@ section .btn:hover {
 .btn-card{
     width: 100%;
     text-align-last: center;
+}
+
+.btn-card:hover{
+    background-color: #1f5e48;
 }
 
 .alinhamento{
