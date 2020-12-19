@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escolha da Data</title>
+    <link rel="stylesheet" href="../tela_2_calendario_agendamento/style_calendario_agendamento.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <img src="./img_2/logo-menu.PNG">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">    
+          <div class="col-lg-8 col-md-9 col-sm-9 col-xs-4 item-menu">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Planos</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-8 col-md-9 col-sm-9 col-xs-4 nav-text">
+            <ul class="navbar-nav mr-1">
+              <li class="nav-item"><a class="nav-link" href="#"><b>Agendamento de Consultas</b></a></li>
+              <li class="nav-item"><a class="nav-link" href="../tela_7_minhas_consultas/minhas_consultas.html">Minhas Consultas</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- trilha 1 -->
+    <div class="rowtrilha d-flex flex-wrap">
+      <div class="cada-item d-flex flex-column">
+          <div class="bola-linha d-flex">
+              <div class="bolinha bolinha-cheia">1</div>
+              <div class="linha linha-ativa"></div>
+          </div>
+          <div class="texto-trilha d-flex flex-column">
+              <div class="trilha">Consulta</div>
+              <div class="opcao">Presencial</div>
+          </div>
+      </div>
+      <div class="cada-item d-flex flex-column">
+          <div class="bola-linha d-flex">
+              <div class="bolinha bolinha-cheia">2</div>
+              <div class="linha linha-ativa"></div>
+          </div>
+          <div class="texto-trilha d-flex flex-column">
+              <div class="trilha ">Especialidade</div>
+              <div class="opcao ">Endocrinologia</div>
+          </div>
+      </div>
+      <div class="cada-item d-flex flex-column">
+          <div class="bola-linha d-flex">
+            <div class="bolinha bolinhaVazia">3</div>
+            <div class="linha linha-futura"></div>
+          </div>
+          <div class="texto-trilha d-flex flex-column">
+            <div class="trilha">Data</div>
+            <div class="opcao-vazia">vazio</div>
+        </div>
+      </div>
+      <div class="cada-item d-flex flex-column">
+          <div class="bola-linha d-flex">
+              <div class="bolinha bolinhaVazia">4</div>
+              <div class="linha linha-futura"></div>
+          </div>
+          <div class="texto-trilha d-flex flex-column">
+              <div class="trilha">Especialista</div>
+              <div class="opcao-vazia">vazio</div>
+          </div>
+      </div>
+      <div class="cada-item d-flex flex-column">
+          <div class="bola-linha d-flex">
+              <div class="bolinha bolinhaVazia">5</div>
+              <div class="linha linha-futura"></div>
+          </div>
+          <div class="texto-trilha d-flex flex-column">
+              <div class="trilha">Horário</div>
+              <div class="opcao-vazia">vazio</div>
+          </div>
+      </div>
+      <div class="cada-item d-flex flex-column">
+          <div class="bola-linha d-flex">
+              <div class="bolinha bolinhaVazia">6</div>
+              <div class="linha linha-futura"></div>
+          </div>
+          <div class="texto-trilha d-flex flex-column">
+              <div class="trilha">Pagamento</div>
+              <div class="opcao-vazia">vazio</div>
+          </div>
+      </div>
+      <div class="cada-item d-flex flex-column">
+          <div class="bola-linha d-flex">
+              <div class="bolinha bolinhaVazia" id="bolinha7">7</div>
+          </div>
+          <div class="texto-trilha d-flex flex-column">
+              <div class="trilha">Confirmação</div>
+              <div class="opcao-vazia">vazio</div>
+          </div>
+      </div>
+    </div>
+    <!--fim trilha 2 -->
+
+    <section class="container">
+      <div class="calendar">
+        <div class="month">
+          <i class="fas fa-angle-left prev"></i>
+          <div class="date">
+            <h1></h1>
+            <p></p>
+          </div>
+          <i class="fas fa-angle-right next"></i>
+        </div>
+       <div class="weekdays">
+        <a href="../tela_3_escolha_profissional/escolha_profissional.html"><div class="dom">Dom</div></a>
+          <div>Seg</div>
+          <div>Ter</div>
+          <div>Qua</div>
+          <div>Qui</div>
+          <div>Sex</div>
+          <div>Sab</div>
+        </div>
+        <div class="days"></div>
+      </div>
+    </section>
+  
+    <footer>
+      <div class="row">
+        <div class="col-md-2"><img src="./img_2/logo-footer.png"></div>
+        <div class="col-md-6">
+          <h4>MAPA DO SITE</h4>
+          <ul class="nav flex-column rodape">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Planos</a></li>
+            <li class="nav-item"><a class="nav-link" href="../tela_1_agendamento_consultas/agendamento_consultas.html">Agendamento de Consultas</a></li>
+            <li class="nav-item"><a class="nav-link" href="../tela_7_minhas_consultas/minhas_consultas.html">Minhas Consultas</a></li>
+          </ul>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <h4>SOCIAL MEDIA</h4>   
+            <ul class="nav flex-column rodape">
+              <li class="nav-item"><img src="./img_2/logo-facebook.png"><a class="nav-link" href="#">Facebook</a></li>
+              <li class="nav-item"><img src="./img_2/logo-linkedin.png"><a class="nav-link" href="#">Linkedin</a></li>
+            </ul>
+        </div>
+      </div>    
+    </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="./app_calendario_agendamento.js"></script>
+  </body>
+</html>
