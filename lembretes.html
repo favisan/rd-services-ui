@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/styles-lembretes.css">
 </head>
 
-<body class="container">
+<body class="container-fluid">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <a href="portal.html"><img src="img/logo-menu.png"></a>
@@ -38,7 +38,7 @@
 
     </header>
 
-    <section>
+    <section class="container">
         <h3>LEMBRETE</h3>
 
         <form>
@@ -51,55 +51,28 @@
 
                 <div class="row">
                     <div class="col-12 col-lg-3">
-                        <label>Data</label>
+                        <label>Data Inicial:</label>
                         <input type="date" class="form-control" placeholder="Data">
                     </div>
                     <div class="col-12 col-lg-3">
-                        <label>Hora:</label>
+                        <label>Hora Inicial:</label>
                         <input type="time" class="form-control" placeholder="horário">
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <label>Especialista/ Medicamento</label>
-                        <input type="text" class="form-control" placeholder="Médico">
+                    <div class="col-12 col-lg-3">
+                        <label>A cada:</label>
+                        <input type="number" class="form-control" placeholder="horário">
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-lg-2">
-                        <label>Início de Uso</label>
-                        <input type="date" class="form-control" placeholder="Inicio Tratamento">
-                    </div>
-                    <div class="col-12 col-lg-2">
-                        <label>Tomar</label>
-                        <input type="number" class="form-control" placeholder="1">
-                    </div>
-                    <div class="col-12 col-lg-2">
-                        <label>Tipo</label>
-                        <input type="text" class="form-control" placeholder="unidade(s)">
-                    </div>
-                    <div class="col-12 col-lg-2">
-                        <label>A cada</label>
-                        <input type="number" class="form-control" placeholder="1">
-                    </div>
-                    <div class="col-12 col-lg-2">
-                        <label>Intervalo</label>
+                    <div class=" intervalo col-12 col-lg-2" >
+                        <label>Intervalo:</label>
+                        <br>
                         <select>
                             <option>Dias</option>
                             <option>Horas</option>
                         </select>
                     </div>
-
                 </div>
-
-
-
-
-
-
-
-                <br>
+        
+               <br>
                 <p><button class="btn btn-menu btn-lembrete">Criar Lembrete</button></p>
         </form>
     </section>
