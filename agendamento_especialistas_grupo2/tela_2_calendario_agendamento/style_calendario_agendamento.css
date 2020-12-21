@@ -7,10 +7,9 @@
   text-decoration: underline;
 }
 .nav-text{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .item-menu{
-  padding: 25px 12px;
   font-size: 1.5rem;
 }
 section{
@@ -65,7 +64,7 @@ footer h4{
   height: 36px;
   width: 45px;
   text-align: center;
-  padding-top: 4%;
+  padding-top: 2%;
   font-weight: bold;
   z-index: 2;
 }
@@ -84,8 +83,12 @@ footer h4{
   width: 100%;
   align-items: center;
 }
-.texto-consulta{
-  width: 100%;
+.texto-trilha a{
+  color: black;
+  padding: 0;
+}
+.texto-trilha a:hover{
+  color: black;
 }
 .opcao-vazia{
   color: white;
