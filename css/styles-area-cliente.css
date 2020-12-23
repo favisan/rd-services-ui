@@ -241,10 +241,12 @@ section {
 }
 button#todoSubmit{
     border-radius:0%;
-    width: 100%;
+    width: 60%; 
     display: flex;
    justify-content: space-around;
+   align-items: center;
    font-weight: bold;
+   margin: 0 auto;
  
 }
 .fas{
@@ -267,7 +269,7 @@ p.excluir {
     width: 100%;
     display: flex;
    justify-content: space-between;
-   font: ;
+   
    
 } 
  .mais_lembretes{
