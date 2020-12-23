@@ -41,7 +41,7 @@ footer{
     color: #ffffff;
 }
 
-footer h4{
+.footer h4{
     font-size: 1.0rem;
 }
 
@@ -50,18 +50,41 @@ footer h4{
     display: inline;
 }
 
-.btn-lembrete {
-        background-color: #319A75;
-        color: #FFFFFF;
-        padding: 10px 20px;
-        font-size: 1.5rem;
-        border-radius: 2px;
-        line-height: 18px;
+h1 {
+    text-align: center;
+    color: #319A75;
 }
-.btn-lembrete:hover {
+
+.planos {
+    text-align: center;
+  
+  
+       
+}
+
+h5 {
+    text-align: center;
+    color: #319A75;
+}
+
+li {
+    text-align: left;
+}
+
+.btn-planos:hover {
     background-color: #1f5e48;
 }
 
-.intervalo{
-    width: 20px;
+.rodape li a.nav-link {
+    list-style: none;
+    padding: 0;
 }
+
+
+/* 
+@media(max-width: 425px){ 
+    .footer .row .col-md-3 {
+        margin-top: 10px;
+    }
+} */
+
