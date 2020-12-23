@@ -135,6 +135,9 @@ footer h4{
     margin: 3px;
     cursor: pointer;
 }
+.clicado{
+  background-color: #787878;
+}
 
 .container1 {
     padding: 0%;

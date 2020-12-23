@@ -168,6 +168,9 @@ color: #8d8178;
   justify-content: flex-end;
 }
 
+.clicado{
+  background-color: #787878;
+}
 .btn {
   padding: 0px;
 }
@@ -183,6 +186,10 @@ color: #8d8178;
   padding: 0px;
   border: 0px;
   margin: 3px;
+}
+
+.clicado{
+  background-color: #787878;
 }
 
 .btn-active:hover {
