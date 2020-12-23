@@ -61,3 +61,7 @@ footer h4{
 .btn-lembrete:hover {
     background-color: #1f5e48;
 }
+
+.intervalo{
+    width: 20px;
+}

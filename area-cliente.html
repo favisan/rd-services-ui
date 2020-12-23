@@ -114,28 +114,45 @@
 
                         <div class="col-md-6 col-sm-12 col-12 p-3">
                             <div class="todo__container ">
-                                <h1 class="todo__title text-center p-2">Lembrete </h1>
+                                <h1 class="todo__title text-center p-2">Lembretes </h1>
                                 <div class="card rounded ">
-                                    <div class="card-image-overlay  p-3">
+                                    <div class="card-image-overlay  ">
                                         <form action="" class="todo-form " id="todoForm">
-                                            <div class="text-btn">
-                                                <textarea class="form-control todo-form__input " id="todoInput" rows="2"
-                                                    placeholder="Insira um lembrete..."></textarea>
-                                                    <button type="submit" value="" class="todo-form__btn btn"
-                                                        id="todoSubmit"><img src="./img/mais.png"></button>
-                                                        
+                                            <div class="text-btn  ">
+                                                <!-- <textarea class="form-control todo-form__input " id="todoInput" rows="2"
+                                                    placeholder="Insira um novo lembrete..."></textarea> -->
+                                                    <button type="submit" value="" class="todo-form__btn btn "
+                                                        id="todoSubmit">Novo lembrete<a href=""><i class="fas fa-plus pr-2" data-toggle="modal" data-target=".bd-example-modal-lg"></i></a></button>  
                                             </div>
                                         </form>
                                         <div class="todo__tarefas" id="todoTarefas">
                                             <ul class="todo__tarefas-lista" id="todoLista">
+                                                <li class="item-lista">
+                                                    <p class="titulo_lembrete">Medicamento Controlado</p>
+                                                    <p  class="excluir ">Descrição: Tomar comprimido de novalgina<span class="todo__btn-excluir">X</span></p>
+                                                    <p class="excluir font-weight-bold">Data: 22/12/2020 - Hora:15:00</p>
+                                                    <p >Intervalo: A cada 8h.></p>
+                                                </li>
+                                                <li class="item-lista">
+                                                    <p class="titulo_lembrete">Buscar Exames</p>
+                                                    <p class="excluir ">Descrição: Buscar exames no laboratório <span class="todo__btn-excluir">X</span></p>
+                                                    <p class="excluir font-weight-bold">Data: 22/12/2020 - Hora:15:00</p>
+                                                    
+                                                </li>
+                                                <li class="item-lista">
+                                                    <p class="titulo_lembrete">Eletrocardiograma</p>
+                                                    <p class="excluir ">Descrição: Fazer o eletro no laboratório <span class="todo__btn-excluir">X</span></p>
+                                                    <p class="excluir font-weight-bold"> Data: 22/12/2020  - Hora:15:00</p>
+                                                 
+                                                </li>
                                             </ul>
-                                        </div>
+                                            <a href=""><p type="submit"  class="mais_lembretes text-center">Carregar mais lembretes</p></a>
+                                        </div>                         
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="col-md-2 col-12 p-3" ></div> -->
-                        <!-- Categoria Meu Plano -->
+                        <!-- Categoria meu Plano -->
                         <div class="col-md-4 col-sm-12 col-12 p-3 ">
                             <h1 class="todo__title text-center p-2">Meu Plano Atual </h1>
                             <div class="card rounded ">
@@ -156,6 +173,57 @@
                         </div>
                     </div>
             </section>
+            <!-- Modal Lembretes -->
+
+           
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <form>
+            <div class="modal-header">
+              <h5 class="modal-title"> Criar Lembretes</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="form-group" class="col-12 col-lg-4">
+                <label for="formGroupExampleInput">Título</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Título do Lembrete"
+                    required>
+                <label for="formGroupExampleInput">Descrição</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Descrição do Lembrete">
+
+                <div class="row">
+                    <div class="col-12 col-lg-3 col-sm-12">
+                        <label>Data:</label>
+                        <input type="date" class="form-control" placeholder="Data">
+                    </div>
+                    <div class="col-12 col-lg-3 col-sm-12">
+                        <label>Hora:</label>
+                        <input type="time" class="form-control" placeholder="horário">
+                    </div>
+                    <div class="col-12 col-lg-3 col-sm-12">
+                        <label>Intervalo:</label>
+                        <select class="form-control">
+                            <option>Dias</option>
+                            <option>Horas</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-lg-3 col-sm-12">
+                        <label >A cada</label>
+                        <input type="number" class="form-control" placeholder="1">
+                    </div>
+                </div>
+                </div>
+                
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary btn_salvar">Criar Lembrete</button>
+            </div>
+        </form>
+    </div>
+  </div>
+</div>
 
 
             <footer>
@@ -191,7 +259,6 @@
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
                 integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
                 crossorigin="anonymous"></script>
-
 </body>
 
 </html>

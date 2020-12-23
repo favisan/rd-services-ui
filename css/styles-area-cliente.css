@@ -48,14 +48,12 @@
     max-width:100%;
 }
 
-.btn{
-    display: inline;
-    justify-content: flex-end;
+ .btn{
+     
     background-color: #319A75;
     color: #fff;
-    text-align-last: right;
-    clear: both;
-}
+   
+} 
 
 section .btn:hover {
     background-color: rgb(000, 080, 052);
@@ -105,6 +103,9 @@ section{
 
 #ads .card-image-overlay {
         font-size: 20px;
+        
+       
+      
 }
 
 #ads .ad-btn {
@@ -118,20 +119,12 @@ section{
         text-decoration: none;
         margin: 20px auto 1px auto;
         color: #ffff;
-        /* overflow: hidden; */
         position: relative;
         background-color: #319A75;
-        /* font-weight: bold; */
+
 }
 
-/* #ads .ad-btn:hover {
-    background-color:#067D4B;
-    color:#067D4B;
-    border: 2px solid #067D4B;
-    background: transparent;
-    transition: all 0.3s ease;
-    box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
-} */
+
 
 #ads .ad-btn:hover {
     background-color: rgb(000, 080, 052);
@@ -167,6 +160,11 @@ section{
 section {
     padding: 3%;
 }
+/* Diminuido tamanho da fonte do botao de lembrete */
+.btn{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
 }
 
 
@@ -186,7 +184,10 @@ section {
 /* Fim dos cards*/
 
 /* Inicio da lista de lembretes */
-
+.text-btn{
+    padding: 20px 20px 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
 
 
 .todo__title{
@@ -194,7 +195,6 @@ section {
     background-color: #319A75;
     font-size:1.2rem;
     max-width:400px;
-     border-radius: 5%;
     height: 40px;
     position: relative;
     top:10px;
@@ -202,23 +202,18 @@ section {
 
 
 }
-.todo-form{
-    display: block;
-}
+
 .todo__tarefas ul{
     padding: 10px 0 10px 0 ;
 }
-.todo__tarefas-lista li {
+ .todo__tarefas-lista li {
 
     font-size: 0.9rem;
     list-style: none;
-    display: flex;
-    overflow: hidden;
-    justify-content: space-between;
-    margin: 0 auto;
+    line-height: 20%;
     border-bottom: 1px solid #ccc ;
 
-}
+} 
 
 
 
@@ -237,28 +232,68 @@ section {
     display: inline-block;
     top:20px
 }
-.text-btn{
-    display:flex;
-    border-radius: 20px;
 
-}
 
 
 .todo__tarefas-lista span{
     text-align: center;
 
 }
-
-
 button#todoSubmit{
-    border:none;
-    box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: 0;
-
+    border-radius:0%;
+    width: 100%;
+    display: flex;
+   justify-content: space-around;
+   font-weight: bold;
+ 
+}
+.fas{
+    color:white;
+    text-decoration: none;
+    background-repeat: no-repeat;
 }
 
-
+/* Ul dos lembretes */
+.titulo_lembrete{
+    color:#319A75;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding-top:20px ;
+}
+.todo__tarefas-lista p {
+    font-size: 0.8rem; 
+}
+p.excluir {
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+   font: ;
+   
+} 
+ .mais_lembretes{
+     color:#7a7a79;
+     font-weight: bold;
+   max-width:100% ;
+   margin: 0 auto;
+   font-size: 1rem;
+   
+   
+ }
+ p.mais_lembretes{
+     height: 40px;
+     padding-top:10px;
+ 
+ }
+ a:hover{
+    text-decoration:none;
+ }
+.item-lista{
+    padding:0  10px 0 10px;
+}
+ul#todoLista.todo__tarefas-lista{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
 
 /* Fim da lista de lembretes  */
 
@@ -267,6 +302,7 @@ button#todoSubmit{
 @media screen and (min-width: 550px) and (max-width: 780px) {
 .rounded{
   max-width: 400px;
+
 }
 }
 .title-plano{
@@ -327,6 +363,19 @@ button#todoSubmit{
     color:white;
 }
 /* Fim do plano Atual */
+
+/* Modal Lembrete */
+
+ .modal-content{
+    max-width: 1000px;
+    padding: 20px;
+    height: 400px;
+} 
+.btn_salvar:hover{
+text-decoration: none;
+border: none;
+}
+
 
 footer{
     padding: 30px;
