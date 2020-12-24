@@ -12,153 +12,175 @@
     <link rel="stylesheet" href="css/styles-portal.css">
 </head>
 
-<body class="container-fluid">
-    <header>
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a href="portal.html"><img src="img/logo-menu.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="col-lg-8 col-md-9 col-sm-9 col-xs-4 item-menu">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item"><a class="nav-link" href="planos.html">Planos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
-                    </ul>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-4 col-sm-4 col-xs-4">
-                    <div class="text-center">Login</div>
-                    <div>
-                        <a href="login-cliente.html"><button class="btn btn-menu">Paciente</button></a>
-                        <button class="btn btn-menu">Médico</button>
+<body>
+    <div class="container-fluid">
+
+        <header>
+            <!-- NAVBAR COM CONTAINER-->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a href="portal.html"><img src="img/logo-menu.png"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="col-lg-8 col-md-9 col-sm-9 col-xs-4 item-menu">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item"><a class="nav-link" href="planos.html">Planos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-4 col-sm-4 col-xs-4">
+                            <div class="text-center">Login</div>
+                            <div>
+                                <a href="login-cliente.html"><button class="btn btn-menu">Paciente</button></a>
+                                <button class="btn btn-menu">Médico</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
 
-        <div class="container">
+
         <!-- BANNER -->
         <div class="row">
-            <div class="col-12 banner">
-                <h2 class="banner-title">Faça seu cadastro</h2>
-                <div class="banner-buttons">
-                    <a href="cadastro-cliente.html"><button class="btn btn-menu btn-banner">Sou paciente</button></a> 
-                    <button class="btn btn-menu btn-banner">Sou médico</button>
-                </div>
+            <div class="col-12 banner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 banner">
+                            <h2 class="banner-title">Faça seu cadastro</h2>
+                            <div class="banner-buttons">
+                                <a href="cadastro-cliente.html"><button class="btn btn-menu btn-banner">Sou
+                                        paciente</button></a>
+                                <button class="btn btn-menu btn-banner">Sou médico</button>
+                            </div>
 
-                <span class="material-icons down">
-                    <a href="#servicos">expand_more</a>
-                </span>
-            </div>
-        </div>
-    </header>
-
-    <!-- MAIN -->
-    <div class="container">
-        <main>
-            <!-- CARDS -->
-            <div class="row" id="servicos">
-                <div class="col-12">
-                    <div class="cards">
-    
-                        <!-- CARD -->
-                        <div class=" col-12 col-md-6 col-lg-3">
-                            <div class="card text-center">
-                                <div class="card-body">
-                                    <span class="material-icons card-icon card-consultas my-2"></span>
-                                    <h5 class="card-title">Consultas</h5>
-                                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                                    <div class="card-line my-2"></div>
-                                    <p class="card-text">Consultas com profissionais de diversas especialidades</p>
-                                    <button class="btn btn-menu btn-card"><a href="area-cliente.html">Ver</a></button>
-                                </div>
-                            </div>
+                            <span class="material-icons down">
+                                <a href="#servicos">expand_more</a>
+                            </span>
                         </div>
-    
-                        <div class=" col-12 col-md-6 col-lg-3">
-                            <div class="card text-center">
-                                <div class="card-body">
-                                    <span class="material-icons card-icon card-exames my-2"></span>
-                                    <h5 class="card-title">Exames</h5>
-                                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                                    <div class="card-line my-2"></div>
-                                    <p class="card-text">Acompanhe as solicitações de exames feitas por seus médicos</p>
-                                    <button class="btn btn-menu btn-card"><a href="area-cliente.html">Ver</a></button>
-                                </div>
-                            </div>
-                        </div>
-    
-    
-    
-    
-                        <div class=" col-12 col-md-6 col-lg-3">
-                            <div class="card text-center">
-                                <div class="card-body">
-                                    <span class="material-icons card-icon card-nutri my-2"></span>
-                                    <h5 class="card-title">Nutrição</h5>
-                                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                                    <div class="card-line my-2"></div>
-                                    <p class="card-text">Buscamos entender as necessidades dos pacientes</p>
-                                    <button class="btn btn-menu btn-card"><a href="area-cliente.html">Ver</a></button>
-                                </div>
-                            </div>
-    
-                        </div>
-    
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <div class="card text-center">
-                                <div class="card-body">
-                                    <span class="material-icons card-icon card-lab my-2"></span>
-                                    <h5 class="card-title">Serviços farmacêuticos</h5>
-                                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                                    <div class="card-line my-2"></div>
-                                    <p class="card-text">Encontre a farmácia mais próxima de você e agende</p>
-                                    <br>
-                                    <button class="btn btn-menu btn-card"><a href="area-cliente.html">Ver</a></button>
-                                </div>
-                            </div>
-                        </div>
-    
                     </div>
                 </div>
             </div>
-    
-            <div class="row mb-5">
-                <div class="about col-12">
-                    <h3 class="about-title text-center">Sobre</h3>
-                    <p class="about-text text-center">A RD serviços é um plataforma que oferece agendamento de consultas com médicos especialistas, solicitações de exames aos pacientes, programas de nutrição e agendamento de serviços farmacêuticos. Com ela, procurar, agendar e realizar seus procedimentos se torna muito mais simples, rápido e eficaz: todas as datas, farmácias e profissionais estão ao alcance de um clique. Cadastre-se já e usufrua de todas as nossas comodidades.</p>
+        </div>
+
+        <!-- MAIN -->
+        <div class="container">
+            <main>
+                <!-- CARDS -->
+                <div class="row" id="servicos">
+                    <div class="col-12">
+                        <div class="cards">
+                            <!-- CARD -->
+                            <div class=" col-12 col-md-6 col-lg-3">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <span class="material-icons card-icon card-consultas my-2"></span>
+                                        <h5 class="card-title">Consultas</h5>
+                                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                                        <div class="card-line my-2"></div>
+                                        <p class="card-text">Consultas com profissionais de diversas especialidades
+                                        </p>
+                                        <button class="btn btn-menu btn-card"><a
+                                                href="area-cliente.html">Ver</a></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class=" col-12 col-md-6 col-lg-3">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <span class="material-icons card-icon card-exames my-2"></span>
+                                        <h5 class="card-title">Exames</h5>
+                                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                                        <div class="card-line my-2"></div>
+                                        <p class="card-text">Acompanhe as solicitações de exames feitas por seus
+                                            médicos</p>
+                                        <button class="btn btn-menu btn-card"><a
+                                                href="area-cliente.html">Ver</a></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class=" col-12 col-md-6 col-lg-3">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <span class="material-icons card-icon card-nutri my-2"></span>
+                                        <h5 class="card-title">Nutrição</h5>
+                                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                                        <div class="card-line my-2"></div>
+                                        <p class="card-text">Buscamos entender as necessidades dos pacientes</p>
+                                        <button class="btn btn-menu btn-card"><a
+                                                href="area-cliente.html">Ver</a></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <span class="material-icons card-icon card-lab my-2"></span>
+                                        <h5 class="card-title">Serviços farmacêuticos</h5>
+                                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                                        <div class="card-line my-2"></div>
+                                        <p class="card-text">Encontre a farmácia mais próxima de você e agende</p>
+                                        <button class="btn btn-menu btn-card"><a
+                                                href="area-cliente.html">Ver</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="about col-12">
+                        <h3 class="about-title text-center">Sobre</h3>
+                        <p class="about-text text-center">A RD serviços é um plataforma que oferece agendamento de
+                            consultas com médicos especialistas, solicitações de exames aos pacientes, programas de
+                            nutrição e agendamento de serviços farmacêuticos. Com ela, procurar, agendar e realizar
+                            seus procedimentos se torna muito mais simples, rápido e eficaz: todas as datas,
+                            farmácias e profissionais estão ao alcance de um clique. Cadastre-se já e usufrua de
+                            todas as nossas comodidades.</p>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+
+        <!-- FOOTER COM CONTAINER -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6"><img src="img/logo-footer.png"></div>
+                    <div class="col-md-2">
+                        <h4>MAPA DO SITE</h4>
+                        <ul class="nav flex-column rodape">
+                            <li class="nav-item"><a class="nav-link" href="planos.html">Planos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
+                            <li class="nav-item"><a class="nav-link" href="portal.html#servicos">Serviços</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3">
+                        <h4>SOCIAL MIDIA</h4>
+                        <ul class="nav flex-column rodape">
+                            <li class="nav-item"><img src="img/logo-facebook.png"><a class="nav-link"
+                                    href="#">Facebook</a>
+                            </li>
+                            <li class="nav-item"><img src="img/logo-linkedin.png"><a class="nav-link"
+                                    href="#">Linkedin</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </main>
-    
+        </footer>
     </div>
-    </div>
-    
-
-    <footer>
-        <div class="row">
-            <div class="col-12 col-md-6"><img src="img/logo-footer.png"></div>
-            <div class="col-md-2">
-                <h4>MAPA DO SITE</h4>
-                <ul class="nav flex-column rodape">
-                    <li class="nav-item"><a class="nav-link" href="planos.html">Planos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
-                </ul>
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-3">
-                <h4>SOCIAL MIDIA</h4>
-                <ul class="nav flex-column rodape">
-                    <li class="nav-item"><img src="img/logo-facebook.png"><a class="nav-link" href="#">Facebook</a></li>
-                    <li class="nav-item"><img src="img/logo-linkedin.png"><a class="nav-link" href="#">Linkedin</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

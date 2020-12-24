@@ -15,6 +15,12 @@ a:hover {
     justify-content: center;
 }
 
+.container-box {
+    height: 650px;
+    display: flex;
+    align-items: center
+}
+
 .box-central{
     background-color: white;
     display: flex;
@@ -52,21 +58,6 @@ a:hover {
     color: #908F8F!important;
 }
 
-footer{
-    padding: 30px;
-    background-color: #929288;
-    width: 100%;
-    color: #ffffff;
-}
-
-footer h4{
-    font-size: 1.0rem;
-}
-
-.rodape .nav-item .nav-link {
-    color: #ffffff;
-    display: inline;
-}
 
 .nav-item:hover{
     text-decoration: underline;

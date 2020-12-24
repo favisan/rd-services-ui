@@ -7,10 +7,16 @@ a:hover {
     text-decoration: none;
 }
 
-.banner {
+.banner-bg {
     background-image: url("../img/foto-5.jpg");
     background-size: cover;
     background-position: center;
+    height: 500px;
+    padding: 0;
+    width: 100vw;
+}
+
+.banner {
     height: 500px;
     width: 100%;
     display: flex;
@@ -140,15 +146,6 @@ font-size: 1rem;
   .about-title {
     color: #319A75;
   }
-
-  footer {
-      margin: 0;
-      width: 100%;
-  }
-
-
-
-
 
 
   @media(max-width: 1000px){

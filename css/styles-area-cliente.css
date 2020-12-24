@@ -1,40 +1,3 @@
-
-.btn-menu{
-    background-color: #319A75;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    font-size: 1.5rem;
-    border-radius: 2px;
-    line-height: 18px;
-}
-
-.btn-secondary{
-    height: 25px;
-    text-align: center;
-    font-size:0.7rem;
-    font-weight: bold;
-    float: inline-end;
-    background-color:#929288;
-}
-
-.btn-secondary a{
-    text-decoration: none;
-    color:white;
-}
-
-.collapse{
-    text-align: center;
-}
-
-.nav-item:hover{
-    text-decoration: underline;
-}
-
-.item-menu{
-    padding: 25px 12px;
-    font-size: 1.5rem;
-}
-
 /* Inicio Foto perfil */
 .perfil{
     color: #444444;
@@ -62,15 +25,10 @@ section .btn:hover {
 /* FIM Foto perfil */
 
 
-section{
-    background-color: rgba(223, 239, 219, 0.24);
-    width: 100%;
-    padding: 1%;
-}
-
 .lembretes-plano {
     display: flex;
     justify-content: center;
+    margin: auto;
 }
 
 /* Titulo */
@@ -103,9 +61,6 @@ section{
 
 #ads .card-image-overlay {
         font-size: 20px;
-        
-       
-      
 }
 
 #ads .ad-btn {
@@ -168,7 +123,7 @@ section {
 }
 
 
- @media screen and (min-width: 768px) and (max-width: 990px) {
+@media screen and (min-width: 768px) and (max-width: 990px) {
         .ad-btn{
             max-width: 100px;
 
@@ -269,32 +224,36 @@ p.excluir {
     width: 100%;
     display: flex;
    justify-content: space-between;
-   
-   
 } 
- .mais_lembretes{
+
+.mais_lembretes{
      color:#7a7a79;
      font-weight: bold;
    max-width:100% ;
    margin: 0 auto;
    font-size: 1rem;
-   
-   
- }
- p.mais_lembretes{
+}
+
+p.mais_lembretes{
      height: 40px;
      padding-top:10px;
- 
- }
- a:hover{
+}
+
+a:hover{
     text-decoration:none;
- }
+}
+
 .item-lista{
     padding:0  10px 0 10px;
 }
+
 ul#todoLista.todo__tarefas-lista{
     padding-bottom: 0;
     margin-bottom: 0;
+}
+
+.lembretes-plano p a {
+    color: inherit;
 }
 
 /* Fim da lista de lembretes  */
@@ -303,10 +262,11 @@ ul#todoLista.todo__tarefas-lista{
 
 @media screen and (min-width: 550px) and (max-width: 780px) {
 .rounded{
-  max-width: 400px;
+max-width: 400px;
 
 }
 }
+
 .title-plano{
     color:white;
     background-color: #319A75;
@@ -316,8 +276,8 @@ ul#todoLista.todo__tarefas-lista{
     height: 40px;
     position: relative;
     top:10px;
-
 }
+
 .image_plano{
     max-width: 100px;
     display: block;
@@ -340,9 +300,8 @@ ul#todoLista.todo__tarefas-lista{
 
 .success{
     display: flex;
-  align-items: center;
-  justify-content: center;
-
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-plano{
@@ -371,28 +330,11 @@ ul#todoLista.todo__tarefas-lista{
  .modal-content{
     max-width: 1000px;
     padding: 20px;
-    height: 400px;
+    min-height: 400px;
 } 
 .btn_salvar:hover{
 text-decoration: none;
 border: none;
-}
-
-
-footer{
-    padding: 30px;
-    background-color: #929288;
-    width: 100%;
-    color: #ffffff;
-}
-
-footer h4{
-    font-size: 1.0rem;
-}
-
-.rodape .nav-item .nav-link {
-    color: #ffffff;
-    display: inline;
 }
 
 #txt-login{
@@ -421,11 +363,16 @@ div.btn{
     clear: both;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: #444444;
-}
 
 .btn-sm:hover{
     text-decoration: none;
     background-color: #1f5e48;
+}
+
+
+
+
+section{
+    width: 100%;
+    padding: 1%;
 }
