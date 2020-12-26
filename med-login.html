@@ -20,50 +20,83 @@
             </div>       
         </div>
 
-        <div class="container container-background">
-            <div class="box-central col-md-4 pl-4 pr-4 pt-4 pb-4 align-self-center">
-                <h3 class="titulo-verde text-center">Login Área do Médico</h3>
-                <form id="id-form" name="formulario" action="#">
-                    <div class="form-group mt-2">
-                        <label for="login-email-med" class="label-form">Email</label>
-                        <input type="text" class="form-control style-input" id="login-email-med" placeholder="Digite seu email" required>
-                    </div>
+        <div class="container-fluid container-background">
+            <div class="container">
+                <div class="container container-box">
+                    <div class="box-central col-md-4">
+                        <h3 class="titulo-verde text-center">Login Área Médica</h3>
+                        <form id="id-form" name="formulario" action="#">
+                            <div class="form-group mt-2">
+                                <label for="login-email-med" class="label-form">Email</label>
+                                <input type="text" class="form-control style-input" id="login-email-med" placeholder="Digite seu email" required>
+                            </div>
 
-                    <div class="form-group">
-                        <label for="login-email-med" class="label-form">Senha</label>
-                        <input type="text" class="form-control style-input" id="login-email-med" placeholder="Digite sua senha" required>
+                            <div class="form-group">
+                                <label for="login-email-med" class="label-form">Senha</label>
+                                <input type="text" class="form-control style-input" id="login-email-med" placeholder="Digite sua senha" required>
+                            </div>
+                            <button type="submit" class="btn col-md-12 btn-verde mt-4">Entrar</button>
+                        </form>
+                        <p class="text-center mb-3 mt-2"><a class="nav-link" href="#" data-toggle="modal"
+                            data-target=".bd-example-modal-lg">Esqueceu sua senha?</a></p>
+                        <div class="box-line my-2"></div>
+                        <p class="text-center mt-3">Ainda não possui cadastro?</p>
+                        <button type="submit" class="btn btn-verde">Cadastrar</button>
                     </div>
-                    <button type="submit" class="btn col-md-12 btn-verde mt-4">Entrar</button>
-                </form>
-                <p class="text-center mb-3 mt-2">Esqueceu sua senha?</p>
-                <hr class="col-10"/>
-                <p class="text-center mt-3">Ainda não possui cadastro?</p>
-                <button type="submit" class="btn btn-verde">Cadastrar</button>
+                </div>
             </div>
         </div>
 
-    <footer class="container">
-        <div class="row">
-            <div class="col-md-6"><img src="images/logo-footer.png"></div>
-            <div class="col-md-2">
-                <h4>MAPA DO SITE</h4>
-                <ul class="nav flex-column rodape">
-                    <li class="nav-item"><a class="nav-link" href="#">Planos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"><img src="images/logo-footer.png"></div>
+                <div class="col-md-2">
+                    <h4>MAPA DO SITE</h4>
+                    <ul class="nav flex-column rodape">
+                        <li class="nav-item"><a class="nav-link" href="#">Planos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+                        </ul>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <h4>SOCIAL MIDIA</h4>   
+                    <ul class="nav flex-column rodape">
+                        <li class="nav-item"><img src="images/logo-facebook.png"><a class="nav-link" href="#">Facebook</a></li>
+                        <li class="nav-item"><img src="images/logo-linkedin.png"><a class="nav-link" href="#">Linkedin</a></li>
                     </ul>
+                </div>
             </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-3">
-                <h4>SOCIAL MIDIA</h4>   
-                <ul class="nav flex-column rodape">
-                    <li class="nav-item"><img src="images/logo-facebook.png"><a class="nav-link" href="#">Facebook</a></li>
-                    <li class="nav-item"><img src="images/logo-linkedin.png"><a class="nav-link" href="#">Linkedin</a></li>
-                </ul>
-            </div>
-        
         </div>    
     </footer>
+
+     <!-- MODAL -->
+     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+     aria-hidden="true">
+     <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+             <form>
+                 <div class="modal-header">
+                     <!-- <h5 class="modal-title">Digite o e-mail cadastrado:</h5> -->
+
+                     <div class="form-group col-md-12 esqueci-senha">
+                         <label for="cartao-numero">Digite o e-mail cadastrado:</label>
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                         </button>
+                         <div>
+                             <input type="text" class="form-control" id="email-rec-senha"
+                                 placeholder="digite o seu e-mail">
+                             <button class="btn btn-verde"><a href="#">Enviar</a></button>
+                         </div>
+                     </div>
+                 </div>
+             </form>
+         </div>
+     </div>
+ </div>
+ </div>
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
