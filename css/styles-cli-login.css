@@ -63,6 +63,10 @@ a:hover {
     text-decoration: underline;
 }
 
+.form-control {
+    border-radius: 7px;
+}
+
 /* MODAL */
 
 .modal-content{
