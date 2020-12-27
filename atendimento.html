@@ -34,7 +34,7 @@
             </nav>      
         </header>
 
-        <section>
+        <section class="pb-4">
             <div class="container pt-5">
                 <div class="row">
                     <div class="col-12 col-md-10">
@@ -47,7 +47,7 @@
                 
                 <form id="id-form" name="formulario" action="#">
                     <div class="row mt-2">
-                        <div class="form-group col-12 col-md-7">
+                        <div class="form-group col-12 col-md-6">
                             <label for="name-paciente" class="label-form">Nome do(a) Paciente</label>
                             <input type="text" class="form-control style-input" id="name-paciente" placeholder="Maria da Silva" disabled>
                         </div>
@@ -55,9 +55,17 @@
                             <label for="idade" class="label-form">Idade</label>
                             <input type="text" class="form-control style-input" id="idade" placeholder="35" disabled>
                         </div>
-                        <div class="form-group col-12 col-md-3">
+                        <div class="form-group col-12 col-md-2">
                             <label for="genero" class="label-form">Gênero</label>
                             <input type="text" class="form-control style-input" id="genero" placeholder="Feminino" disabled>
+                        </div>
+                        <div class="form-group col-12 col-md-1">
+                            <label for="peso" class="label-form">Peso</label>
+                            <input type="text" class="form-control style-input" id="peso" placeholder="">
+                        </div>
+                        <div class="form-group col-12 col-md-1">
+                            <label for="altura" class="label-form">Altura</label>
+                            <input type="text" class="form-control style-input" id="altura" placeholder="">
                         </div>
                     </div>
 
@@ -67,7 +75,7 @@
                             <input type="text" class="form-control style-input" id="habitos" placeholder="" required>
                         </div>
                         <div class="form-group col-12 col-md-5">
-                            <label for="alergias" class="label-form">Alergias</label>
+                            <label for="alergias" class="label-form">Alergias/Restrições</label>
                             <input type="text" class="form-control style-input" id="alergias" placeholder="" required>
                         </div>
                     </div>
@@ -140,17 +148,16 @@
                 </button>
                 </div>
                 <div class="modal-body modal-salvar-msg">
-                Deseja realmente salvar as alterações feitas neste prontuário?
+                Prontuário de atendimento salvo com sucesso!
                 </div>
                 <div class="modal-footer">
-                <button type="button" class="btn btn-cinza" data-dismiss="modal">Fechar</button>
-                <button type="button" class="btn  btn-verde">Salvar Alterações</button>
+                <button type="button" class="btn  btn-verde" data-dismiss="modal">Ok</button>
                 </div>
             </div>
             </div>
         </div>
 
-        <footer class="mt-4">
+        <footer>
             <div class="row">
                 <div class="col-md-6"><img src="./images/logo-footer.png"></div>
                 <div class="col-md-2">

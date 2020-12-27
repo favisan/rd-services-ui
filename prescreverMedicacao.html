@@ -7,179 +7,250 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/stylesPrescreverMedicacao.css">
     </head>
+
     <body>
-        <section>
-            <div class="container-fluid">
-                <div class="row">
-                    <img src="images/banner-2.jpg" class="banner" alt="">
-                    <img src="images/logo-branco.png" class="logo" alt="">
+        <div class="container-fluid">
+            <div class="row">
+                <img src="images/banner-2.jpg" class="banner" alt="">
+                <img src="images/logo-branco.png" class="logo" alt="">
+            </div>
+        </div>
+    
+        <div class="container pt-5">
+            <div class="row">
+                <div class="form-group col-12 col-md-2">
+                    <select type="text" class="form-control style-input" id="tipo-receita" required>
+                        <option>Tipo de Receita</option>
+                        <option>Receituário Simples</option>
+                        <option>Receituário de Antimicrobianos</option>
+                        <option>Receituário de Controle Especial</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-8">
+                    <h1 class="titulo-verde text-center">Receituário Simples</h1>
+                </div>
+                <div class="form-group col-12 col-md-2">
+                    <a><img src="./images/validar.png" class="img-validar"></img></a>
                 </div>
             </div>
-        
-            <div class="container pt-5">
-                <div class="row">
-                    <div class="form-group col-12 col-md-2">
-                        <select type="text" class="form-control style-input" id="tipo-receita" required>
-                            <option>Tipo de Receita</option>
-                            <option>Receituário Simples</option>
-                            <option>Receituário de Antimicrobianos</option>
-                            <option>Receituário de Controle Especial</option>
-                        </select>
-                    </div>
-                    <div class="col-12 col-md-8">
-                        <h1 class="titulo-verde text-center">Receituário Simples</h1>
-                    </div>
-                    <div class="form-group col-12 col-md-2">
-                        <a><img src="./images/validar.png" class="img-validar"></img></a>
+            
+            <form id="id-form" name="formulario" action="#">
+                <div class="row mt-2">
+                    <div class="form-group col-12 col-md-12">
+                        <label for="name-paciente" class="label-form">Nome do(a) Paciente</label>
+                        <input type="text" class="form-control style-input" id="name-paciente" placeholder="Maria da Silva" disabled>
                     </div>
                 </div>
-                
-                <form id="id-form" name="formulario" action="#">
-                    <div class="row mt-2">
-                        <div class="form-group col-12 col-md-12">
-                            <label for="name-paciente" class="label-form">Nome do(a) Paciente</label>
-                            <input type="text" class="form-control style-input" id="name-paciente" placeholder="Maria da Silva" disabled>
-                        </div>
-                    </div>
 
+                <div class="presc-border">
                     <div class="row mt-2 mb-0">
-                        <div class="form-group col-12 col-md-2 mb-0">
+                        <div class="form-group col-12 col-md-12 mb-0">
                             <label for="idade" class="label-form">Prescrição</label>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="form-group col-12 col-md-2">
-                            <label for="idade" class="label-form">Medicação</label>
-                            <select type="text" class="form-control style-input" id="medicacao" required>
-                                <option>Selecione a Medicação</option>
-                                <option>Dipirona</option>
-                                <option>Paracetamol</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-12 col-md-2">
-                            <label for="quantidade" class="label-form">Quantidade</label>
-                            <input type="number" class="form-control style-input" id="quantidade" placeholder="" required>
-                        </div>
-                        <div class="form-group col-12 col-md-2">
-                            <label for="concentracao" class="label-form">Concentração</label>
-                            <input type="text" class="form-control style-input" id="concentracao" placeholder="" required>
-                        </div>
-                        <div class="form-group col-12 col-md-3">
-                            <label for="idade" class="label-form">Via de Administração</label>
-                            <select type="text" class="form-control style-input" id="via-adm" required>
-                                <option>Selecione a Via de Administração</option>
-                                <option>Uso Tópico</option>
-                                <option>Uso Local</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-12 col-md-3">
-                            <label for="idade" class="label-form">Forma Farmacêutica</label>
-                            <select type="text" class="form-control style-input" id="forma-farmaceutica" required>
-                                <option>Selecione a Forma Farmacêutica</option>
-                                <option>Solução</option>
-                                <option>Comprimido</option>
-                            </select>
-                        </div>
-                    </div>
 
-                    <div class="row mt-2">
-                        <div class="form-group col-12 col-md-12">
-                            <label for="orientacoes" class="label-form">Orientações de Uso (Dose, Posologia)</label>
-                            <input type="text" class="form-control style-input" id="orientacoes" placeholder="" required>
+                    <div>
+                        <div class="row">
+                            <div class="form-group col-12 col-md-2">
+                                <label for="idade" class="label-form">Medicação</label>
+                                <select type="text" class="form-control style-input select-form" id="medicacao" required>
+                                    <option>Selecione a Medicação</option>
+                                    <option>Dipirona</option>
+                                    <option>Paracetamol</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-12 col-md-2">
+                                <label for="quantidade" class="label-form">Quantidade</label>
+                                <input type="number" class="form-control style-input" id="quantidade" placeholder="" required>
+                            </div>
+                            <div class="form-group col-12 col-md-2">
+                                <label for="concentracao" class="label-form">Concentração</label>
+                                <input type="text" class="form-control style-input" id="concentracao" placeholder="" required>
+                            </div>
+                            <div class="form-group col-12 col-md-3">
+                                <label for="idade" class="label-form">Via de Administração</label>
+                                <select type="text" class="form-control style-input select-form" id="via-adm" required>
+                                    <option>Selecione a Via de Administração</option>
+                                    <option>Uso Tópico</option>
+                                    <option>Uso Local</option>
+                                    <option>Via Oral</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-12 col-md-3">
+                                <label for="idade" class="label-form">Forma Farmacêutica</label>
+                                <select type="text" class="form-control style-input select-form" id="forma-farmaceutica" required>
+                                    <option>Selecione a Forma Farmacêutica</option>
+                                    <option>Solução</option>
+                                    <option>Comprimido</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="row mt-2">
-                        <div class="form-group col-12 col-md-9">
-                            <label for="name-medico" class="label-form">Nome do(a) Médico(a)</label>
-                            <input type="text" class="form-control style-input" id="name-medico" placeholder="Ana Maria Campos" disabled>
-                        </div>
-                        <div class="form-group col-12 col-md-2">
-                            <label for="crm" class="label-form">CRM</label>
-                            <input type="text" class="form-control style-input" id="crm" placeholder="11111" disabled>
-                        </div>
-                        <div class="form-group col-12 col-md-1">
-                            <label for="uf-crm" class="label-form">UF</label>
-                            <input type="text" class="form-control style-input" id="uf-crm" placeholder="SP" disabled>
+                        <div class="row mt-2">
+                            <div class="form-group col-12 col-md-11">
+                                <label for="orientacoes" class="label-form">Orientações de Uso (Dose, Posologia)</label>
+                                <input type="text" class="form-control style-input" id="orientacoes" placeholder="" required>
+                            </div>
+                            <div class="form-group col-12 col-md-1">
+                                <button type="button" class="btn-add" data-toggle="modal" data-target="#modal-add"></button>
+                                <!-- <a class="btn-add" data-toggle="modal" data-target="#modal-add"><img  src="./images/add.png" class="img-add"></a> -->
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="row mt-2">
-                        <div class="form-group col-12 col-md-12">
-                            <label for="local-atend" class="label-form">Local de Atendimento</label>
-                            <input type="text" class="form-control style-input" id="local-atend" placeholder="Clinica ANC" disabled>
-                        </div>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                <th class="texto-tabela" scope="col">Medicação</th>
+                                <th class="texto-tabela" scope="col">Quantidade</th>
+                                <th class="texto-tabela" scope="col">Concentração</th>
+                                <th class="texto-tabela" scope="col">Via de Administração</th>
+                                <th class="texto-tabela" scope="col">Forma Farmacêutica</th>
+                                <th class="texto-tabela" scope="col">Orientações de Uso (Dose, Posologia)</th>
+                                <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td class="texto-tabela">Dipirona</td>
+                                <td class="texto-tabela">1 caixa</td>
+                                <td class="texto-tabela">10 mg</td>
+                                <td class="texto-tabela">Via Oral</td>
+                                <td class="texto-tabela">Comprimido</td>
+                                <td class="texto-tabela">Tomar 1 comprimido de 8/8h</td>
+                                <td><a class="btn-remove"><img src="./images/delete.png"></a></td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td class="texto-tabela">Paracetamol</td>
+                                    <td class="texto-tabela">1 caixa</td>
+                                    <td class="texto-tabela">5 mg</td>
+                                    <td class="texto-tabela">Via Oral</td>
+                                    <td class="texto-tabela">Comprimido</td>
+                                    <td class="texto-tabela">Tomar 1 comprimido de 6/6h</td>
+                                    <td><a class="btn-remove"><img src="./images/delete.png"></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
+                </div>
 
-                    <div class="row mt-2">
-                        <div class="form-group col-12 col-md-9">
-                            <label for="endereco" class="label-form">Endereço</label>
-                            <input type="text" class="form-control style-input" id="endereco" placeholder="Rua A,  55" disabled>
-                        </div>
-                        <div class="form-group col-12 col-md-3">
-                            <label for="bairro" class="label-form">Bairro</label>
-                            <input type="text" class="form-control style-input" id="bairro" placeholder="Penha" disabled>
-                        </div>
+                <div class="row mt-2">
+                    <div class="form-group col-12 col-md-9">
+                        <label for="name-medico" class="label-form">Nome do(a) Médico(a)</label>
+                        <input type="text" class="form-control style-input" id="name-medico" placeholder="Ana Maria Campos" disabled>
                     </div>
+                    <div class="form-group col-12 col-md-2">
+                        <label for="crm" class="label-form">CRM</label>
+                        <input type="text" class="form-control style-input" id="crm" placeholder="11111" disabled>
+                    </div>
+                    <div class="form-group col-12 col-md-1">
+                        <label for="uf-crm" class="label-form">UF</label>
+                        <input type="text" class="form-control style-input" id="uf-crm" placeholder="SP" disabled>
+                    </div>
+                </div>
 
-                    <div class="row mt-2">
-                        <div class="form-group col-12 col-md-5">
-                            <label for="cidade" class="label-form">Cidade</label>
-                            <input type="text" class="form-control style-input" id="cidade" placeholder="São Paulo" disabled>
-                        </div>
-                        <div class="form-group col-12 col-md-1">
-                            <label for="uf" class="label-form">UF</label>
-                            <input type="text" class="form-control style-input" id="uf" placeholder="SP" disabled>
-                        </div>
-                        <div class="form-group col-12 col-md-3">
-                            <label for="tel" class="label-form">Telefone</label>
-                            <input type="text" class="form-control style-input" id="tel" placeholder="(11) 2222-3333" disabled>
-                        </div>
-                        <div class="form-group col-12 col-md-3">
-                            <label for="data-emissao" class="label-form">Data de Emissão</label>
-                            <input type="date" class="form-control style-input" id="data-emissao" placeholder="08/12/2020" required>
-                        </div>
+                <div class="row mt-2">
+                    <div class="form-group col-12 col-md-12">
+                        <label for="local-atend" class="label-form">Local de Atendimento</label>
+                        <input type="text" class="form-control style-input" id="local-atend" placeholder="Clinica ANC" disabled>
                     </div>
+                </div>
 
-                    <div class="row mt-4 mb-4">
-                        <div class="form-group col-12 col-md-3"></div>
-                        <div class="form-group col-12 col-md-6 ">
-                            <textarea  class="form-control style-input-text-area" id="assinatura-medico" rows="4" required></textarea>
-                            <label for="assinatura-medico" class="label-form d-flex justify-content-center mt-1">Assinatura Médico(a)</label>
-                        </div>
-                        <div class="form-group col-12 col-md-3"></div>
+                <div class="row mt-2">
+                    <div class="form-group col-12 col-md-9">
+                        <label for="endereco" class="label-form">Endereço</label>
+                        <input type="text" class="form-control style-input" id="endereco" placeholder="Rua A,  55" disabled>
                     </div>
+                    <div class="form-group col-12 col-md-3">
+                        <label for="bairro" class="label-form">Bairro</label>
+                        <input type="text" class="form-control style-input" id="bairro" placeholder="Penha" disabled>
+                    </div>
+                </div>
 
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-verde mr-5" data-toggle="modal" data-target="#modal-salvar">Salvar</button>
-                        <button type="submit" class="btn btn-verde mr-5" data-toggle="modal" data-target="#modal-enviar" data-whatever="@rd">Enviar</button>
-                        <button type="reset" class="btn btn-cinza mr-5">Limpar</button>
-                        <button type="button" class="btn btn-cinza">Sair</button>
+                <div class="row mt-2">
+                    <div class="form-group col-12 col-md-5">
+                        <label for="cidade" class="label-form">Cidade</label>
+                        <input type="text" class="form-control style-input" id="cidade" placeholder="São Paulo" disabled>
                     </div>
-                </form>
+                    <div class="form-group col-12 col-md-1">
+                        <label for="uf" class="label-form">UF</label>
+                        <input type="text" class="form-control style-input" id="uf" placeholder="SP" disabled>
+                    </div>
+                    <div class="form-group col-12 col-md-3">
+                        <label for="tel" class="label-form">Telefone</label>
+                        <input type="text" class="form-control style-input" id="tel" placeholder="(11) 2222-3333" disabled>
+                    </div>
+                    <div class="form-group col-12 col-md-3">
+                        <label for="data-emissao" class="label-form">Data de Emissão</label>
+                        <input type="date" class="form-control style-input" id="data-emissao" placeholder="08/12/2020" required>
+                    </div>
+                </div>
+
+                <div class="row mt-4 mb-4">
+                    <div class="form-group col-12 col-md-3">
+                    </div>
+                    <div class="form-group col-12 col-md-6 ">
+                        <textarea  class="form-control style-input-text-area" id="assinatura-medico" rows="4" required></textarea>
+                        <label for="assinatura-medico" class="label-form d-flex justify-content-center mt-1">Assinatura Médico(a)</label>
+                    </div>
+                    <div class="form-group col-12 col-md-3">
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-verde mr-5" data-toggle="modal" data-target="#modal-salvar">Salvar</button>
+                    <button type="submit" class="btn btn-verde mr-5" data-toggle="modal" data-target="#modal-enviar" data-whatever="@rd">Enviar</button>
+                    <button type="reset" class="btn btn-cinza mr-5">Limpar</button>
+                    <button type="button" class="btn btn-cinza">Sair</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Modal Adicionar-->
+        <div class="modal fade" id="modal-add" tabindex="-1" role="dialog" aria-labelledby="modal-addTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-addTitle">Atenção</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body modal-add-msg">
+                        Medicamento adicionado com sucesso!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn  btn-verde" data-dismiss="modal">Ok</button>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
 
         <!-- Modal Salvar-->
         <div class="modal fade" id="modal-salvar" tabindex="-1" role="dialog" aria-labelledby="modal-salvarTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="modal-salvarTitle">Atenção</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-salvarTitle">Atenção</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body modal-salvar-msg">
+                        Receituário salvo com sucesso!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn  btn-verde" data-dismiss="modal">Ok</button>
+                    </div>
                 </div>
-                <div class="modal-body modal-salvar-msg">
-                Deseja realmente salvar as alterações feitas neste receituário?
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-cinza" data-dismiss="modal">Fechar</button>
-                <button type="button" class="btn  btn-verde">Salvar Alterações</button>
-                </div>
-            </div>
             </div>
         </div>
+
         <!--Modal Enviar-->
         <div class="modal fade" id="modal-enviar" tabindex="-1" role="dialog" aria-labelledby="modal-enviarLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -208,7 +279,7 @@
                 </div>
               </div>
             </div>
-        </div>
+        </div>        
 
         <footer class="mt-4">
             <div class="row">

@@ -1,7 +1,5 @@
-
-section{
+body {
     background-color: rgba(223, 239, 219, 0.24);
-    width: 100%;
 }
 
 .banner {
@@ -52,6 +50,16 @@ section{
     padding: 0 15px;
 }
 
+.presc-border {
+    border: 1px solid #908f8f; 
+    border-radius: 7px;
+    padding: 0 15px;
+}
+
+.texto-tabela {
+    color: #908f8f;
+}
+
 ::-webkit-input-placeholder {
     color: #908F8F !important;
 }
@@ -69,10 +77,29 @@ section{
     border: 1px solid rgb(000, 080, 052); 
 }
 
+.btn-add {
+    border-radius: 50px;
+    border: 1px solid #2a764a; 
+    width: 34px;
+    height: 34px;
+    background-image: url(../images/add.png);
+    margin-top: 37px;
+    margin-left: 30px;
+}
+
+.btn-add:hover {
+    background-color: rgb(000, 080, 052);
+    border: 1px solid rgb(000, 080, 052); 
+}
+
+.btn-remove {
+    border: none;
+}
+
 .btn-cinza {
     font-size: 14px;
     font-weight: 700;
-    background-color: rgb(108, 108, 100);
+    background-color: #6c6c64;
     border: 1px solid rgb(108, 108, 100);
     color: white;
 }
@@ -106,4 +133,10 @@ footer h4{
 .modal-salvar-msg {
     color: #8d8178;
     font-size: 13px;
+}
+
+.select-form {
+    padding-left: 0;
+    margin-left: 0;
+    padding-right: 0;
 }
