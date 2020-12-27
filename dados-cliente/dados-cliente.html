@@ -16,7 +16,7 @@
         <!-- NAVBAR COM CONTAINER -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a href="portal.html"><img src="img/logo-menu.png"></a>
+                <a href="../portal/portal.html"><img src="../img/logo-menu.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -25,10 +25,10 @@
                 <div class="collapse navbar-collapse item-menu" id="navbarSupportedContent">
                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-4 ">
                         <ul class="navbar-nav mr-auto">
-                            <li class="nav-item"><a class="nav-link" href="planos.html">Planos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../planos/planos.html">Planos</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
-                            <li class="nav-item"><a class="nav-link" href="portal.html#servicos">Serviços</a></li>
-                            <li class="nav-item"><a class="nav-link" href="area-cliente.html">Minha Área</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../portal/portal.html">Serviços</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../area-cliente/area-cliente.html">Minha Área</a></li>
                         </ul>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4" id="img-login">
@@ -37,17 +37,16 @@
                                 <p id="txt-login">Olá Laura</p>
                             </div>
                             <div class="botao-sair">
-                                <a href="portal.html"><button class="btn btn-sm">Sair</button></a>
+                                <a href="../portal/portal.html"><button class="btn btn-sm">Sair</button></a>
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <img src="./img/icon_login.png">
+                            <img src="../img/icon_login.png">
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
-
     </header>
 
     <section class="container">
@@ -155,7 +154,7 @@
 
                 <div class="form-row">
                     <div class="form-group col-md-6" id="altera-foto">
-                        <img id="img-perfil" src="./img/icon_login.png">
+                        <img id="img-perfil" src="../img/icon_login.png">
                         <button type="button" class="btn botao-altera-foto" data-toggle="modal"
                             data-target=".bd-foto-perfil-modal-lg">Alterar Foto</button>
                     </div>
@@ -191,7 +190,7 @@
             <div class="modal-body" id="planos-dados">
                 <div class="card-deck">
                     <div class="card">
-                        <img class="img-card" src="./img/BASIC.png" alt="Card image cap">
+                        <img class="img-card" src="../img/BASIC.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Plano Basic</h5>
                             <p class="card-text">&#9702 Agendamento de Serviços Farmacêuticos</p>
@@ -202,7 +201,7 @@
                         <div><button class="btn  btn-card" disabled>Incluso</button></div>
                     </div>
                     <div class="card">
-                        <img class="img-card" src="./img/PLUS.png" alt="Card image cap">
+                        <img class="img-card" src="../img/PLUS.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Plano Plus</h5>
                             <p class="card-text">&#9702 Agendamento de Serviços Farmacêuticos</p>
@@ -215,7 +214,7 @@
                                 data-target=".bd-example-modal-lg">Selecionar</button></div>
                     </div>
                     <div class="card">
-                        <img class="img-card" src="./img/PREMIUM.png" alt="Card image cap">
+                        <img class="img-card" src="../img/PREMIUM.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Plano Premim</h5>
                             <p class="card-text">&#9702 Agendamento de Serviços Farmacêuticos</p>
@@ -322,28 +321,32 @@
         </form>
     </section>
 
-    <footer>
+   <!-- FOOTER COM CONTAINER -->
+   <footer>
+    <div class="container">
         <div class="row">
-            <div class="col-md-6"><img src="img/logo-footer.png"></div>
+            <div class="col-md-6"><img src="../img/logo-footer.png"></div>
             <div class="col-md-2">
                 <h4>MAPA DO SITE</h4>
                 <ul class="nav flex-column rodape">
-                    <li class="nav-item"><a class="nav-link" href="planos.html">Planos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../planos/planos.html">Planos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
-                    <li class="nav-item"><a class="nav-link" href="portal.html#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../portal/portal.html#servicos">Serviços</a></li>
                 </ul>
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-3">
                 <h4>SOCIAL MIDIA</h4>
                 <ul class="nav flex-column rodape">
-                    <li class="nav-item"><img src="img/logo-facebook.png"><a class="nav-link" href="#">Facebook</a></li>
-                    <li class="nav-item"><img src="img/logo-linkedin.png"><a class="nav-link" href="#">Linkedin</a></li>
+                    <li class="nav-item"><img src="../img/logo-facebook.png"><a class="nav-link" href="#">Facebook</a>
+                    </li>
+                    <li class="nav-item"><img src="../img/logo-linkedin.png"><a class="nav-link" href="#">Linkedin</a>
+                    </li>
                 </ul>
-
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

@@ -8,7 +8,7 @@ a:hover {
 }
 
 .banner-bg {
-    background-image: url("../img/foto-5.jpg");
+    background-image: url("../../img/foto-5.jpg");
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -100,19 +100,19 @@ a:hover {
 }
 
 .card-nutri {
-    background-image: url("../img/logo_balanca.svg");
+    background-image: url("../../img/logo_balanca.svg");
 }
 
 .card-exames {
-    background-image: url("../img/logo_lab.svg");
+    background-image: url("../../img/logo_lab.svg");
 }
 
 .card-consultas {
-    background-image: url("../img/logo_med.svg");
+    background-image: url("../../img/logo_med.svg");
 }
 
 .card-lab {
-    background-image: url("../img/logo_vax.svg");
+    background-image: url("../../img/logo_vax.svg");
 }
 
 .card-title {

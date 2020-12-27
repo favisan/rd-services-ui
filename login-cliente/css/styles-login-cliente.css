@@ -8,7 +8,7 @@ a:hover {
 }
 
 .container-background {
-    background-image: url("../img/foto-1.jpg");
+    background-image: url("../../img/foto-1.jpg");
     background-size: cover;
     display: flex;
     height: 650px;
