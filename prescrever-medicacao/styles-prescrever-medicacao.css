@@ -89,11 +89,24 @@ body {
 
 .btn-add:hover {
     background-color: rgb(000, 080, 052);
+    border-radius: 50px;
     border: 1px solid rgb(000, 080, 052); 
 }
 
-.btn-remove {
-    border: none;
+.btn-delete {
+    border-radius: 50px;
+    border: 1px solid rgb(108, 108, 100); 
+    width: 34px;
+    height: 34px;
+    background-image: url(../images/delete.png);
+    margin-top: 37px;
+    margin-left: 30px;
+}
+
+.btn-delete:hover {
+    background-color: rgb(146, 146, 136);
+    border-radius: 50px;
+    border: 1px solid  rgb(146, 146, 136); 
 }
 
 .btn-cinza {

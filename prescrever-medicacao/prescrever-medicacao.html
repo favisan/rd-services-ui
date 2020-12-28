@@ -5,14 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>RD - Prescrição de Medicamentos</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="./css/stylesPrescreverMedicacao.css">
+        <link rel="stylesheet" href="./styles-prescrever-medicacao.css">
     </head>
 
     <body>
         <div class="container-fluid">
             <div class="row">
-                <img src="images/banner-2.jpg" class="banner" alt="">
-                <img src="images/logo-branco.png" class="logo" alt="">
+                <img src="../images/banner-2.jpg" class="banner" alt="">
+                <img src="../images/logo-branco.png" class="logo" alt="">
             </div>
         </div>
     
@@ -30,7 +30,7 @@
                     <h1 class="titulo-verde text-center">Receituário Simples</h1>
                 </div>
                 <div class="form-group col-12 col-md-2">
-                    <a><img src="./images/validar.png" class="img-validar"></img></a>
+                    <a><img src="../images/validar.png" class="img-validar"></img></a>
                 </div>
             </div>
             
@@ -93,7 +93,6 @@
                             </div>
                             <div class="form-group col-12 col-md-1">
                                 <button type="button" class="btn-add" data-toggle="modal" data-target="#modal-add"></button>
-                                <!-- <a class="btn-add" data-toggle="modal" data-target="#modal-add"><img  src="./images/add.png" class="img-add"></a> -->
                             </div>
                         </div>
                     </div>
@@ -121,7 +120,7 @@
                                 <td class="texto-tabela">Via Oral</td>
                                 <td class="texto-tabela">Comprimido</td>
                                 <td class="texto-tabela">Tomar 1 comprimido de 8/8h</td>
-                                <td><a class="btn-remove"><img src="./images/delete.png"></a></td>
+                                <td><button type="button" class="btn-delete"></button></td>
                                 </tr>
                             </tbody>
                             <tbody>
@@ -132,7 +131,7 @@
                                     <td class="texto-tabela">Via Oral</td>
                                     <td class="texto-tabela">Comprimido</td>
                                     <td class="texto-tabela">Tomar 1 comprimido de 6/6h</td>
-                                    <td><a class="btn-remove"><img src="./images/delete.png"></a></td>
+                                    <td><button type="button" class="btn-delete"></button></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -283,20 +282,20 @@
 
         <footer class="mt-4">
             <div class="row">
-                <div class="col-md-6"><img src="./images/logo-footer.png"></div>
+                <div class="col-md-6"><img src="../images/logo-footer.png"></div>
                 <div class="col-md-2">
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-3">
                     <h4>SOCIAL MIDIA</h4>   
                     <ul class="nav flex-column rodape">
-                        <li class="nav-item"><img src="./images/logo-facebook.png"><a class="nav-link" href="#">Facebook</a></li>
-                        <li class="nav-item"><img src="./images/logo-linkedin.png"><a class="nav-link" href="#">Linkedin</a></li>
+                        <li class="nav-item"><img src="../images/logo-facebook.png"><a class="nav-link" href="#">Facebook</a></li>
+                        <li class="nav-item"><img src="../images/logo-linkedin.png"><a class="nav-link" href="#">Linkedin</a></li>
                     </ul>
                 </div>
             </div>    
         </footer>
-        <script src="./js/appPrescreverMedicacao.js"></script>
+        <script src="./app-prescrever-medicacao.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
