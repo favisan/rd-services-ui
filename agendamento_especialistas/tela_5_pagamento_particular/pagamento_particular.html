@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Forma de Pagamento | Particular</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../tela_5_pagamento_particular/style_pagamento_particular.css">
+</head>
+
+
+<body>
+    <!-- <header>
+        <nav class="navbar navbar-expand-lg navbar-light col-12">
+            <img src="./img_5/logo-menu.PNG">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="col-6 item-menu">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Planos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 nav-text d-flex justify-content-end">
+                    <ul class="navbar-nav mr-1">
+                        <li class="nav-item"><a class="nav-link" href="#"><b>Agendamento de Consultas</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="../tela_7_minhas_consultas/minhas_consultas.html">Minhas Consultas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> -->
+
+    <!-- trilha 5 -->
+    <div class="rowtrilha d-flex flex-wrap justify-content-center">
+        <div class="cada-item d-flex flex-column">
+            <div class="bola-linha d-flex">
+                <div class="bolinha bolinha-cheia">1</div>
+                <div class="linha linha-ativa"></div>
+            </div>
+            <div class="texto-trilha d-flex flex-column">
+                <a href="../tela_1_agendamento_consultas/agendamento_consultas.html">
+                    <div class="trilha">Consulta</div>
+                    <div class="opcao">Presencial</div>
+                </a>
+            </div>
+        </div>
+        <div class="cada-item d-flex flex-column">
+            <div class="bola-linha d-flex">
+                <div class="bolinha bolinha-cheia">2</div>
+                <div class="linha linha-ativa"></div>
+            </div>
+            <div class="texto-trilha d-flex flex-column">
+                <a href="../tela_1_agendamento_consultas/agendamento_consultas.html">
+                    <div class="trilha ">Especialidade</div>
+                    <div class="opcao ">Endocrinologia</div>
+                </a>
+            </div>
+        </div>
+        <div class="cada-item d-flex flex-column">
+            <div class="bola-linha d-flex">
+                <div class="bolinha bolinha-cheia">3</div>
+                <div class="linha linha-ativa"></div>
+            </div>
+            <div class="texto-trilha d-flex flex-column">
+                <a href="../tela_2_calendario_agendamento/calendario_agendamento.html">
+                    <div class="trilha ">Data</div>
+                    <div class="opcao">23/10/2017</div>
+                </a>
+            </div>
+        </div>
+        <div class="cada-item d-flex flex-column">
+            <div class="bola-linha d-flex">
+                <div class="bolinha bolinha-cheia">4</div>
+                <div class="linha linha-ativa"></div>
+            </div>
+            <div class="texto-trilha d-flex flex-column">
+                <a href="../tela_3_escolha_profissional/escolha_profissional.html">
+                    <div class="trilha">Especialista</div>
+                    <div class="opcao">Dra Brinquedos</div>
+                </a>
+            </div>
+        </div>
+        <div class="cada-item d-flex flex-column">
+            <div class="bola-linha d-flex">
+                <div class="bolinha bolinha-cheia">5</div>
+                <div class="linha linha-ativa"></div>
+            </div>
+            <div class="texto-trilha d-flex flex-column">
+                <a href="../tela_3_escolha_profissional/escolha_profissional.html">
+                    <div class="trilha">Horário</div>
+                    <div class="opcao">14:00</div>
+                </a>
+            </div>
+        </div>
+        <div class="cada-item d-flex flex-column">
+            <div class="bola-linha d-flex">
+                <div class="bolinha bolinhaVazia">6</div>
+                <div class="linha linha-futura"></div>
+            </div>
+            <div class="texto-trilha d-flex flex-column">
+                <div class="trilha">Pagamento</div>
+                <div class="opcao-vazia">vazio</div>
+            </div>
+        </div>
+        <div class="cada-item d-flex flex-column">
+            <div class="bola-linha d-flex">
+                <div class="bolinha bolinhaVazia" id="bolinha7">7</div>
+            </div>
+            <div class="texto-trilha d-flex flex-column">
+                <div class="trilha">Confirmação</div>
+                <div class="opcao-vazia">vazio</div>
+            </div>
+        </div>
+    </div>
+    <!--fim trilha 5 -->
+
+
+    <!-- formulario -->
+
+    <section class="pagPag container d-flex flex-column">
+        <div>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="containerForma">
+                        <div class="forma text-center text-secundary">
+                            <h3>Forma de Pagamento</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--- botoes Particular e Planos -->
+            <div class="row">
+                <div class="container text-center col-12 md-3 mt-3 mb-5">
+                    <a href="../tela_4_pagamento_plano/pagamento_plano.html"><button
+                            class="btn-active">Plano</button></a>
+                    <button class="btn-active clicado">Particular</button>
+                </div>
+            </div>
+        </div>
+        <!--- final botoes -->
+        <div class="d-flex">
+            <div class="containerEsq">
+                <!-- Dados do cartão de crédito -->
+                <div class="dadosCC">
+                    <form class="formDadosCC">
+                        <!-- linha 1 - Número do cartão -->
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label for="numeroCC">Número do cartão*</label>
+                                <input type="text" class="form-control" id="numeroCC" placeholder="5555 5555 5555 5555"
+                                    required>
+                            </div>
+
+                        </div>
+
+                        <!-- linha 2 - Nome do titular -->
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label for="nomeTitular">Nome do titular do cartão*</label>
+                                <input type="text" class="form-control" id="nomeTitular"
+                                    placeholder="Digite o nome como gravado no cartão" required>
+                            </div>
+                        </div>
+
+                        <!-- linha 3 - Data de vencimento e código de segurança -->
+                        <div class="form-row">
+                            <div class="form-group col-12 col-lg-4">
+                                <label for="dtVencMes">Mês de vencimento*</label>
+                                <select id="dtVencMes" class="form-control" required>
+                                    <option selected>Mês</option>
+                                    <option>01 - janeiro</option>
+                                    <option>02 - fevereiro</option>
+                                    <option>03 - março</option>
+                                    <option>04 - abril</option>
+                                    <option>05 - maio</option>
+                                    <option>06 - junho</option>
+                                    <option>07 - julho</option>
+                                    <option>08 - agosto</option>
+                                    <option>09 - setembro</option>
+                                    <option>10 - outubro</option>
+                                    <option>11 - novembro</option>
+                                    <option>12 - dezembro</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-12 col-lg-4">
+                                <label for="dtVencAno">Ano de vencimento*</label>
+                                <select id="dtVencAno" class="form-control" required>
+                                    <option selected>Ano</option>
+                                    <option>2020</option>
+                                    <option>2021</option>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                    <option>2025</option>
+                                    <option>2026</option>
+                                    <option>2027</option>
+                                    <option>2028</option>
+                                    <option>2029</option>
+                                    <option>2030</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-12 col-lg-4">
+                                <label for="codSegCC">CVV*</label>
+                                <input type="text" class="form-control" id="codSegCC" placeholder="000" required>
+                            </div>
+                        </div>
+
+
+                        <!-- linha 4 - Números de parcelas -->
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label for="numParcelas">Opções de parcelamento*</label>
+                                <select id="numParcelas" class="form-control">
+                                    <option selected>Escolha o número de parcelas</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- linha 5 - Salvar dados do cartão -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="salvarCC" id="salvarCC" value="option1">
+                            <label class="form-check-label" for="salvarCC">
+                                Salvar dados do cartão para compras futuras
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="containerDir">
+                <h4 class="resumoPedido text-center">Resumo do pedido</h4>
+                <div class="tabelaPedido">
+                    <br>
+
+                    <table class="table">
+                        <tr class="cabecalho ">
+                            <th class="produto text-center">SERVIÇO</th>
+                            <th class="quantidade text-center">QTD</th>
+                            <th class="preco text-center">PARCELAS</th>
+                            <th class="preco text-center">VALOR</th>
+                        </tr>
+                        <tr class="dadosPedido">
+                            <td class="text-left">Endocrinologia</td>
+                            <td class="text-center">01</td>
+                            <td class="text-right">3x de R$ 42,00</td>
+                            <td class="text-right">R$ 126,00</td>
+                        </tr>
+                    </table>
+                    <table class="table">
+                        <tr>
+                            <th colspan="2" class="total">Total</th>
+                            <td class="total text-right">R$ 126,00</td>
+                        </tr>
+                    </table>
+                    <div class="btnConcluir">
+                        <div class="col text-center">
+                            <a href="../tela_6_confirmacao_consulta/confirmacao_consulta.html"><button
+                                    class="btn-active">Confirmar</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="row">
+            <div class="col-md-6"><img src="./img_5/logo-footer.png"></div>
+            <div class="col-md-3">
+                <h4>MAPA DO SITE</h4>
+                <ul class="nav flex-column rodape">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Planos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="../tela_1_agendamento_consultas/agendamento_consultas.html">Agendamento de
+                            Consultas</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="../tela_7_minhas_consultas/minhas_consultas.html">Minhas Consultas</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4>SOCIAL MEDIA</h4>
+                <ul class="nav flex-column rodape">
+                    <li class="nav-item"><img src="./img_5/logo-facebook.png"><a class="nav-link" href="#">Facebook</a>
+                    </li>
+                    <li class="nav-item"><img src="./img_5/logo-linkedin.png"><a class="nav-link" href="#">Linkedin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+
+
+
+</body>
+
+<!-- rodapé -->
+
+
+
+</html>

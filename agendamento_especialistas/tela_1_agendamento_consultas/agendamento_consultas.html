@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Consultas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="./style_agendamento_consultas.css" rel="stylesheet"/>
+</head>
+<body>
+  
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light col-12">
+      <a href="#"><img src="./img_1/logo-menu.PNG"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">    
+        <div class="col-6 item-menu">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Planos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
+          </ul>
+        </div>
+        <div class="col-6 nav-text d-flex justify-content-end">
+          <ul class="navbar-nav mr-1">
+            <li class="nav-item"><a class="nav-link" href="../tela_7_minhas_consultas/minhas_consultas.html"><b>Minhas Consultas</b></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  
+  <div class="container1">
+    <div class="container-fluid" id=imagem style="background-image: url(https://cdn.rdsaudeemdia.com.br/wp-content/uploads/2020/07/shutterstock_1684337584N-1.jpg);">
+      <div class="banner-wrap col-12">
+        <h1>AGENDE SUA CONSULTA AGORA MESMO!</h1>
+      </div>
+    </div>
+  </div>
+  <section class="container">
+    <div class="col-12 text-center">
+      <h1>Qual é o tipo de consulta que você quer agendar?</h1>
+    </div>
+
+    <div class="divbotoes col-12 ">
+      <div class="container col-12 text-center">
+        <button class="btn-active">Online</button>
+        <button class="btn-active">Presencial</button>
+      </div>
+    </div>
+
+    <div class="divbotoes col-12">
+      <div class="wrapper">
+        <div class="menu col-12 text-center">
+          <select id="name">
+            <option value="selecione">Selecione uma Especialidade</option>
+            <option value="alergo">Alergologia</option>
+            <option value="cardio">Cardiologia</option>
+            <option value="geral">Cirurgia Geral</option>
+            <option value="fisio">Fisioterapia</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="divbotoes col-12">
+      <div class="container col-12 text-center">
+        <a href="../tela_2_calendario_agendamento/calendario_agendamento.html"><button class="btn-active">AGENDAR</button></a>
+      </div>
+    </div>
+
+  
+  </section>
+    
+   
+     
+
+  <footer>
+    <div class="row">
+      <div class="col-md-6"><img src="./img_1/logo-footer.png"></div>
+      <div class="col-md-3">
+        <h4>MAPA DO SITE</h4>
+        <ul class="nav flex-column rodape">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Planos</a></li>
+          <li class="nav-item"><a class="nav-link" href="../tela_1_agendamento_consultas/agendamento_consultas.html">Agendamento de Consultas</a></li>
+          <li class="nav-item"><a class="nav-link" href="../tela_7_minhas_consultas/minhas_consultas.html">Minhas Consultas</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h4>SOCIAL MEDIA</h4>   
+          <ul class="nav flex-column rodape">
+            <li class="nav-item"><img src="./img_1/logo-facebook.png"><a class="nav-link" href="#">Facebook</a></li>
+            <li class="nav-item"><img src="./img_1/logo-linkedin.png"><a class="nav-link" href="#">Linkedin</a></li>
+          </ul>
+      </div>
+    </div>    
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "7a505e5b-74df-4ae5-b53a-01fdb104e8ff", // The ID of this integration.
+        region: "us-south", // The region your integration is hosted in.
+        serviceInstanceID: "8d495177-6954-404b-aade-84a46171ecd3", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+      document.head.appendChild(t);
+    });
+  </script>
+
+</body>
+</html>
