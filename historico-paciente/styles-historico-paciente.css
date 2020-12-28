@@ -69,16 +69,17 @@ footer{
     width: 100%;
     color: #ffffff;
 }
+
 footer h4{
     font-size: 1.0rem;
 }
+
 .rodape .nav-item .nav-link {
     color: #ffffff;
     display: inline;
+    margin-left: -15px;
 }
+
 .nav-item:hover{
     text-decoration: underline;
-}
-footer a:hover{
-    color: #5cc3a0!important;
 }
