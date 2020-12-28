@@ -92,12 +92,24 @@ input {
     font-size: 13px;
 }
 
+#btn-dados {
+    display: flex;
+    justify-content: center;
+}
+
+#btn-voltar {
+    display: flex;
+    justify-content: center;
+}
+
 .bt-padrao {
     background-color: #2a764a;
     color: white;
     border-radius: 7px;
     border-color: white;
     border-width: 1px;
+    width: 50%;
+    height: 40px;
 }
 
 .bt-voltar {
@@ -106,15 +118,8 @@ input {
     border-radius: 7px;
     border-color: white;
     border-width: 1px;
-}
-
-select {
-    background-color: rgb(108, 108, 100);
-    color: white;
-    border-radius: 7px;
-    border-color: white;
-    border-width: 1px;
-    margin-left: 10px;
+    height: 40px;
+    width: 30%;
 }
 
 
@@ -142,3 +147,31 @@ footer h4{
     display: inline;
     margin-left: -15px;
 }
+
+.label-form {
+    color: #908F8F;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    padding-bottom: 3px;
+    width: 100%;
+}
+
+select {
+    color: #908F8F;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    padding-bottom: 3px;
+    margin-left: 10px;
+    height: 40px;
+    border-radius: 7px;
+}
+
+.form-control {
+    margin-left: 0;
+    width: 100%;
+    color: #908F8F;
+    font-size: 14px;
+}
+

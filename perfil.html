@@ -11,8 +11,8 @@
 
       <div class="container-fluid">
         <div class="row">
-            <img src="images/banner-2.jpg" class="superior" alt="">
-            <img src="images/logo-branco.png" class="logo" alt="">
+            <img src="img/banner-2.jpg" class="superior" alt="">
+            <img src="img/logo-branco.png" class="logo" alt="">
         </div>
       </div>
 
@@ -25,10 +25,10 @@
       <div class="container-principal">
         <div class="container-menu">
             <nav class="menu-vertical">
-                <img class="usuario" src="images/usuario.png" width="150px">
+                <img class="usuario" src="img/usuario.png" width="150px">
                 <p class="editarFotoPerfil">Editar Foto do Perfil</p>
                 <select>
-                  <option>Clínicas Conveniadas</option>
+                  <option> Clínicas Conveniadas</option>
                   <option>Ex: Clínica X</option>
                   <option>Ex: Clínica Y</option>
                   <option>Ex: Clínica Z</option>
@@ -40,7 +40,7 @@
         <div class="container-form container">
             <div class="row">
                 <div class="col-12">
-                  <h4 class="sub">Dados Pessoais</h4>
+                  <h3 class="sub">Dados Pessoais</h3>
                     <form>
                       <div class="row">
                         <div class="form-group col-12 col-md-8">
@@ -58,32 +58,51 @@
                       </div>
 
                       <div class="row">
+                        <div class="col-12 col-md-4">
+                          <label class="label-form" for="Especialidade">Especialidade</label>
+                          <select class="form-control" id="Especialidade" required>
+                              <option>Alergista </option>
+                              <option>Clínico Geral</option>
+                              <option>Cardiologia</option>
+                              <option>Dermatologia</option>
+                              <option>Endocrinologia</option>
+                              <option>Gatroenterelogia</option>
+                              <option>Geriatria</option>
+                              <option>Ginecologia</option>
+                              <option>Infectologia</option>
+                              <option>Nutrologia</option>
+                              <option>Oftalmologia</option>
+                              <option>Ortopedia</option>
+                              <option>Otorrinolaringologia</option>
+                              <option>Pediatria</option>
+                              <option>Pneumologia</option>
+                              <option>Psiquiatria</option>
+                              <option>Urologia</option>
+                          </select>
+                        </div>
                         <div class="form-group col-12 col-md-4">
                             <label>Data de Nascimento</label>
-                            <input type="name" class="form-control" placeholder="Ex: 22/10/1990">
+                            <input type="data" class="form-control" placeholder="Ex: 22/10/1990">
                         </div>
-                        <div class="form-group col-12 col-md-4">
-                            <label>RG</label>
-                            <input type="crm" class="form-control" placeholder="00.000.000-0">
-                        </div>
+                  
                         <div class="form-group col-12 col-md-4">
                             <label>CPF</label>
-                            <input type="uf" class="form-control" placeholder="000.000.000-00">
+                            <input type="cpf" class="form-control" placeholder="000.000.000-00">
                         </div>
                       </div>
 
                       <div class="row">
-                        <div class="form-group col-12 col-md-4">
+                        <div class="form-group col-12 col-md-3">
+                          <label>CEP</label>
+                          <input type="cep" class="form-control" placeholder="00000-000">
+                        </div>
+                        <div class="form-group col-12 col-md-5">
                             <label>Endereço Comercial</label>
-                            <input type="name" class="form-control" placeholder="Ex: Rua Amora,100">
+                            <input type="endereco" class="form-control" placeholder="Ex: Rua Amora,100">
                         </div>
                         <div class="form-group col-12 col-md-4">
                             <label>Bairro</label>
-                            <input type="crm" class="form-control" placeholder="Ex: Penha">
-                        </div>
-                        <div class="form-group col-12 col-md-4">
-                            <label>CEP</label>
-                            <input type="uf" class="form-control" placeholder="00000-000">
+                            <input type="bairro" class="form-control" placeholder="Ex: Penha">
                         </div>
                       </div>
 
@@ -91,35 +110,27 @@
                       <div class="row">
                         <div class="form-group col-12 col-md-3">
                             <label>Cidade</label>
-                            <input type="name" class="form-control" placeholder="Ex: São Paulo">
+                            <input type="cidade" class="form-control" placeholder="Ex: São Paulo">
                         </div>
-                        <div class="form-group col-12 col-md-3">
+                        <div class="form-group col-12 col-md-1">
                             <label>UF</label>
-                            <input type="crm" class="form-control" placeholder="SP">
+                            <input type="uf-crm" class="form-control" placeholder="SP">
                         </div>
                         <div class="form-group col-12 col-md-3">
                             <label>Telefone</label>
                             <input type="uf" class="form-control" placeholder="11 0000-0000">
                         </div>
-                        <div class="form-group col-12 col-md-3">
+                        <div class="form-group col-12 col-md-5">
                           <label>E-mail</label>
                           <input type="uf" class="form-control" placeholder="exemple@exemple.com">
                         </div>
                       </div>
                       <br>
                       <div class="row">
-                        <div class="col-12 col-md-4">
-                          <select>
-                            <option>Especialidade</option>
-                            <option>Clínico Geral</option>
-                            <option>Pediatra</option>
-                            <option>Nutróloga</option>
-                          </select>
-                        </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-6" id="btn-dados">
                             <button class="bt-padrao">Alterar Dados</button>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-6" id="btn-voltar">
                           <button class="bt-voltar">Voltar</button>
                         </div>
                       </div>
@@ -131,22 +142,17 @@
      
       <footer>
         <div class="row">
-            <div class="col-md-6"><img src="images/logo-footer.png"></div>
+            <div class="col-md-6"><img src="img/logo-footer.png"></div>
             <div class="col-md-2">
-                <h4>MAPA DO SITE</h4>
-                <ul class="nav flex-column rodape">
-                    <li class="nav-item"><a class="nav-link" href="#">Iniciar Atendimento</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Histórico de Paciente</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Agenda Geral</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Plano Nutricional</a></li>
-                    </ul>
+         
+           
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-3">
                 <h4>SOCIAL MIDIA</h4>   
                 <ul class="nav flex-column rodape">
-                    <li class="nav-item"><img src="images/logo-facebook.png"><a class="nav-link" href="#">Facebook</a></li>
-                    <li class="nav-item"><img src="images/logo-linkedin.png"><a class="nav-link" href="#">Linkedin</a></li>
+                    <li class="nav-item"><img src="img/logo-facebook.png"><a class="nav-link" href="#">Facebook</a></li>
+                    <li class="nav-item"><img src="img/logo-linkedin.png"><a class="nav-link" href="#">Linkedin</a></li>
                 </ul>
             </div>
         
