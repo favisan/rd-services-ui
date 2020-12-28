@@ -1,0 +1,120 @@
+/* inicio menu */
+.btn-menu{
+    background-color: #319A75;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 2px;
+    line-height: 18px;
+}
+
+.text-center{
+    color: #444444;
+}
+
+.collapse{
+    text-align: center;
+}
+
+.nav-item:hover{
+    text-decoration: underline;
+}
+
+.item-menu{
+    padding: 25px 12px;
+    font-size: 1.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #444444;
+}
+/* fim menu */
+
+section{
+    background-color: rgba(223, 239, 219, 0.24);
+    width: 100%;
+    height: 100%;
+}
+
+/* inicio footer */
+footer{
+    padding: 30px;
+    background-color: #929288;
+    width: 100%;
+    color: #ffffff;
+}
+
+footer h4{
+    font-size: 1.0rem;
+}
+
+.rodape .nav-item .nav-link {
+    color: #ffffff;
+    display: inline;
+}
+/* fim footer */
+
+/* pagina inteira */
+.pagPag {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.banner {
+    background-image: url(../img/banner.jpg);
+    background-size: contain;
+    width: 100%;
+    height: 170px;
+    background-repeat: no-repeat;
+  }
+
+
+/* container esquerdo */
+.containerEsq {
+    margin: 10px;
+    width: 60%;
+}
+
+
+.dadosCC {
+    background-color:hsla(147, 19%, 55%, 0.5);
+    border-radius: 5px;
+}
+
+.formDadosCC {
+    width: 99%;
+    padding: 15px;
+}
+
+/* container direito */
+.containerDir {
+    margin: 10px;
+    align-self: center;
+}
+
+
+.dadosPedido td {
+    color: #887d73;
+    font-size: 1rem;
+}
+
+
+.total {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btn-lg a{
+    color: white;  
+    text-decoration: none;
+}
+
+.form-check-input {
+    cursor: pointer;
+}
+
+form {
+    margin-bottom: 1rem;
+}
+
