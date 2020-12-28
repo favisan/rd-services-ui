@@ -60,9 +60,10 @@
                     <p class="texto-consulta col-8">12/12/20 - <b>AGENDADA</b> - Dr Fulano - Cardiologia</p>
                     <h2 class="menos col-1">-</h2>
                     <p class="texto-expansao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, ab adipisci in corporis veritatis consectetur similique. Dolorem ducimus blanditiis sapiente dicta dolorum dolore cupiditate, beatae animi pariatur, corporis recusandae reiciendis.</p>
-                    <div class="botoes-consulta col-4">
-                        <button class="checkin col-5">Check-in</button>
-                        <button class="remarcar col-5">Reagendar</button>
+                    <div class="botoes-consulta col-6">
+                        <button class="checkin col-4" data-toggle="modal" data-target="#checkinModal">Check-in</button>
+                        <button class="remarcar col-4" data-toggle="modal" data-target="#remarcarModal">Reagendar</button>
+                        <button class="col-4 btn-canc" data-toggle="modal" data-target="#cancelarModal">Cancelar</button>
                     </div>
                     <h3 class="mais col-1">+</h3>
                 </div>
@@ -70,9 +71,10 @@
                     <p class="texto-consulta col-8">12/12/20 - <b>AGENDADA</b> - Dr Fulano - Cardiologia</p>
                     <h2 class="menos col-1">-</h2>
                     <p class="texto-expansao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, ab adipisci in corporis veritatis consectetur similique. Dolorem ducimus blanditiis sapiente dicta dolorum dolore cupiditate, beatae animi pariatur, corporis recusandae reiciendis.</p>
-                    <div class="botoes-consulta col-4">
-                        <button class="checkin col-5">Check-in</button>
-                        <button class="remarcar col-5">Reagendar</button>
+                    <div class="botoes-consulta col-6">
+                      <button class="checkin col-4" data-toggle="modal" data-target="#checkinModal">Check-in</button>
+                      <button class="remarcar col-4" data-toggle="modal" data-target="#remarcarModal">Reagendar</button>
+                      <button class="col-4 btn-canc" data-toggle="modal" data-target="#cancelarModal">Cancelar</button>
                     </div>
                     <h3 class="mais col-1">+</h3>
                 </div>
@@ -80,9 +82,10 @@
                     <p class="texto-consulta col-8">12/12/20 - <b>AGENDADA</b> - Dr Fulano - Cardiologia</p>
                     <h2 class="menos col-1">-</h2>
                     <p class="texto-expansao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, ab adipisci in corporis veritatis consectetur similique. Dolorem ducimus blanditiis sapiente dicta dolorum dolore cupiditate, beatae animi pariatur, corporis recusandae reiciendis.</p>
-                    <div class="botoes-consulta col-4">
-                        <button class="checkin col-5">Check-in</button>
-                        <button class="remarcar col-5">Reagendar</button>
+                    <div class="botoes-consulta col-6">
+                      <button class="checkin col-4" data-toggle="modal" data-target="#checkinModal">Check-in</button>
+                      <button class="remarcar col-4" data-toggle="modal" data-target="#remarcarModal">Reagendar</button>
+                      <button class="col-4 btn-canc" data-toggle="modal" data-target="#cancelarModal">Cancelar</button>
                     </div>
                     <h3 class="mais col-1">+</h3>
                 </div>
@@ -113,7 +116,80 @@
                     <h3 class="mais col-1">+</h3>
                 </div>
             </div>
-        </section>
+
+            <!-- Modal check-in -->
+            <div class="modal fade" id="checkinModal" tabindex="-1" role="dialog" aria-labelledby="checkinModal" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Check-in</h5>
+                  </div>
+                  <div class="modal-body">
+                    Check-in realizado com sucesso!
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal Confirmar cancelar -->
+            <div class="modal fade" id="cancelarModal" tabindex="-1" role="dialog" aria-labelledby="cancelarModal" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cancelar Consulta</h5>
+                  </div>
+                  <div class="modal-body">
+                     Você tem certeza que deseja cancelar a consulta?
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#canceladaModal">Sim</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Modal Cancelada -->
+            <div class="modal fade" id="canceladaModal" tabindex="-1" role="dialog" aria-labelledby="canceladaModal" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Consulta Cancelada</h5>
+                  </div>
+                  <div class="modal-body">
+                    Consulta cancelada com sucesso!
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal Confirmar reagendar -->
+            <div class="modal fade" id="remarcarModal" tabindex="-1" role="dialog" aria-labelledby="remarcarModal" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Reagendar Consulta</h5>
+                  </div>
+                  <div class="modal-body">
+                     Você tem certeza que deseja reagendar a consulta?
+                  </div>
+                  <div class="modal-footer">
+                    <a href="../tela_1_agendamento_consultas/agendamento_consultas.html"><button type="button" class="btn btn-secondary">Sim</button></a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </section>
         <footer>
             <div class="row">
               <div class="col-md-6"><img src="./img_7/logo-footer.png"></div>

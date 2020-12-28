@@ -88,6 +88,12 @@ button{
 button:hover{
     background-color:#5cc3a0
 }
+.btn-canc{
+    background-color:  rgb(141, 60, 69);
+}
+.btn-canc:hover{
+    background-color:  rgba(141, 60, 69, 0.3);
+}
 .botoes-consulta{
     display: none;
     margin-top: 1%;
