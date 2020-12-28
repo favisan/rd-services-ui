@@ -22,9 +22,12 @@
             </div>
         </div>
     </header>
+    <a href="#" class="img-sair">
+        <img src="images/baseline_exit_to_app_black_18dp.png" class="sair" alt="">
+    </a>
 
     <!--Início Calendário-->
-    <div class="container-agenda">
+    <div class="container col-12 col-md-6 container-agenda">
         <div class="calendar">
             <div class="month">
                 <i class="fas fa-angle-left prev"></i>
@@ -41,19 +44,24 @@
                 <div>Qua</div>
                 <div>Qui</div>
                 <div>Sex</div>
-                <div>Sab</div>
+                <div>Sáb</div>
             </div>
             <div class="days"></div>
 
+            <br>
+            
+        </div>
+        <!--Fim Calendário-->
 
-            <!-- Início Button Abrir Agenda -->
-            <div class="buttons">
+        <!-- Início Button Abrir Agenda -->
+        <div class="buttons">
             <button type="button" class="btn abrir-agenda" data-toggle="modal" data-target="#exampleModalCenter">
                 Abrir Agenda
             </button>
             <button type="button" class="btn fechar-agenda" data-toggle="modal" data-target="#exampleModalCenter">
                 Fechar Agenda
             </button>
+        </div>
 
             <!-- Modal -->
             <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
@@ -61,38 +69,41 @@
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h3 class="modal-title" id="exampleModalLongTitle">Escolha o horário:</h3>
+                            <h2 class="modal-title" id="exampleModalLongTitle">Selecione o(s) horário(s):</h2>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body modal-horarios">
-                            <button type="button" class="btn btn-outline-success button-hora">09:00</button>
-                            <button type="button" class="btn btn-outline-success button-hora">10:00</button>
-                            <button type="button" class="btn btn-outline-success button-hora">11:00</button>
-                            <button type="button" class="btn btn-outline-success button-hora">12:00</button>
-                            <button type="button" class="btn btn-outline-success button-hora">14:00</button>
-                            <button type="button" class="btn btn-outline-success button-hora">15:00</button>
-                            <button type="button" class="btn btn-outline-success button-hora">16:00</button>
-                            <button type="button" class="btn btn-outline-success button-hora">17:00</button>
+                            <div class="manha">
+                                <h3>Manhã: </h3>
+                                <button type="button" class="btn btn-outline-success button-hora">09:00</button>
+                                <button type="button" class="btn btn-outline-success button-hora">10:00</button>
+                                <button type="button" class="btn btn-outline-success button-hora">11:00</button>
+                                <button type="button" class="btn btn-outline-success button-hora">12:00</button>
+                            </div>
+                            <div class="tarde">
+                                <h3>Tarde: </h3>
+                                <button type="button" class="btn btn-outline-success button-hora">14:00</button>
+                                <button type="button" class="btn btn-outline-success button-hora">15:00</button>
+                                <button type="button" class="btn btn-outline-success button-hora">16:00</button>
+                                <button type="button" class="btn btn-outline-success button-hora">17:00</button>
+                            </div>
                         </div>
                         <div class="modal-footer">
+                            <button type="button" class="btn btn-outline button-limpar">Limpar seleção</button>
                             <button type="button" class="btn button-salvar">Salvar</button>
                             <button type="button" class="btn btn-secondary button-fechar" data-dismiss="modal">Fechar</button>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
-            <!-- Fim Button Abrir Agenda -->
 
-        </div>
-
-        <!--Fim Calendário-->
+        <!-- Fim Button Abrir Agenda -->
 
         <!--Início Agenda-->
-        <div class="agenda col-12 col-md-5 col-sm-3">
-            <h3 class="text-center">Agenda 23/12</h3>
+        <div class="agenda col-12 col-md-8">
+            <h1 class="text-center title-agenda">Agenda 18/12</h1>
             <table class="table">
                 <tbody class="text-center">
                     <tr>
@@ -198,7 +209,7 @@
     </footer>
     <!-- Fim Footer -->
 
-    <script src="js/app.js"></script>
+    <script src="js/app-agenda-medico.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

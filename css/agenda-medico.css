@@ -35,11 +35,24 @@
     color: #444444;
 }
 
+.img-sair {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sair {
+    margin: 20px 20px;
+}
+
 .buttons {
     display: flex;
-    justify-content: space-around;
-    margin-top: 90px;
+    flex-direction: row;
+    position: relative;
+    width: 400px;
+    top: 305px;
+    right: 368px;
     color: white;
+    height: 25px;
 }
 
 .abrir-agenda {
@@ -47,12 +60,19 @@
     height: 40px;
     font-size: 15px;
     background-color: #2a764a;
+    margin-right: 30px;
     color: white;
 }
 
 .abrir-agenda:hover {
     background-color: rgb(000, 080, 052);
     border: 1px solid rgb(000, 080, 052); 
+}
+
+.button-limpar {
+    font-size: 14px;
+    border-color: rgb(108, 108, 100);
+    color:  rgb(108, 108, 100);
 }
 
 .button-salvar {
@@ -79,8 +99,34 @@
 }
 
 .modal-horarios {
+    display: flexbox;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 2px;
+}
+
+.manha {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.tarde {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.active:hover {
+    color: #319A75;
+}
+
+h2 {
+    color: #8D8178;
+}
+
+h3 {
+    font-size: 20px;
+    color: #8D8178;
 }
 
 .button-hora {
@@ -110,7 +156,7 @@ html {
     margin-bottom: 100px;
     color: #212529;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     
 }
@@ -118,7 +164,8 @@ html {
 .calendar {
     width: 45rem;
     height: 51rem;
-    margin-left: 250px;
+    margin-left: 470px;
+    margin-right: 0px;
     background-color: white;
     border-radius: .25rem;
 }
@@ -214,7 +261,8 @@ html {
     border-width: 1px;
     color: #8D8178;
     font-size: 1rem;
-    margin-right: 250px;
+    margin-left: 0px;
+    margin-right: 470px;
     background-color: white;
 }
 
@@ -223,13 +271,12 @@ html {
 }
 
 .pendente {
-    color: #e04444
+    color: yellowgreen;
 }
 
-h3 {
-    color: #8D8178;
+.title-agenda {
+    color: #016F33;
     padding: 10px;
-    font-size: 2.4rem
 }
 
 tr, td {
