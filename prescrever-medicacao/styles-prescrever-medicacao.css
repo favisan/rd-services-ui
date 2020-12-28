@@ -100,7 +100,8 @@ body {
 .btn-add:focus, .btn-add:active{
     outline: none !important;
     box-shadow: none !important;
-    border: none !important;
+    border-radius: 50px !important;
+    border: 1px solid rgb(000, 080, 052) !important;
 }
 
 .btn-delete {
@@ -109,14 +110,21 @@ body {
     width: 34px;
     height: 34px;
     background-image: url(../images/delete.png);
-    margin-top: 37px;
-    margin-left: 30px;
 }
 
 .btn-delete:hover {
     background-color: rgb(146, 146, 136);
     border-radius: 50px;
-    border: 1px solid  rgb(146, 146, 136); 
+    border: 1px solid  rgb(146, 146, 136);
+    width: 34px;
+    height: 34px;
+}
+
+.btn-delete:focus, .btn-delete:active{
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 50px !important;
+    border: 1px solid  rgb(146, 146, 136) !important; 
 }
 
 .btn-cinza {
