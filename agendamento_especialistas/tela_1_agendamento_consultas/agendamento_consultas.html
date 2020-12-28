@@ -71,19 +71,7 @@
       </div>
     </div>
 
-   <!-- Default dropup button -->
-   <div class="container col-12 text-right style=width: 8rem">
-    <div class="btn-group dropup">
-      <button type="button" class="btn-chat text-left dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-        aria-expanded="false">
-        PRECISA DE AJUDA? <a> <img src="./img_1/janela-de-conversa (1).png">Acesse nosso chat! </a>
-      </button>
-      <div class="dropdown-menu">
-        <img src="./img_1/chatbot.jpg">
-      </div>
-    </div>
-  </div>
-
+  
   </section>
     
    
@@ -117,6 +105,20 @@
   integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "7a505e5b-74df-4ae5-b53a-01fdb104e8ff", // The ID of this integration.
+        region: "us-south", // The region your integration is hosted in.
+        serviceInstanceID: "8d495177-6954-404b-aade-84a46171ecd3", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+      document.head.appendChild(t);
+    });
+  </script>
 
 </body>
 </html>
