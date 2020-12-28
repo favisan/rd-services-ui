@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Integrado RD Divas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body class="container" id="inicio">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+                <img src="img/logo-menu.png">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">    
+                <div class="col-lg-8 col-md-9 col-sm-9 col-xs-4 item-menu" >
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Planos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+            
+    </header>
+
+    <div class="banner"></div>
+
+    <section>
+        <form>
+            <div class="row justify-content-center">
+                <h1 class="titulo-cor p-15">Agendamento de Serviços</h1> 
+            </div>
+
+            <div class="row">
+                <div class="form-group col-12 col-lg-8 pt-3">
+                    <label for="servico"><h4 class="titulo-p">1. Escolha o serviço</h4></label>
+                    <select class="form-control" type="text" id="servico" required>
+                        <option selected>Escolha a opção</option>
+                        <option>Aplicação de vacina</option>
+                        <option>Aplicação de medicamneto</option>
+                        <option>Aferição de pressão</option>
+                        <option>Teste de glicemia</option>
+                    </select>
+                    <div style="display: none;" class="alert alert-danger alert-servico" role="alert">
+                        Campo Obrigatório
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-end">
+                <div class="form-group col-10 col-lg-8 pt-3">
+                    <label for="local"><h4 class="titulo-p">2. Selecione a localidade</h4></label>
+                    <input class="form-control" type="text" id="local" placeholder="Busque por rua, bairro ou cidade" required> 
+                    <div style="display: none;" class="alert alert-danger alert-local" role="alert">
+                        Campo Obrigatório
+                    </div>
+                </div>
+                <div class="form-group col-2 col-lg-4 pt-3">
+                    <button type="button" class="btn btn-success btn-verde" id="btn-ok">
+                        OK
+                    </button>
+                </div>
+            </div>
+            <div class="row lojas" id="abrir-lojas">
+                <div class="form-group col-12 col-lg-4 pt-3">
+                    <div class="card" id = "c1" style="width: 100%;">
+                        <div class="card-body">
+                          <h5 class="card-title">Loja</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Seg à Sáb 07:30 às 23:30</h6>
+                          <h6 class="card-subtitle mb-2 text-muted">Domingos 00:30 às 00:30</h6>                       
+                          <p class="card-text">Av. Mar Floriano Peixoto, 12 - Gonzaga - CEP: 11060300 </p>
+                          <button type="button" class="btn btn-success btn-verde btn-seleciona">Selecione</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-12 col-lg-4 pt-3">
+                    <div class="card" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Loja</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Seg à Sáb 07:30 às 23:30</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Domingos 00:30 às 00:30</h6>                       
+                            <p class="card-text">Av. Mar Floriano Peixoto, 12 - Gonzaga - CEP: 11060300 </p>
+                            <button type="button" class="btn btn-success btn-verde">Selecione</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="form-group col-12 col-lg-4 pt-3">
+                    <div class="card" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Loja</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Seg à Sáb 07:30 às 23:30</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Domingos 00:30 às 00:30</h6>                       
+                            <p class="card-text">Av. Mar Floriano Peixoto, 12 - Gonzaga - CEP: 11060300 </p>
+                            <button type="button" class="btn btn-success btn-verde">Selecione</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row p-15 pt-5">
+                <h4 class="titulo-p">3. Selecione data e horário</h4>
+            </div>
+            
+            <div class="row p-15">
+                <div class="form-group col-12 col-lg-5 pt-3 calendario">
+                    <div class="containerx">
+                        <div class="calendar">
+                          <div class="month" style="color: white;">
+                            <i class="fas fa-angle-left prev" style="color: white;"></i>
+                            <div class="date" style="color: white;">
+                              <h1></h1>
+                              <p></p>
+                            </div>
+                            <i class="fas fa-angle-right next"></i>
+                          </div>
+                          <div class="weekdays">
+                            <div>Dom</div>
+                            <div>Seg</div>
+                            <div>Ter</div>
+                            <div>Qua</div>
+                            <div>Qui</div>
+                            <div>Sex</div>
+                            <div>Sab</div>
+                          </div>
+                          <div class="days"></div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="form-group col-12 col-lg-5 offset-md-1 pt-3">
+                    <div class="row p-15" style="background-color: white;">
+                        <h5>Sexta feira, 18 de dezembro de 2020</h5>
+                    </div>
+
+                    <div class="form-group col-12 col-lg-12 pt-3 horarios">
+                        <div class="row justify-content-around">
+                            <button type="button" class="btn btn-success btn-verde">8:15</button>
+                            <button type="button" class="btn btn-success btn-verde">8:15</button>
+                            <button type="button" class="btn btn-success btn-verde">8:15</button>
+                            <button type="button" class="btn btn-success btn-verde">8:15</button>
+                            <button type="button" class="btn btn-success btn-verde">8:15</button>
+                        </div>
+                        <div class="row justify-content-around pt-5">
+                            <button type="button" class="btn btn-success btn-verde">8:15</button>
+                            <button type="button" class="btn btn-success btn-verde">8:15</button>
+                            <button type="button" class="btn btn-success btn-verde">8:15</button>
+                            <button type="button" class="btn btn-success btn-verde">8:15</button>
+                            <button type="button" class="btn btn-success btn-verde">8:15</button>
+                        </div>
+                        <div class="row justify-content-around pt-5">
+                            <button type="button" class="btn btn-success btn-verde">8:15</button>
+                            <button type="button" class="btn btn-success btn-verde">8:15</button>
+                            <button type="button" class="btn btn-success btn-verde">8:15</button>
+                            <button type="button" class="btn btn-success btn-verde">8:15</button>
+                            <button type="button" class="btn btn-success btn-verde">8:15</button>
+                        </div>
+                        <br>
+                    </div>
+
+                </div>
+                
+            </div>
+            <br><br><br>
+             <!-- Button trigger modal -->
+            <div class="row d-flex justify-content-center p-15">
+                <br>
+                <button type="button" class="btn btn-success btn-verde btn-lg" id="btn-confirma" data-toggle="modal" data-target="#exampleModal">Confirmar</button>
+            </div>
+            <br><br>
+           
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirmar agendamento</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                    Deseja agendar outro serviço?
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">SIM</button>
+                    <button type="button" class="btn btn-primary btn-verde">CONCLUIR</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </form>    
+    </section>
+
+    
+    
+
+
+
+
+
+    <footer>
+        <div class="row">
+            <div class="col-md-6"><img src="img/logo-footer.png"></div>
+            <div class="col-md-2">
+                <h4>MAPA DO SITE</h4>
+                <ul class="nav flex-column rodape">
+                    <li class="nav-item"><a class="nav-link" href="#">Planos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+                    </ul>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <h4>SOCIAL MIDIA</h4>   
+                <ul class="nav flex-column rodape">
+                    <li class="nav-item"><img src="img/logo-facebook.png"><a class="nav-link" href="#">Facebook</a></li>
+                    <li class="nav-item"><img src="img/logo-linkedin.png"><a class="nav-link" href="#">Linkedin</a></li>
+                </ul>
+            </div>
+        
+        </div>    
+    </footer>
+    
+    <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

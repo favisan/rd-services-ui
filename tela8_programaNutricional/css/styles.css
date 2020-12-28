@@ -1,0 +1,147 @@
+section{
+    background-color: rgba(223, 239, 219, 0.24);
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    margin: 10px;
+}
+
+.pl-15{
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.col-5{
+    text-align: right;
+}
+
+  /*Inicio Menu*/
+.btn-menu{
+    background-color: #319A75;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 2px;
+    line-height: 18px;
+}
+
+.text-center{
+    color: #444444;
+}
+
+.collapse{
+    text-align: center;
+}
+
+.nav-item:hover{
+    text-decoration: underline;
+}
+
+.item-menu{
+    padding: 25px 12px;
+    font-size: 1.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #444444;
+} 
+/*Fim Menu*/
+
+
+ /*Inicio do footer*/
+ footer{
+    padding: 30px;
+    background-color: #929288;
+    width: 100%;
+    color: #ffffff;
+}
+
+footer h4{
+    font-size: 1.0rem;
+}
+
+.rodape .nav-item .nav-link {
+    color: #ffffff;
+    display: inline;
+}
+/*Fim Footer*/
+
+
+/* inicio da ação para abrir refeições*/
+#abrir-refeicoes-cafe,
+#abrir-refeicoes-lanche-manha, 
+#abrir-refeicoes-almoco,
+#abrir-refeicoes-lanche-tarde,
+#abrir-refeicoes-jantar,
+#abrir-refeicoes-ceia{
+    /*visibility: hidden;*/
+    display: none;
+}
+
+#abrir-refeicoes-cafe:checked ~ .refeicoes {
+    display: block;
+}
+
+#abrir-refeicoes-lanche-manha:checked ~ .refeicoes {
+    display: block;
+}
+
+#abrir-refeicoes-almoco:checked ~ .refeicoes {
+    display: block;
+}
+
+#abrir-refeicoes-lanche-tarde:checked ~ .refeicoes {
+    display: block;
+}
+
+#abrir-refeicoes-jantar:checked ~ .refeicoes {
+    display: block;
+}
+
+#abrir-refeicoes-ceia:checked ~ .refeicoes {
+    display: block;
+}
+
+.l-abrir-refeicao,
+.abrir-refeicoes-lanche-manha,
+.abrir-refeicoes-almoco,
+.abrir-refeicoes-lanche-tarde,
+.abrir-refeicoes-jantar,
+.abrir-refeicoes-ceia
+{
+    cursor: pointer;
+}
+
+/* fim da ação para abrir refeições*/
+
+h2 {
+    text-align: center;
+    padding-top: 10px;
+    color:#005034;
+}
+.refeicoes {
+    display: none;
+}
+
+.btn {
+    background-color: #23a455;
+    border: #23a455;
+}
+
+.btn:hover{
+    background-color: hsla(159, 35%, 40%, 0.8);
+}
+
+.container{
+    padding:30px;
+}
+
+.banner {
+    background-image: url(../img/alimentacao.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+}

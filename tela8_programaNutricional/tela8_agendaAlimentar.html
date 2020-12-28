@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Integrado RD Divas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="container">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <img src="img/logo-menu.png">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="col-lg-8 col-md-9 col-sm-9 col-xs-4 item-menu">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Planos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="banner"></div>
+        <div class="container2">
+            <div class="d-flex justify-content-center">
+
+                <div class="col-12 col-sm-6 col-lg-6">
+                    <div class="card">
+                        <h2>Agenda Alimentação</h2>
+                        <div class="form-group col-md-12">
+                            <label for="inputEscolhaDia"></label>
+                            <select id="inputEscolhaDia" class="form-control">
+                                <option selected>Selecione o dia da semana</option>
+                                <option selected>Segunda-feira</option>
+                                <option selected>Terça-feira</option>
+                                <option selected>Quarta-feira</option>
+                                <option selected>Quinta-feira</option>
+                                <option selected>Sexta-feira</option>
+                                <option selected>Sábado-feira</option>
+                                <option selected>Domingo</option>
+                            </select>
+
+                            <div class="row pt-3 ">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            Café da Manhã
+                                        </div>
+                                        <div class="col-5">
+                                            Horário
+                                            <input type="time">
+                                        </div>
+                                        <div class="col-1">
+                                            <label class="l-abrir-refeicao" for="abrir-refeicoes-cafe">></label>
+                                        </div>
+                                    </div>
+                                    <input type="checkbox" id="abrir-refeicoes-cafe">
+
+                                    <div class="row refeicoes pl-15">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                                class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline1">Panqueca de
+                                                banana</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                                class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline2">Panqueca de
+                                                Morango</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row pt-3 ">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            Lanche da Manhã
+                                        </div>
+                                        <div class="col-5" id="horario">
+                                            Horário
+                                            <input type="time">
+                                        </div>
+                                        <div class="col-1">
+                                            <label class="abrir-refeicoes-lanche-manha" for="abrir-refeicoes-lanche-manha">></label>
+                                        </div>
+                                    </div>
+                                    <input type="checkbox" id="abrir-refeicoes-lanche-manha">
+                                    <div class="row refeicoes pl-15">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                                class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline1">Tapioca</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                                class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline2">Pão com peito
+                                                de peru</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row pt-3">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            Almoço
+                                        </div>
+                                        <div class="col-5">
+                                            Horário
+                                            <input type="time">
+                                        </div>
+                                        <div class="col-1">
+                                            <label class = "abrir-refeicoes-almoco" for="abrir-refeicoes-almoco">></label>
+                                        </div>
+                                    </div>
+                                    <input type="checkbox" id="abrir-refeicoes-almoco">
+                                    <div class="row refeicoes pl-15">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                                class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline1">Panqueca de
+                                                banana</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                                class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline2">Panqueca de
+                                                Morango</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row pt-3">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            Lanche da Tarde
+                                        </div>
+                                        <div class="col-5">
+                                            Horário
+                                            <input type="time">
+                                        </div>
+                                        <div class="col-1">
+                                            <label class = "abrir-refeicoes-lanche-tarde" for="abrir-refeicoes-lanche-tarde">></label>
+                                        </div>
+                                    </div>
+                                    <input type="checkbox" id="abrir-refeicoes-lanche-tarde">
+                                    <div class="row refeicoes pl-15">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                                class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline1">Panqueca de
+                                                banana</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                                class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline2">Panqueca de
+                                                Morango</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row pt-3">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            Jantar
+                                        </div>
+                                        <div class="col-5">
+                                            Horário
+                                            <input type="time">
+                                        </div>
+                                        <div class="col-1">
+                                            <label class = "abrir-refeicoes-jantar" for="abrir-refeicoes-jantar">></label>
+                                        </div>
+                                    </div>
+                                    <input type="checkbox" id="abrir-refeicoes-jantar">
+                                    <div class="row refeicoes pl-15">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                                class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline1">Panqueca de
+                                                banana</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                                class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline2">Panqueca de
+                                                Morango</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row pt-3">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            Ceia
+                                        </div>
+                                        <div class="col-5">
+                                            Horário
+                                            <input type="time">
+                                        </div>
+                                        <div class="col-1">
+                                            <label class = "abrir-refeicoes-ceia" for="abrir-refeicoes-ceia">></label>
+                                        </div>
+                                    </div>
+                                    <input type="checkbox" id="abrir-refeicoes-ceia">
+                                    <div class="row refeicoes pl-15">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                                class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline1">Panqueca de
+                                                banana</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                                class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline2">Panqueca de
+                                                Morango</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        
+                            <center>
+                                <button type="submit" class="btn btn-primary">Imprimir</button>
+                            </center>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+
+    </section>
+
+
+    <footer>
+        <div class="row">
+            <div class="col-md-6"><img src="img/logo-footer.png"></div>
+            <div class="col-md-2">
+                <h4>MAPA DO SITE</h4>
+                <ul class="nav flex-column rodape">
+                    <li class="nav-item"><a class="nav-link" href="#">Planos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+                </ul>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <h4>SOCIAL MIDIA</h4>
+                <ul class="nav flex-column rodape">
+                    <li class="nav-item"><img src="img/logo-facebook.png"><a class="nav-link" href="#">Facebook</a></li>
+                    <li class="nav-item"><img src="img/logo-linkedin.png"><a class="nav-link" href="#">Linkedin</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
