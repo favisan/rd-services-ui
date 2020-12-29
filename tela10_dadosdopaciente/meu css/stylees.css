@@ -114,27 +114,27 @@ section{
  
 
 /*botão */
-.btn {
+.btn-verde {
     background-color: #23a455;
     border: #23a455;
 }
 
-.btn:hover{
+.btn-verde:hover{
     background-color: hsla(159, 35%, 40%, 0.8);
 }
 
 /*botao lixeira */
 
-.btn-trash{
+.btn-padrao{
     border: none;
     background-color: transparent;
     font-size: 20px;
 }
 
-.btn-trash:hover{
+.btn-padrao:hover{
     background-color: hsla(159, 35%, 40%, 0.8);
 }
 
-.btn-trash {
+.btn-padrao {
     cursor: pointer;
 }
