@@ -55,3 +55,11 @@ section .btn:hover {
     width: 70%;
     align-self: center;
 }
+
+a:hover{
+    text-decoration: none;
+} 
+
+.btn-menu:hover {
+    background-color: rgb(000, 080, 052);
+}
