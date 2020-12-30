@@ -1,0 +1,80 @@
+#img-login{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#txt-login{
+    font-size: 1rem;
+    color: #444444;
+    text-align: right;
+    margin-block-end: auto;
+}
+
+#altera-foto{
+    text-align: center;
+    align-self: center;
+}
+
+.botao-altera-foto:hover{
+    background-color: #1f5e48;
+}
+
+.btn{
+    display: inline;
+    justify-content: flex-end;
+    background-color: #319A75;
+    color: #fff;
+    text-align-last: right;
+    clear: both;
+}
+
+.btn-cancelar{
+    background-color: #c6d4c8;
+}
+
+.btn-card{
+    width: 100%;
+    text-align-last: center;
+}
+
+.botoes-cadastro{
+    float: right;
+}
+
+.botoes-cadastro a{
+    text-decoration: none;
+}
+
+#img-perfil{
+    padding: 30px 20px;
+    width: 30%;
+}
+
+.altera-senha{
+    border-left: 1px solid lightgray;
+    padding: 0px 20px;
+}
+
+.modal-content{
+    padding: 20px;
+    background-color: rgba(223, 239, 219);
+}
+
+.btn-card:hover{
+    background-color: #1f5e48;
+}
+
+.img-card{
+    width: 70%;
+    align-self: center;
+}
+
+.botao-sair{
+    text-align-last: end;
+}
+
+.btn-sm:hover{
+    text-decoration: none;
+    background-color: #1f5e48;
+}

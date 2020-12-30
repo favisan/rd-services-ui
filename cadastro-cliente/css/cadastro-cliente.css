@@ -1,0 +1,57 @@
+
+.botoes-cadastro{
+    float: right;
+    text-decoration: none;
+}
+
+.botoes-cadastro a{
+    text-decoration: none;
+}
+
+.btn{
+    display: inline;
+    justify-content: flex-end;
+    background-color: #319A75;
+    color: #fff;
+    text-align-last: right;
+    clear: both;
+}
+
+section .btn:hover {
+    background-color: rgb(000, 080, 052);
+}
+
+.btn-cancelar{
+    background-color: #c6d4c8;
+}
+
+.card-text{
+    font-size: 0.75rem;
+}
+
+.btn-card{
+    width: 100%;
+    text-align-last: center;
+}
+
+.btn-card:hover{
+    background-color: #1f5e48;
+}
+
+.alinhamento{
+    text-align-last: center;
+}
+
+.modal-content{
+    padding: 20px;
+    background-color: rgba(223, 239, 219);
+}
+
+.vencimento-cartao{
+    display: inline-flex;
+}
+
+.img-card{
+    width: 70%;
+    align-self: center;
+}

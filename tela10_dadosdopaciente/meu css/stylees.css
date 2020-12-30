@@ -1,0 +1,140 @@
+
+.btn-menu{
+    background-color: #319A75;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 2px;
+    line-height: 18px;
+}
+
+.text-center{
+    color: #444444;
+}
+
+.collapse{
+    text-align: center;
+}
+
+.nav-item:hover{
+    text-decoration: underline;
+}
+
+.item-menu{
+    padding: 25px 12px;
+    font-size: 1.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #444444;
+}
+
+footer{
+    padding: 30px;
+    background-color: #929288;
+    width: 100%;
+    color: #ffffff;
+}
+
+footer h4{
+    font-size: 1.0rem;
+}
+
+.rodape .nav-item .nav-link {
+    color: #ffffff;
+    display: inline;
+}
+
+.h1 {
+    text-align: center;
+}
+
+.titulo{
+    padding-left: 40px;
+     color: #005034;
+ }
+
+.pt-10{
+    padding-left:10px;
+    padding-bottom: 10px;
+  }
+
+section{
+    background-color: rgba(223, 239, 219, 0.24);
+    width: 100%;
+    height: 100%;
+}
+
+.tt{
+    width: 100%;
+    
+}
+
+.cT{
+    width: 100%;
+    height: 100%;
+}
+
+.c1A{
+    width: 100%;
+   padding-left: 30px;
+   padding-right: 30px;
+}
+
+.c1B{
+    width: 100%;
+    padding: 30px;
+}
+
+.c1C{
+    width: 100%;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 80px;
+    background-color: hsla(147, 19%, 55%, 0.5)
+}
+
+.tt-cardapio{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.receitas{
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+.banner {
+    background-image: url(../img/banner.jpg);
+    background-size: contain;
+    width: 100%;
+    height: 170px;
+    background-repeat: no-repeat;
+  }
+ 
+
+/*botão */
+.btn {
+    background-color: #23a455;
+    border: #23a455;
+}
+
+.btn:hover{
+    background-color: hsla(159, 35%, 40%, 0.8);
+}
+
+/*botao lixeira */
+
+.btn-trash{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.btn-trash:hover{
+    background-color: hsla(159, 35%, 40%, 0.8);
+}
+
+.btn-trash {
+    cursor: pointer;
+}

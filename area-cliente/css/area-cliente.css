@@ -1,0 +1,378 @@
+/* Inicio Foto perfil */
+.perfil{
+    color: #444444;
+    margin-right: 70px;
+    font-size: 0.8rem;
+}
+
+
+.perfil::after{
+    content:url("../img/user.png");
+    max-width:100%;
+}
+
+ .btn{
+     
+    background-color: #319A75;
+    color: #fff;
+   
+} 
+
+section .btn:hover {
+    background-color: rgb(000, 080, 052);
+}
+
+/* FIM Foto perfil */
+
+
+.lembretes-plano {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+/* Titulo */
+.titulo{
+    color: #319A75;
+}
+
+/* Inicio Cards */
+
+#ads {
+    margin: 30px 0 30px 0;
+}
+
+.card-all{
+    border-radius:20px !important;
+}
+
+.text-card{
+    margin: auto;
+    font-size: 0.8rem;
+    text-align: center;
+    padding:30px 0 10px 0;
+}
+
+#ads .card:hover {
+    box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#ads .card-image-overlay {
+        font-size: 20px;
+}
+
+#ads .ad-btn {
+        width: 150px;
+        height: 40px;
+        border-radius: 2px;
+        font-size: 1rem;
+        line-height: 35px;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+        margin: 20px auto 1px auto;
+        color: #ffff;
+        position: relative;
+        background-color: #319A75;
+
+}
+
+
+
+#ads .ad-btn:hover {
+    background-color: rgb(000, 080, 052);
+        transition: all 0.3s ease;
+}
+
+#ads .ad-title h5 {
+    font-size: 18px;
+}
+
+    /* Media para os botoes do card */
+
+@media screen and (max-width: 325px) {
+.ad-btn{
+    max-width: 100px;
+
+}
+
+#ads .ad-btn{
+    font-size:0.7rem;
+    padding: 0;
+}
+.ad-btn li{
+    font-size: 0.7rem;
+    padding: 0 -40px;
+
+}
+.ad-btn ul{
+    font-size: 0.7rem;
+
+}
+
+section {
+    padding: 3%;
+}
+/* Diminuido tamanho da fonte do botao de lembrete */
+.btn{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+        .ad-btn{
+            max-width: 100px;
+
+        }
+
+        #ads .ad-btn{
+            font-size:0.7rem;
+        }
+}
+
+  
+
+/* Fim dos cards*/
+
+/* Inicio da lista de lembretes */
+.text-btn{
+    padding: 20px 20px 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.todo__title{
+    color:white;
+    background-color: #319A75;
+    font-size:1.2rem;
+    max-width:400px;
+    height: 40px;
+    position: relative;
+    top:10px;
+
+
+
+}
+
+.todo__tarefas ul{
+    padding: 10px 0 10px 0 ;
+}
+ .todo__tarefas-lista li {
+
+    font-size: 0.9rem;
+    list-style: none;
+    line-height: 20%;
+    border-bottom: 1px solid #ccc ;
+
+} 
+
+
+
+.todo-form__input{
+    resize: none;
+    max-width: 300px;
+    padding-top:0 ;
+    margin-left:0;
+
+}
+ .todo__container{
+    max-width: 400px;
+
+}
+ .form-control{
+    display: inline-block;
+    top:20px
+}
+
+
+
+.todo__tarefas-lista span{
+    text-align: center;
+
+}
+button#todoSubmit{
+    border-radius:0%;
+    width: 60%; 
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+   font-weight: bold;
+   margin: 0 auto;
+ 
+}
+.fas{
+    color:white;
+    text-decoration: none;
+    background-repeat: no-repeat;
+}
+
+/* Ul dos lembretes */
+.titulo_lembrete{
+    color:#319A75;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding-top:20px ;
+}
+.todo__tarefas-lista p {
+    font-size: 0.8rem; 
+}
+p.excluir {
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+} 
+
+.mais_lembretes{
+     color:#7a7a79;
+     font-weight: bold;
+   max-width:100% ;
+   margin: 0 auto;
+   font-size: 1rem;
+}
+
+p.mais_lembretes{
+     height: 40px;
+     padding-top:10px;
+}
+
+a:hover{
+    text-decoration:none;
+}
+
+.item-lista{
+    padding:0  10px 0 10px;
+}
+
+ul#todoLista.todo__tarefas-lista{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.lembretes-plano p a {
+    color: inherit;
+}
+
+/* Fim da lista de lembretes  */
+
+/* Meu Plano */
+
+@media screen and (min-width: 550px) and (max-width: 780px) {
+.rounded{
+max-width: 400px;
+
+}
+}
+
+.title-plano{
+    color:white;
+    background-color: #319A75;
+    font-size:1.2rem;
+    max-width:300px;
+     border-radius: 5%;
+    height: 40px;
+    position: relative;
+    top:10px;
+}
+
+.image_plano{
+    max-width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rounded{
+    background-color:rgb(247, 245, 245);
+}
+
+.ad-btn{
+    list-style: none;
+    font-size:0.8rem;
+    margin:0 auto;
+    padding: 0;
+    padding-bottom:20px;
+
+}
+
+.success{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-plano{
+    background-color: #319A75;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 2px;
+    line-height: 18px;
+
+}
+
+.btn-plano:hover {
+        background-color: rgb(000, 080, 052);
+            transition: all 0.3s ease;
+}
+
+.btn-plano a{
+    text-decoration: none;
+    color:white;
+}
+/* Fim do plano Atual */
+
+/* Modal Lembrete */
+
+ .modal-content{
+    max-width: 1000px;
+    padding: 20px;
+    min-height: 400px;
+} 
+.btn_salvar:hover{
+text-decoration: none;
+border: none;
+}
+
+#txt-login{
+    font-size: 1rem;
+    color: #444444;
+    text-align: right;
+    margin-block-end: auto;
+}
+
+.botao-sair{
+    text-align-last: end;
+}
+
+#img-login{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.btn{
+    display: inline;
+    justify-content: flex-end;
+    background-color: #319A75;
+    color: #fff;
+    text-align-last: right;
+    clear: both;
+}
+
+
+.btn-sm:hover{
+    text-decoration: none;
+    background-color: #1f5e48;
+}
+
+
+
+
+section{
+    width: 100%;
+    padding: 1%;
+}

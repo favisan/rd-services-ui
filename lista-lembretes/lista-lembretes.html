@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Lembretes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/lista-lembretes.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <header>
+            <!-- NAVBAR COM CONTAINER -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a href="../portal/portal.html"><img src="../img/logo-menu.png"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse item-menu" id="navbarSupportedContent">
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-4 ">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item"><a class="nav-link" href="../planos/planos.html">Planos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../portal/portal.html#servicos">Serviços</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../area-cliente/area-cliente.html">Minha Área</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4" id="img-login">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <div>
+                                    <p id="txt-login">Olá Laura</p>
+                                </div>
+                                <div class="botao-sair">
+                                    <a href="../portal/portal.html"><button class="btn btn-sm">Sair</button></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <img src="../img/icon_login.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="container">
+
+            <!-- Navegação Lembretes -->
+            <div class="row nav-lembretes">
+                <div class="col-12 col-md-4 p-3 btn-lembrete">
+                    <!-- BOTAO NOVO LEMBRETE -->
+                    <button type="button" value="" class="btn" id="todoSubmit" data-toggle="modal"
+                        data-target=".bd-lembrete-modal-lg">Novo lembrete<i class="fas fa-plus pr-2"></i></button>
+                </div>
+
+                <div class="col-12 col-md-8 controlar-lembretes">
+                    <form class="controlar-lembretes-form">
+                        <label for="lembretes-ordem">Ordenar por:</label>
+                        <select name="lembretes-ordem" id="lembretes-ordem" class="form-control">
+                            <option value="valor1">Mais recente</option>
+                            <option value="valor2" selected>Mais antigo</option>
+                            <option value="valor3">Data de criação</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <!-- Categoria Lembretes -->
+            <div>
+                <div class="row lembretes-plano">
+                    <div class="col-12 p-3">
+                        <h1 class="todo__title text-center p-2">Lembretes </h1>
+                        <div class="card rounded ">
+                            <div class="todo__tarefas" id="todoTarefas">
+                                <ul class="todo__tarefas-lista" id="todoLista">
+                                    <li class="item-lista">
+                                        <p class="titulo_lembrete">Medicamento Controlado</p>
+                                        <p class="excluir ">Descrição: Tomar comprimido de
+                                            novalgina<span class="todo__btn-excluir">X</span></p>
+                                        <p class="excluir font-weight-bold">Data: 22/12/2020 -
+                                            Hora:15:00
+                                        </p>
+                                        <p>Intervalo: A cada 8h.</p>
+                                    </li>
+                                    <li class="item-lista">
+                                        <p class="titulo_lembrete">Buscar Exames</p>
+                                        <p class="excluir ">Descrição: Buscar exames no laboratório
+                                            <span class="todo__btn-excluir">X</span>
+                                        </p>
+                                        <p class="excluir font-weight-bold">Data: 22/12/2020 -
+                                            Hora:15:00
+                                        </p>
+                                    </li>
+                                    <li class="item-lista">
+                                        <p class="titulo_lembrete">Eletrocardiograma</p>
+                                        <p class="excluir ">Descrição: Fazer o eletro no laboratório
+                                            <span class="todo__btn-excluir">X</span>
+                                        </p>
+                                        <p class="excluir font-weight-bold"> Data: 22/12/2020 -
+                                            Hora:15:00
+                                        </p>
+                                    </li>
+                                    <li class="item-lista">
+                                        <p class="titulo_lembrete">Exame de Sangue</p>
+                                        <p class="excluir ">Descrição: Jejum de 8h
+                                            <span class="todo__btn-excluir">X</span>
+                                        </p>
+                                        <p class="excluir font-weight-bold"> Data: 23/12/2020 -
+                                            Hora:08:00
+                                        </p>
+                                    </li>
+                                    <li class="item-lista item-passado">
+                                        <p class="titulo_lembrete">Corrida Noturna FILA</p>
+                                        <p class="excluir ">Descrição: Corrida beneficente
+                                            <span class="todo__btn-excluir">X</span>
+                                        </p>
+                                        <p class="excluir font-weight-bold"> Data: 05/01/2021 -
+                                            Hora:23:30
+                                        </p>
+                                    </li>
+                                    <li class="item-lista">
+                                        <p class="titulo_lembrete">Visita</p>
+                                        <p class="excluir ">Descrição: Encontro com a Thais
+                                            <span class="todo__btn-excluir">X</span>
+                                        </p>
+                                        <p class="excluir font-weight-bold"> Data: 20/01/2021 -
+                                            Hora:10:00
+                                        </p>
+                                    </li>
+                                    <li class="item-lista item-passado">
+                                        <p class="titulo_lembrete">Exame de Sangue</p>
+                                        <p class="excluir ">Descrição: Jejum de 8h
+                                            <span class="todo__btn-excluir">X</span>
+                                        </p>
+                                        <p class="excluir font-weight-bold"> Data: 23/12/2020 -
+                                            Hora:08:00
+                                        </p>
+                                    </li>
+                                    <li class="item-lista">
+                                        <p class="titulo_lembrete">Corrida Noturna FILA</p>
+                                        <p class="excluir ">Descrição: Corrida beneficente
+                                            <span class="todo__btn-excluir">X</span>
+                                        </p>
+                                        <p class="excluir font-weight-bold"> Data: 05/01/2021 -
+                                            Hora:23:30
+                                        </p>
+                                    </li>
+                                    <li class="item-lista item-passado">
+                                        <p class="titulo_lembrete">Visita</p>
+                                        <p class="excluir ">Descrição: Encontro com a Thais
+                                            <span class="todo__btn-excluir">X</span>
+                                        </p>
+                                        <p class="excluir font-weight-bold"> Data: 20/01/2021 -
+                                            Hora:10:00
+                                        </p>
+                                    </li>
+                                    <li class="item-lista">
+                                        <p class="titulo_lembrete">Medicamento Tosse</p>
+                                        <p class="excluir ">Descrição: Tomar xarope<span
+                                                class="todo__btn-excluir">X</span></p>
+                                        <p class="excluir font-weight-bold">Data: 26/12/2020 -
+                                            Hora:12:00
+                                        </p>
+                                        <p>Intervalo: A cada 4h.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Lembretes -->
+                <div class="modal fade bd-lembrete-modal-lg" tabindex="-1" role="dialog"
+                    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <form>
+                                <div class="modal-header">
+                                    <h5 class="modal-title"> Criar Lembrete</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <div class="form-group col-12">
+                                    <div class="row mt-1">
+                                        <div class="col-12">
+                                            <label for="formGroupExampleInput">Título</label>
+                                            <input type="text" class="form-control" id="formGroupExampleInput"
+                                                placeholder="Título do Lembrete" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-1">
+                                        <div class="col-12">
+                                            <label for="formGroupExampleInput">Descrição</label>
+                                            <input type="text" class="form-control" id="formGroupExampleInput"
+                                                placeholder="Descrição do Lembrete">
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-1">
+                                        <div class="col-12 col-lg-3">
+                                            <label>Data:</label>
+                                            <input type="date" class="form-control" placeholder="Data">
+                                        </div>
+                                        <div class="col-12 col-lg-3">
+                                            <label>Hora:</label>
+                                            <input type="time" class="form-control" placeholder="horário">
+                                        </div>
+                                        <div class="col-12 col-lg-3">
+                                            <label>Repete a cada:</label>
+                                            <input type="number" class="form-control" placeholder="1" min="0">
+                                        </div>
+                                        <div class="col-12 col-lg-3">
+                                            <label>Intervalo:</label>
+                                            <select class="form-control">
+                                                <option>Dias</option>
+                                                <option>Horas</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary btn_salvar">Criar Lembrete</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FOOTER COM CONTAINER -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6"><img src="../img/logo-footer.png"></div>
+                    <div class="col-md-2">
+                        <h4>MAPA DO SITE</h4>
+                        <ul class="nav flex-column rodape">
+                            <li class="nav-item"><a class="nav-link" href="../planos/planos.html">Planos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../portal/portal.html#servicos">Serviços</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3">
+                        <h4>SOCIAL MIDIA</h4>
+                        <ul class="nav flex-column rodape">
+                            <li class="nav-item"><img src="../img/logo-facebook.png"><a class="nav-link"
+                                    href="#">Facebook</a>
+                            </li>
+                            <li class="nav-item"><img src="../img/logo-linkedin.png"><a class="nav-link"
+                                    href="#">Linkedin</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script type="text/javascript" src="./js/area-cliente.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

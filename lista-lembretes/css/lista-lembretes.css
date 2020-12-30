@@ -1,0 +1,234 @@
+/* Inicio Foto perfil */
+.perfil{
+    color: #444444;
+    margin-right: 70px;
+    font-size: 0.8rem;
+}
+
+
+.perfil::after{
+    content:url("../img/user.png");
+    max-width:100%;
+}
+
+.btn{
+    background-color: #319A75;
+    color: #fff;
+} 
+
+button#todoSubmit{
+    border-radius:0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    padding:2%;
+}
+
+section .btn:hover {
+    background-color: rgb(000, 080, 052);
+}
+
+/* FIM Foto perfil */
+
+.lembretes-plano {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Titulo */
+.titulo{
+    color: #319A75;
+}
+
+/* organizacao lembretes */
+
+.nav-lembretes {
+    display: flex;
+}
+
+.controlar-lembretes {
+    display: flex;
+    align-items: center;
+}
+
+.controlar-lembretes-form{
+    margin-right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.controlar-lembretes-form label {
+    text-align: right;
+    margin-right: 20px;
+}
+
+@media(max-width:540px) {
+    .nav-lembretes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-lembrete .btn {
+        margin: auto;
+    }
+}
+
+/* Inicio da lista de lembretes */
+.text-btn{
+    padding: 20px 20px 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.todo__title{
+    color:white;
+    background-color: #319A75;
+    font-size:1.2rem;
+    height: 40px;
+    position: relative;
+    top:10px;
+}
+
+.todo__tarefas ul{
+    padding: 10px 0 10px 0 ;
+}
+
+.todo__tarefas-lista li {
+    font-size: 0.9rem;
+    list-style: none;
+    line-height: 20%;
+    border-bottom: 1px solid #ccc ;
+} 
+
+
+.todo-form__input{
+    resize: none;
+    max-width: 300px;
+    padding-top:0 ;
+    margin-left:0;
+}
+
+.todo__container{
+    max-width: 80%;
+
+}
+.form-control{
+    width: 75%;
+    top:20px;
+}
+
+.todo__tarefas-lista span{
+    text-align: center;
+}
+
+.fas{
+    color:white;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+}
+
+/* Ul dos lembretes */
+.titulo_lembrete{
+    color:#319A75;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding-top:20px ;
+}
+.todo__tarefas-lista p {
+    font-size: 0.8rem; 
+}
+p.excluir {
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+   
+   
+} 
+ .mais_lembretes{
+     color:#7a7a79;
+     font-weight: bold;
+   max-width:100% ;
+   margin: 0 auto;
+   font-size: 1rem;
+   
+   
+ }
+ p.mais_lembretes{
+     height: 40px;
+     padding-top:10px;
+ 
+ }
+ a:hover{
+    text-decoration:none;
+ }
+.item-lista{
+    padding:0  10px 0 10px;
+}
+ul#todoLista.todo__tarefas-lista{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.item-passado {
+    opacity: 0.6;
+    background-color: #dddddd;
+}
+
+/* Fim da lista de lembretes  */
+
+
+/* Modal Lembrete */
+
+ .modal-content{
+    max-width: 1000px;
+    padding: 20px;
+    min-height: 400px;
+} 
+.btn_salvar:hover{
+text-decoration: none;
+border: none;
+}
+
+#txt-login{
+    font-size: 1rem;
+    color: #444444;
+    text-align: right;
+    margin-block-end: auto;
+}
+
+.botao-sair{
+    text-align-last: end;
+}
+
+#img-login{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.btn{
+    display: inline;
+    justify-content: flex-end;
+    background-color: #319A75;
+    color: #fff;
+    text-align-last: right;
+    clear: both;
+}
+
+
+.btn-sm:hover{
+    text-decoration: none;
+    background-color: #1f5e48;
+}
+
+
+
+section{
+    width: 100%;
+    padding: 1%;
+}

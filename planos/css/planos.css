@@ -1,0 +1,45 @@
+.planos {
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+    color: #319A75;
+}
+
+li {
+    text-align: left;
+}
+
+.btn-planos:hover {
+    background-color: #1f5e48;
+}
+
+.card {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.card-img-top {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+.card-body {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card button a {
+    color: inherit;
+}
+
+.card button {
+    justify-self: end;
+    margin-bottom: 0;
+}

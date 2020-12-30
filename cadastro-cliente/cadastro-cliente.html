@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Cliente</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cadastro-cliente.css">
+</head>
+
+<body class="container-fluid">
+    <header>
+        <!-- NAVBAR COM CONTAINER-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a href="../portal/portal.html"><img src="../img/logo-menu.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="col-lg-8 col-md-9 col-sm-9 col-xs-4 item-menu">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item"><a class="nav-link" href="../planos/planos.html">Planos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../portal/portal.html#servicos">Serviços</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-4 col-sm-4 col-xs-4">
+                        <div class="text-center">Login</div>
+                        <div>
+                            <a href="../login-cliente/login-cliente.html"><button class="btn btn-menu">Paciente</button></a>
+                            <button class="btn btn-menu">Médico</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <section class="container">
+        <h2 class="text-center">Cadastro</h2>
+        <h6>Dados de Acesso:</h6>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                    <label for="cadastro-email">Email:</label>
+                    <input type="email" class="form-control" id="cadastro-email" placeholder="Digite o seu e-mail">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="cadastro-senha">Senha:</label>
+                    <input type="password" class="form-control" id="cadastro-senha" placeholder="Digite a senha">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                    <label for="cadastro-email2">Repita o Email:</label>
+                    <input type="email" class="form-control" id="cadastro-email2" placeholder="Digite o seu e-mail">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="cadastro-senha2">Repita a Senha:</label>
+                    <input type="password" class="form-control" id="cadastro-senha2" placeholder="Digite a senha">
+                </div>
+            </div>
+        </form>
+        <hr>
+        <h6>Dados Pessoais:</h6>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-9">
+                    <label for="cadastro-nome">Nome Completo:</label>
+                    <input type="text" class="form-control" id="cadastro-nome" placeholder="Digite o seu nome">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="cadastro-sexo">Sexo:</label>
+                    <select class="form-control" id="cadastro-sexo">
+                        <option disabled selected>Selecione</option>
+                        <option>Feminino</option>
+                        <option>Masculino</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="cadastro-cpf">CPF:</label>
+                    <input type="text" class="form-control" id="cadastro-cpf" placeholder="Digite o seu CPF">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="cadastro-celular">Celular:</label>
+                    <input type="text" class="form-control" id="cadastro-celular" placeholder="Digite o seu Celular">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="cadastro-nascimento">Data de Nascimento:</label>
+                    <input type="date" class="form-control" id="cadastro-nascimento">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                    <label for="cadastro-endereco">Endereço:</label>
+                    <input type="text" class="form-control" id="cadastro-endereco" placeholder="Digite o seu endereço">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="cadastro-cep">CEP:</label>
+                    <input type="text" class="form-control" id="cadastro-cep" placeholder="Digite o seu CEP">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <label for="cadastro-bairro">Bairro:</label>
+                    <input type="text" class="form-control" id="cadastro-bairro" placeholder="Digite o seu Bairro">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="cadastro-estado">Estado:</label>
+                    <select class="form-control" id="cadastro-estado">
+                        <option disabled selected>Selecione</option>
+                        <option>AC</option>
+                        <option>AL</option>
+                        <option>AP</option>
+                        <option>AM</option>
+                        <option>BA</option>
+                        <option>CE</option>
+                        <option>DF</option>
+                        <option>ES</option>
+                        <option>GO</option>
+                        <option>MA</option>
+                        <option>MT</option>
+                        <option>MS</option>
+                        <option>MG</option>
+                        <option>PA</option>
+                        <option>PB</option>
+                        <option>PR</option>
+                        <option>PE</option>
+                        <option>PI</option>
+                        <option>RJ</option>
+                        <option>RN</option>
+                        <option>RS</option>
+                        <option>RO</option>
+                        <option>RR</option>
+                        <option>SC</option>
+                        <option>SP</option>
+                        <option>SE</option>
+                        <option>TO</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="cadastro-cidade">Cidade:</label>
+                    <select class="form-control" id="cadastro-cidade">
+                        <option disabled selected>Selecione</option>
+                        <option>Bauru</option>
+                        <option>Campinas</option>
+                        <option>Diadema</option>
+                        <option>Guarulhos</option>
+                        <option>Osasco</option>
+                        <option>São Paulo</option>
+                        <option>São Bernardo do Campo</option>
+                        <option>São Caetano do Sul</option>
+                        <option>Santo André</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+
+            <h6>Planos:</h6>
+
+            <div class="modal-body">
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="img-card" src="../img/BASIC.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Plano Basic</h5>
+                            <p class="card-text">&#9702 Agendamento de Serviços Farmacêuticos</p>
+                        </div>
+                        <div>
+                            <h5 class="alinhamento">R$ 00,00</h5>
+                        </div>
+                        <div><button class="btn  btn-card" disabled>Incluso</button></div>
+                    </div>
+                    <div class="card">
+                        <img class="img-card" src="../img/PLUS.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Plano Plus</h5>
+                            <p class="card-text">&#9702 Agendamento de Serviços Farmacêuticos</p>
+                            <p class="card-text">&#9702 Consulta com o Clínico Gera</p>
+                        </div>
+                        <div>
+                            <h5 class="alinhamento">R$ 00,00</h5>
+                        </div>
+                        <div><button type="button" class="btn btn-card" data-toggle="modal"
+                                data-target=".bd-example-modal-lg">Selecionar</button></div>
+                    </div>
+                    <div class="card">
+                        <img class="img-card" src="../img/PREMIUM.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Plano Premim</h5>
+                            <p class="card-text">&#9702 Agendamento de Serviços Farmacêuticos</p>
+                            <p class="card-text">&#9702 Consulta com o Clínico Gera</p>
+                            <p class="card-text">&#9702 Consulta com Especialistas</p>
+                            <p class="card-text">&#9702 Programa Nutricional</p>
+                        </div>
+                        <div>
+                            <h5 class="alinhamento">R$ 00,00</h5>
+                        </div>
+                        <div><button type="button" class="btn btn-card" data-toggle="modal"
+                                data-target=".bd-example-modal-lg">Selecionar</button></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODAL -->
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <form>
+                            <div class="modal-header">
+                                <h5 class="modal-title">Dados do Cartão:</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12 cadastro-cartao">
+                                    <label for="cartao-numero">Número do Cartão:</label>
+                                    <input type="text" class="form-control" id="cartao-numero"
+                                        placeholder="0000 0000 0000 0000">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="cartao-nome">Nome do titular do Cartão:</label>
+                                    <input type="text" class="form-control" id="cartao-nome"
+                                        placeholder="Seu nome completo">
+                                </div>
+                            </div>
+                            <div class="form-row ">
+                                <div class="form-group col-md-7">
+                                    <label for="cartao-mes cartao-ano">Data de vencimento:</label>
+                                    <div class="vencimento-cartao">
+                                        <div class="form-group col-md-3">
+                                            <input type="text" class="form-control" id="cartao-ano" placeholder="Mês">
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <input type="text" class="form-control" id="cartao-mes" placeholder="Ano">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-5">
+                                    <label for="cartao-codigo-seguranca">Código de segurança do cartão:</label>
+                                    <div class="form-group col-md-10">
+                                        <input type="text" class="form-control" id="cartao-codigo-seguranca"
+                                            placeholder="Mês">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Salvar os dados do meu cartão para futuras compras.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Não salvar os dados.
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group botoes-cadastro">
+                <a href="../area-cliente/area-cliente.html"><button class="btn">Cadastrar</button></a>
+                <a href="../portal/portal.html"><button class="btn btn-cancelar">Cancelar</button></a>
+            </div>
+        </form>
+    </section>
+
+   <!-- FOOTER COM CONTAINER -->
+   <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6"><img src="../img/logo-footer.png"></div>
+            <div class="col-md-2">
+                <h4>MAPA DO SITE</h4>
+                <ul class="nav flex-column rodape">
+                    <li class="nav-item"><a class="nav-link" href="../planos/planos.html">Planos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sustentabilidade</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../portal/portal.html#servicos">Serviços</a></li>
+                </ul>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <h4>SOCIAL MIDIA</h4>
+                <ul class="nav flex-column rodape">
+                    <li class="nav-item"><img src="../img/logo-facebook.png"><a class="nav-link" href="#">Facebook</a>
+                    </li>
+                    <li class="nav-item"><img src="../img/logo-linkedin.png"><a class="nav-link" href="#">Linkedin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
