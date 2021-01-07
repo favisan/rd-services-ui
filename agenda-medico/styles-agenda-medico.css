@@ -116,6 +116,14 @@
     margin-top: 20px;
     margin-left: 15px;
 }
+
+.noite {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
 .active:hover {
     color: #319A75;
 }
