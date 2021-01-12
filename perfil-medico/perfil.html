@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="styles-perfil.css" rel="stylesheet"/>    
+    <link href="style-perfil.css" rel="stylesheet"/>    
   </head>
   <body>
 
@@ -27,12 +27,6 @@
             <nav class="menu-vertical">
                 <img class="usuario" src="../images/usuario.png" width="150px">
                 <p class="editarFotoPerfil">Editar Foto do Perfil</p>
-                <select>
-                  <option> Clínicas Conveniadas</option>
-                  <option>Ex: Clínica X</option>
-                  <option>Ex: Clínica Y</option>
-                  <option>Ex: Clínica Z</option>
-                </select>
                 <p class="senha">Alterar Senha</p1>
             </nav>
         </div>
@@ -108,7 +102,7 @@
 
 
                       <div class="row">
-                        <div class="form-group col-12 col-md-3">
+                        <div class="form-group col-12 col-md-2">
                             <label>Cidade</label>
                             <input type="cidade" class="form-control" placeholder="Ex: São Paulo">
                         </div>
@@ -118,11 +112,15 @@
                         </div>
                         <div class="form-group col-12 col-md-3">
                             <label>Telefone</label>
-                            <input type="uf" class="form-control" placeholder="11 0000-0000">
+                            <input type="tel" class="form-control" placeholder="11 0000-0000">
                         </div>
-                        <div class="form-group col-12 col-md-5">
+                        <div class="form-group col-12 col-md-4">
                           <label>E-mail</label>
-                          <input type="uf" class="form-control" placeholder="exemple@exemple.com">
+                          <input type="email" class="form-control" placeholder="exemple@exemple.com">
+                        </div>
+                        <div class="form-group col-12 col-md-2">
+                          <label>Valor da Consulta</label>
+                          <input type="valor" class="form-control" placeholder="R$ 000,00">
                         </div>
                       </div>
                       <br>
