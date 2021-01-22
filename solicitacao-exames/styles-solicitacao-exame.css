@@ -58,6 +58,16 @@ section {
     background-color: rgb(000, 080, 052);
 }
 
+.presc-border {
+    border: 1px solid #908f8f; 
+    border-radius: 7px;
+    padding: 0 15px;
+}
+
+.texto-tabela {
+    color: #908f8f;
+}
+
 .btn-cinza {
     font-size: 14px;
     font-weight: 700;
@@ -67,6 +77,60 @@ section {
 
 .btn-cinza:hover {
     background-color: rgb(146, 146, 136);
+}
+
+.btn-add {
+    border-radius: 50px;
+    border: 1px solid #2a764a; 
+    width: 34px;
+    height: 34px;
+    background-image: url(../images/add.png);
+    margin-top: 37px;
+    margin-left: 30px;
+}
+
+.btn-add:hover {
+    background-color: rgb(000, 080, 052);
+    border-radius: 50px;
+    border: 1px solid rgb(000, 080, 052); 
+    width: 34px;
+    height: 34px;
+    margin-top: 37px;
+    margin-left: 30px;
+}
+
+.btn-add:focus, .btn-add:active{
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 50px !important;
+    border: 1px solid rgb(000, 080, 052) !important;
+}
+
+.text-left {
+    text-align: right !important;
+}
+
+.btn-delete {
+    border-radius: 50px;
+    border: 1px solid rgb(108, 108, 100); 
+    width: 34px;
+    height: 34px;
+    background-image: url(../images/delete.png);
+}
+
+.btn-delete:hover {
+    background-color: rgb(146, 146, 136);
+    border-radius: 50px;
+    border: 1px solid  rgb(146, 146, 136);
+    width: 34px;
+    height: 34px;
+}
+
+.btn-delete:focus, .btn-delete:active{
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 50px !important;
+    border: 1px solid  rgb(146, 146, 136) !important; 
 }
 
 footer{
