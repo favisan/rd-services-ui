@@ -77,17 +77,17 @@
                         <input type="text" class="form-control style-input" id="telefone-medico" placeholder="(xx) 0000-0000" disabled>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="indicacao" class="label-form">Indicação Clínica</label>
+                        <input type="text" class="form-control style-input" id="indicacao" placeholder="" required>
+                    </div> 
+                </div>
 
                 <div class="presc-border">
-                    <div class="row mt-2 mb-0">
-                        <div class="form-group col-12 col-md-12 mb-0">
-                            <label for="idade" class="label-form">Prescrição</label>
-                        </div>
-                    </div>
-
                     <div>
-                        <div class="row">
-                            <div class="form-group col-12 col-md-2">
+                        <div class="row mt-2">
+                            <div class="form-group col-11">
                                 <label for="exame" class="label-form">Exame</label>
                                 <select type="text" class="form-control style-input select-form" id="exame" required>
                                     <option>Selecione o exame</option>
@@ -95,11 +95,7 @@
                                     <option>Glicemia</option>
                                 </select>
                             </div>
-                            <div class="form-group col-12 col-md-9">
-                                <label for="indicacao" class="label-form">Indicação Clínica</label>
-                                <input type="text" class="form-control style-input" id="indicacao" placeholder="" required>
-                            </div> 
-                            <div class="form-group col-12 col-md-1">
+                            <div class="form-group col-1">
                                 <button type="button" class="btn-add" data-toggle="modal" data-target="#modal-add"></button>
                             </div>
                         </div>
@@ -112,21 +108,18 @@
                             <thead>
                                 <tr>
                                 <th class="texto-tabela" scope="col">Exame</th>
-                                <th class="texto-tabela" scope="col">Indicação Clínica</th>
                                 <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                 <td class="texto-tabela">Glicose</td>
-                                <td class="texto-tabela">Exame de Rotina</td>
                                 <td class="text-left"><button type="button" class="btn-delete"></button></td>
                                 </tr>
                             </tbody>
                             <tbody>
                                 <tr>
                                     <td class="texto-tabela">Colesterol</td>
-                                    <td class="texto-tabela">Exame de Rotina</td>
                                     <td class="text-left"><button type="button" class="btn-delete"></button></td>
                                 </tr>
                             </tbody>
