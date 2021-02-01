@@ -90,7 +90,12 @@
                     <label for="cadastro-cpf">CPF:</label>
                     <input type="text" class="form-control" id="cadastro-cpf" placeholder="Digite o seu CPF">
                 </div>
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-1">
+                    <label for="cadastro-ddd">DDD:</label>
+                    <input type="text" class="form-control" id="cadastro-ddd"
+                        placeholder="(000)">
+                </div>
+                <div class="form-group col-md-3">
                     <label for="cadastro-celular">Celular:</label>
                     <input type="text" class="form-control" id="cadastro-celular" placeholder="Digite o seu Celular">
                 </div>
@@ -100,9 +105,14 @@
                 </div>
             </div>
             <div class="form-row">
-                <div class="form-group col-md-8">
+                <div class="form-group col-md-7">
                     <label for="cadastro-endereco">Endereço:</label>
-                    <input type="text" class="form-control" id="cadastro-endereco" placeholder="Digite o seu endereço">
+                    <input type="text" class="form-control" id="cadastro-endereco"
+                        placeholder="Digite o seu endereço">
+                </div>
+                <div class="form-group col-md-1">
+                    <label for="cadastro-cep">Número:</label>
+                    <input type="text" class="form-control" id="cadastro-numero" placeholder="Número">
                 </div>
                 <div class="form-group col-md-4">
                     <label for="cadastro-cep">CEP:</label>
@@ -232,28 +242,33 @@
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-12">
-                                    <label for="cartao-nome">Nome do titular do Cartão:</label>
+                                    <label for="cartao-nome">Nome impresso no Cartão:</label>
                                     <input type="text" class="form-control" id="cartao-nome"
-                                        placeholder="Seu nome completo">
+                                        placeholder="Nome impresso no Cartão">
                                 </div>
                             </div>
                             <div class="form-row ">
-                                <div class="form-group col-md-7">
-                                    <label for="cartao-mes cartao-ano">Data de vencimento:</label>
+                                <div class="form-group col-md-4">
+                                    <label for="cartao-vencimento">Data de vencimento:</label>
                                     <div class="vencimento-cartao">
-                                        <div class="form-group col-md-3">
-                                            <input type="text" class="form-control" id="cartao-ano" placeholder="Mês">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <input type="text" class="form-control" id="cartao-mes" placeholder="Ano">
+                                        <div class="form-group col-md-10">
+                                            <input type="text" class="form-control" id="dtValidade" placeholder="00/0000">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group col-md-5">
+                                <div class="form-group col-md-4">
+                                    <label for="cartao-emissao">Data de emissão:</label>
+                                    <div class="emissao-cartao">
+                                        <div class="form-group col-md-10">
+                                            <input type="text" class="form-control" id="dtEmissao" placeholder="00/0000">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-4">
                                     <label for="cartao-codigo-seguranca">Código de segurança do cartão:</label>
                                     <div class="form-group col-md-10">
                                         <input type="text" class="form-control" id="cartao-codigo-seguranca"
-                                            placeholder="Mês">
+                                            placeholder="CVV">
                                     </div>
                                 </div>
                             </div>
