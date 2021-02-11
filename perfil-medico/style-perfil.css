@@ -17,7 +17,15 @@
     border-bottom-color: #c2bfbd;
     background-color: #f3eeeb;
 }
-
+.btn-modal {
+    width: 150px;
+    font-size: 16px;
+    font-weight: 700!important;
+    cursor: pointer;
+    color: #2a764a;
+    border: 1px solid #2a764a!important;
+    margin-left: 20px;
+}
 .top {
     color: #2a764a;
     margin-left: 280px;

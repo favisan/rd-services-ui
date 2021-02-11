@@ -27,8 +27,8 @@
             <nav class="menu-vertical">
                 <img class="usuario" src="../images/usuario.png" width="150px">
                 <p class="editarFotoPerfil">Editar Foto do Perfil</p>
-                <p class="senha">Alterar Senha</p1>
-            </nav>
+                <button type="button" class="btn btn-modal" data-toggle="modal" data-target="#modal-salvar">Alterar Senha</button>
+              </nav>
         </div>
     
         <div class="container-form container">
@@ -37,7 +37,7 @@
                   <h3 class="sub">Dados Pessoais</h3>
                     <form>
                       <div class="row">
-                        <div class="form-group col-12 col-md-8">
+                        <div class="form-group col-12 col-md-7">
                             <label>Nome</label>
                             <input type="name" class="form-control" placeholder="Ex: Ana Maria">
                         </div>
@@ -45,10 +45,38 @@
                             <label>CRM</label>
                             <input type="crm" class="form-control" placeholder="00000">
                         </div>
-                        <div class="form-group col-12 col-md-1">
-                            <label>UF</label>
-                            <input type="uf" class="form-control" placeholder="SP">
-                        </div>
+                        <div class="form-group col-12 col-md-2">
+                          <label class="label-form" for="uf-crm">UF CRM</label>
+                          <select class="form-control style-input" id="uf-crm" required>
+                              <option>SP</option>
+                              <option>AC</option>
+                              <option>AL</option>
+                              <option>AP</option>
+                              <option>AM</option>
+                              <option>BA</option>
+                              <option>CE</option>
+                              <option>ES</option>
+                              <option>GO</option>
+                              <option>MA</option>
+                              <option>MT</option>
+                              <option>MS</option>
+                              <option>MG</option>
+                              <option>PA</option>
+                              <option>PB</option>
+                              <option>PR</option>
+                              <option>PE</option>
+                              <option>PI</option>
+                              <option>RJ</option>
+                              <option>RN</option>
+                              <option>RS</option>
+                              <option>RO</option>
+                              <option>RR</option>
+                              <option>SC</option>
+                              <option>SE</option>
+                              <option>TO</option>
+                              <option>DF</option>
+                          </select>
+                      </div> 
                       </div>
 
                       <div class="row">
@@ -106,15 +134,43 @@
                             <label>Cidade</label>
                             <input type="cidade" class="form-control" placeholder="Ex: São Paulo">
                         </div>
-                        <div class="form-group col-12 col-md-1">
-                            <label>UF</label>
-                            <input type="uf-crm" class="form-control" placeholder="SP">
-                        </div>
+                        <div class="form-group col-12 col-md-2">
+                          <label class="label-form" for="uf-crm">UF</label>
+                          <select class="form-control style-input" id="uf-crm" required>
+                              <option>SP</option>
+                              <option>AC</option>
+                              <option>AL</option>
+                              <option>AP</option>
+                              <option>AM</option>
+                              <option>BA</option>
+                              <option>CE</option>
+                              <option>ES</option>
+                              <option>GO</option>
+                              <option>MA</option>
+                              <option>MT</option>
+                              <option>MS</option>
+                              <option>MG</option>
+                              <option>PA</option>
+                              <option>PB</option>
+                              <option>PR</option>
+                              <option>PE</option>
+                              <option>PI</option>
+                              <option>RJ</option>
+                              <option>RN</option>
+                              <option>RS</option>
+                              <option>RO</option>
+                              <option>RR</option>
+                              <option>SC</option>
+                              <option>SE</option>
+                              <option>TO</option>
+                              <option>DF</option>
+                          </select>
+                      </div> 
                         <div class="form-group col-12 col-md-3">
                             <label>Telefone</label>
                             <input type="tel" class="form-control" placeholder="11 0000-0000">
                         </div>
-                        <div class="form-group col-12 col-md-4">
+                        <div class="form-group col-12 col-md-3">
                           <label>E-mail</label>
                           <input type="email" class="form-control" placeholder="exemple@exemple.com">
                         </div>
@@ -157,5 +213,34 @@
         </div>    
     </footer>
         
-  </body>
+    <div class="modal fade" id="modal-salvar" tabindex="-1" role="dialog"  aria-labelledby="modal-salvarTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Digite a Nova Senha</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <div>
+                    <input type="senha" class="form-control" placeholder="Nova Senha">
+                    <p></p>
+                  <input type="senha" class="form-control" placeholder="Confirme a Nova Senha">
+                  <p></p>
+            </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-verde" data-dismiss="modal">Salvar</button>
+                <button type="button" class="btn btn-verde" data-dismiss="modal">Fechar</button>
+              </div>
+        </div>
+      </div> 
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
 </html>
